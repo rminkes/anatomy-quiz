@@ -1,7 +1,7 @@
 [
   {
     "id": "supraspinatus_01",
-    "image_url": "https://drive.google.com/uc?export=view&id=18xE8bxsfhnluxxLgACVdgpgqX5JPWn0l",
+    "image_url": "https://raw.githubusercontent.com/rminkesr/anatomy-quiz/main/images/shoulder/supraspinatus_01.jpg",
     "region": "Shoulder",
     "structure_labeled": "Supraspinatus",
     "structure_type": "muscle",
@@ -12,16 +12,14 @@
       "innervation": "Suprascapular nerve",
       "spinal_levels": "C5, C6",
       "function": "Initiates abduction of the arm (first 15 degrees), assists deltoid in full abduction",
-      "action_on_glenohumeral_joint": "Abduction",
-      "opposing_muscle": "Adductors of the shoulder (Pectoralis Major, Latissimus Dorsi)",
+      "opposing_muscle": "Pectoralis Major, Latissimus Dorsi",
       "blood_supply": "Suprascapular artery",
-      "rotator_cuff_role": "Stabilizes humeral head in glenoid fossa during arm movement",
-      "clinical_note": "Most commonly torn rotator cuff muscle; tested by empty-can (Jobe) test"
+      "clinical_note": "Most commonly torn rotator cuff muscle — tested by the empty-can (Jobe) test"
     }
   },
   {
     "id": "infraspinatus_01",
-    "image_url": "https://drive.google.com/uc?export=view&id=1ekNeTG1L0H7wtg2gveweIq9uysRqZgmZ",
+    "image_url": "https://raw.githubusercontent.com/rminkesr/anatomy-quiz/main/images/shoulder/infraspinatus_01.jpg",
     "region": "Shoulder",
     "structure_labeled": "Infraspinatus",
     "structure_type": "muscle",
@@ -32,16 +30,14 @@
       "innervation": "Suprascapular nerve",
       "spinal_levels": "C5, C6",
       "function": "Lateral (external) rotation of the arm; stabilizes glenohumeral joint",
-      "action_on_glenohumeral_joint": "External rotation",
-      "opposing_muscle": "Subscapularis (internal rotator)",
+      "opposing_muscle": "Subscapularis",
       "blood_supply": "Suprascapular artery, Circumflex scapular artery",
-      "rotator_cuff_role": "Primary external rotator; resists anterior dislocation of humeral head",
       "clinical_note": "Tested by external rotation against resistance with elbow at 90 degrees"
     }
   },
   {
     "id": "teres_minor_01",
-    "image_url": "https://drive.google.com/uc?export=view&id=1GuNod7VkLjrvbvUbd5XzXZMHQHGWNqz7",
+    "image_url": "https://raw.githubusercontent.com/rminkesr/anatomy-quiz/main/images/shoulder/teres_minor_01.jpg",
     "region": "Shoulder",
     "structure_labeled": "Teres Minor",
     "structure_type": "muscle",
@@ -52,16 +48,14 @@
       "innervation": "Axillary nerve",
       "spinal_levels": "C5, C6",
       "function": "Lateral (external) rotation of the arm; adduction of the arm",
-      "action_on_glenohumeral_joint": "External rotation, Adduction",
-      "opposing_muscle": "Subscapularis (internal rotator)",
-      "blood_supply": "Posterior circumflex humeral artery, Circumflex scapular artery",
-      "rotator_cuff_role": "Assists infraspinatus in external rotation; stabilizes humeral head",
-      "clinical_note": "Different nerve than other rotator cuff muscles — axillary nerve, not suprascapular"
+      "opposing_muscle": "Subscapularis",
+      "blood_supply": "Posterior circumflex humeral artery",
+      "clinical_note": "Only rotator cuff muscle innervated by the axillary nerve — not the suprascapular nerve"
     }
   },
   {
     "id": "subscapularis_01",
-    "image_url": "https://drive.google.com/uc?export=view&id=1UcPPpYY23xkJ6ey9jFBszINe2h1HDbq9",
+    "image_url": "https://raw.githubusercontent.com/rminkesr/anatomy-quiz/main/images/shoulder/subscapularis_01.jpg",
     "region": "Shoulder",
     "structure_labeled": "Subscapularis",
     "structure_type": "muscle",
@@ -72,11 +66,9 @@
       "innervation": "Upper and lower subscapular nerves",
       "spinal_levels": "C5, C6, C7",
       "function": "Medial (internal) rotation of the arm; adduction of the arm",
-      "action_on_glenohumeral_joint": "Internal rotation, Adduction",
-      "opposing_muscle": "Infraspinatus and Teres Minor (external rotators)",
+      "opposing_muscle": "Infraspinatus and Teres Minor",
       "blood_supply": "Subscapular artery",
-      "rotator_cuff_role": "Only anterior rotator cuff muscle; resists posterior dislocation of humeral head",
-      "clinical_note": "Only rotator cuff muscle that inserts on the lesser tubercle; tested by lift-off (Gerber) test and belly-press test"
+      "clinical_note": "Only anterior rotator cuff muscle — tested by the lift-off (Gerber) test and belly-press test"
     }
   }
 ]
