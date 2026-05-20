@@ -1,0 +1,110 @@
+[
+  {
+    "id": "deltoid_anterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/deltoid_anterior_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Deltoid \u2014 Anterior Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Deltoid \u2014 Anterior Head",
+      "origin": "Lateral third of the clavicle",
+      "insertion": "Deltoid tuberosity of the humerus",
+      "innervation": "Axillary nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion and medial rotation of the arm",
+      "opposing_muscle": "Posterior Deltoid",
+      "blood_supply": "Anterior circumflex humeral artery, Thoracoacromial artery",
+      "clinical_note": "All three heads of the deltoid are tested together by resisted abduction \u2014 axillary nerve injury causes flattening of the shoulder contour"
+    }
+  },
+  {
+    "id": "deltoid_middle_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/deltoid_middle_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Deltoid \u2014 Middle Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Deltoid \u2014 Middle Head",
+      "origin": "Acromion of the scapula",
+      "insertion": "Deltoid tuberosity of the humerus",
+      "innervation": "Axillary nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Abduction of the arm (from 15 to 90 degrees)",
+      "opposing_muscle": "Pectoralis Major, Latissimus Dorsi",
+      "blood_supply": "Anterior and posterior circumflex humeral arteries",
+      "clinical_note": "Primary abductor of the arm from 15 to 90 degrees \u2014 works with supraspinatus which initiates the first 15 degrees"
+    }
+  },
+  {
+    "id": "deltoid_posterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/deltoid_posterior_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Deltoid \u2014 Posterior Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Deltoid \u2014 Posterior Head",
+      "origin": "Spine of the scapula",
+      "insertion": "Deltoid tuberosity of the humerus",
+      "innervation": "Axillary nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Extension and lateral rotation of the arm",
+      "opposing_muscle": "Anterior Deltoid",
+      "blood_supply": "Posterior circumflex humeral artery",
+      "clinical_note": "Axillary nerve injury also affects teres minor \u2014 both are tested by resisted lateral rotation with arm at side"
+    }
+  },
+  {
+    "id": "teres_major_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/teres_major_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Teres Major",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Teres Major",
+      "origin": "Inferior angle and lower lateral border of the scapula",
+      "insertion": "Medial lip of the intertubercular groove of the humerus",
+      "innervation": "Lower subscapular nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Medial rotation, adduction, and extension of the arm",
+      "opposing_muscle": "Infraspinatus, Teres Minor",
+      "blood_supply": "Subscapular artery, Posterior circumflex humeral artery",
+      "clinical_note": "Often called the little helper of latissimus dorsi \u2014 same actions, same insertion area; not part of the rotator cuff"
+    }
+  },
+  {
+    "id": "coracobrachialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/coracobrachialis_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Coracobrachialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Coracobrachialis",
+      "origin": "Coracoid process of the scapula",
+      "insertion": "Middle third of the medial surface of the humerus",
+      "innervation": "Musculocutaneous nerve",
+      "spinal_levels": "C5, C6, C7",
+      "function": "Flexion and adduction of the arm at the glenohumeral joint",
+      "opposing_muscle": "Posterior Deltoid, Teres Major",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "The musculocutaneous nerve pierces coracobrachialis \u2014 entrapment here causes weakness of elbow flexion and loss of lateral forearm sensation"
+    }
+  },
+  {
+    "id": "subclavius_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/subclavius_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Subclavius",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Subclavius",
+      "origin": "Junction of the first rib and its costal cartilage",
+      "insertion": "Inferior surface of the middle third of the clavicle",
+      "innervation": "Nerve to subclavius",
+      "spinal_levels": "C5, C6",
+      "function": "Depresses and stabilizes the clavicle; protects the subclavian vessels in clavicle fractures",
+      "opposing_muscle": "Trapezius \u2014 Upper Fibers",
+      "blood_supply": "Clavicular branch of the thoracoacromial artery",
+      "clinical_note": "Acts as a buffer protecting the subclavian vein and brachial plexus during clavicle fractures \u2014 its own nerve is used to assess C5 and C6 root integrity"
+    }
+  }
+]
