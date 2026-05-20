@@ -1,0 +1,146 @@
+[
+  {
+    "id": "biceps_brachii_long_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/biceps_brachii_long_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Biceps Brachii — Long Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Biceps Brachii — Long Head",
+      "origin": "Supraglenoid tubercle of the scapula",
+      "insertion": "Radial tuberosity and bicipital aponeurosis",
+      "innervation": "Musculocutaneous nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion of the elbow, supination of the forearm, weak flexion of the shoulder",
+      "opposing_muscle": "Triceps Brachii",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "Long head tendon travels through the intertubercular groove — a common site of tendinitis and rupture causing a Popeye deformity"
+    }
+  },
+  {
+    "id": "biceps_brachii_short_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/biceps_brachii_short_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Biceps Brachii — Short Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Biceps Brachii — Short Head",
+      "origin": "Coracoid process of the scapula",
+      "insertion": "Radial tuberosity and bicipital aponeurosis",
+      "innervation": "Musculocutaneous nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion of the elbow, supination of the forearm, adduction of the arm",
+      "opposing_muscle": "Triceps Brachii",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "Shares origin with coracobrachialis at the coracoid process — both are innervated by the musculocutaneous nerve"
+    }
+  },
+  {
+    "id": "brachialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/brachialis_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Brachialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Brachialis",
+      "origin": "Distal half of the anterior surface of the humerus",
+      "insertion": "Coronoid process and tuberosity of the ulna",
+      "innervation": "Musculocutaneous nerve, small contribution from radial nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion of the elbow in all positions — the workhorse flexor of the elbow",
+      "opposing_muscle": "Triceps Brachii",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "Inserts on the ulna so it is always a pure elbow flexor regardless of forearm pronation or supination — unlike biceps brachii"
+    }
+  },
+  {
+    "id": "coracobrachialis_arm_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/coracobrachialis_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Coracobrachialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Coracobrachialis",
+      "origin": "Coracoid process of the scapula",
+      "insertion": "Middle third of the medial surface of the humerus",
+      "innervation": "Musculocutaneous nerve",
+      "spinal_levels": "C5, C6, C7",
+      "function": "Flexion and adduction of the arm at the glenohumeral joint",
+      "opposing_muscle": "Posterior Deltoid, Teres Major",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "The musculocutaneous nerve pierces coracobrachialis — entrapment here causes weakness of elbow flexion and loss of lateral forearm sensation"
+    }
+  },
+  {
+    "id": "triceps_brachii_long_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/triceps_brachii_long_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Triceps Brachii — Long Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Triceps Brachii — Long Head",
+      "origin": "Infraglenoid tubercle of the scapula",
+      "insertion": "Olecranon process of the ulna",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Extension of the elbow, extension and adduction of the arm at the shoulder",
+      "opposing_muscle": "Biceps Brachii, Brachialis",
+      "blood_supply": "Deep brachial artery",
+      "clinical_note": "Only head of triceps that crosses the shoulder joint — can extend and adduct the arm; radial nerve injury causes wrist drop"
+    }
+  },
+  {
+    "id": "triceps_brachii_lateral_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/triceps_brachii_lateral_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Triceps Brachii — Lateral Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Triceps Brachii — Lateral Head",
+      "origin": "Posterior surface of the humerus superior to the radial groove",
+      "insertion": "Olecranon process of the ulna",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Extension of the elbow",
+      "opposing_muscle": "Biceps Brachii, Brachialis",
+      "blood_supply": "Deep brachial artery",
+      "clinical_note": "Forms the lateral surface of the posterior arm — the most visible head during elbow extension against resistance"
+    }
+  },
+  {
+    "id": "triceps_brachii_medial_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/triceps_brachii_medial_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Triceps Brachii — Medial Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Triceps Brachii — Medial Head",
+      "origin": "Posterior surface of the humerus inferior to the radial groove",
+      "insertion": "Olecranon process of the ulna",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Extension of the elbow — the primary workhorse head of the triceps",
+      "opposing_muscle": "Biceps Brachii, Brachialis",
+      "blood_supply": "Deep brachial artery",
+      "clinical_note": "Deepest and most active head — active in all elbow extension; the lateral and long heads are recruited for forceful extension"
+    }
+  },
+  {
+    "id": "anconeus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/anconeus_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Anconeus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Anconeus",
+      "origin": "Lateral epicondyle of the humerus",
+      "insertion": "Lateral surface of the olecranon and proximal posterior ulna",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Assists triceps in elbow extension, stabilizes the elbow joint, abducts the ulna during pronation",
+      "opposing_muscle": "Biceps Brachii, Brachialis",
+      "blood_supply": "Posterior interosseous artery, Deep brachial artery",
+      "clinical_note": "Small triangular muscle considered a continuation of the medial head of triceps — used as a surgical landmark at the lateral elbow"
+    }
+  }
+]
