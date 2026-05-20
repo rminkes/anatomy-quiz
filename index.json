@@ -8,5 +8,10 @@
     "label": "Shoulder Girdle",
     "region": "Shoulder",
     "file": "shoulder_girdle.json"
+  },
+  {
+    "label": "Arm",
+    "region": "Arm",
+    "file": "arm.json"
   }
 ]
