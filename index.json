@@ -3,5 +3,10 @@
     "label": "Rotator Cuff",
     "region": "Shoulder",
     "file": "rotator_cuff.json"
+  },
+  {
+    "label": "Shoulder Girdle",
+    "region": "Shoulder",
+    "file": "shoulder_girdle.json"
   }
 ]
