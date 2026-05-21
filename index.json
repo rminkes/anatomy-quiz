@@ -13,5 +13,25 @@
     "label": "Arm",
     "region": "Arm",
     "file": "arm.json"
+  },
+  {
+    "label": "Forearm — Anterior Superficial",
+    "region": "Forearm",
+    "file": "forearm_anterior_superficial.json"
+  },
+  {
+    "label": "Forearm — Anterior Deep",
+    "region": "Forearm",
+    "file": "forearm_anterior_deep.json"
+  },
+  {
+    "label": "Forearm — Posterior Superficial",
+    "region": "Forearm",
+    "file": "forearm_posterior_superficial.json"
+  },
+  {
+    "label": "Forearm — Posterior Deep",
+    "region": "Forearm",
+    "file": "forearm_posterior_deep.json"
   }
 ]
