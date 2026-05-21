@@ -33,5 +33,20 @@
     "label": "Forearm — Posterior Deep",
     "region": "Forearm",
     "file": "forearm_posterior_deep.json"
+  },
+  {
+    "label": "Hand — Thenar",
+    "region": "Hand",
+    "file": "hand_thenar.json"
+  },
+  {
+    "label": "Hand — Hypothenar",
+    "region": "Hand",
+    "file": "hand_hypothenar.json"
+  },
+  {
+    "label": "Hand — Intrinsic",
+    "region": "Hand",
+    "file": "hand_intrinsic.json"
   }
 ]
