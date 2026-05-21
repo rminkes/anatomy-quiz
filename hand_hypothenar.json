@@ -1,0 +1,56 @@
+[
+  {
+    "id": "abductor_digiti_minimi_hand_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/abductor_digiti_minimi_hand_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Abductor Digiti Minimi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Abductor Digiti Minimi",
+      "origin": "Pisiform and tendon of flexor carpi ulnaris",
+      "insertion": "Medial side of the base of the proximal phalanx of the little finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the little finger at the metacarpophalangeal joint",
+      "opposing_muscle": "Palmar Interosseous 3",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Most medial hypothenar muscle — hypothenar wasting indicates ulnar nerve injury; the ulnar nerve and artery enter the hand through Guyon canal just lateral to the pisiform"
+    }
+  },
+  {
+    "id": "flexor_digiti_minimi_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/flexor_digiti_minimi_brevis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Flexor Digiti Minimi Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digiti Minimi Brevis",
+      "origin": "Hook of the hamate and flexor retinaculum",
+      "insertion": "Medial side of the base of the proximal phalanx of the little finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint of the little finger",
+      "opposing_muscle": "Extensor Digiti Minimi",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Originates from the hook of the hamate — a fractured hook of hamate can compress the deep branch of the ulnar nerve causing hypothenar and intrinsic muscle weakness"
+    }
+  },
+  {
+    "id": "opponens_digiti_minimi_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/opponens_digiti_minimi_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Opponens Digiti Minimi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Opponens Digiti Minimi",
+      "origin": "Hook of the hamate and flexor retinaculum",
+      "insertion": "Medial border of the fifth metacarpal along its entire length",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Opposition of the little finger — draws the fifth metacarpal anteriorly and rotates it to face the thumb",
+      "opposing_muscle": "Opponens Pollicis",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Deepest hypothenar muscle — mirrors opponens pollicis in structure and function; together they allow the palm to cup for gripping"
+    }
+  }
+]

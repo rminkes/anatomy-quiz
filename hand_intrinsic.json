@@ -1,0 +1,218 @@
+[
+  {
+    "id": "lumbrical_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/lumbrical_1_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Lumbrical 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 1",
+      "origin": "Lateral side of the tendon of flexor digitorum profundus to the index finger",
+      "insertion": "Lateral band of the extensor expansion of the index finger",
+      "innervation": "Median nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint and extension of the interphalangeal joints of the index finger",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Superficial palmar arch",
+      "clinical_note": "Lumbricals 1 and 2 are innervated by the median nerve; lumbricals 3 and 4 are innervated by the ulnar nerve — unique muscles that arise from and modulate their own antagonist"
+    }
+  },
+  {
+    "id": "lumbrical_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/lumbrical_2_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Lumbrical 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 2",
+      "origin": "Lateral side of the tendon of flexor digitorum profundus to the middle finger",
+      "insertion": "Lateral band of the extensor expansion of the middle finger",
+      "innervation": "Median nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint and extension of the interphalangeal joints of the middle finger",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Superficial palmar arch",
+      "clinical_note": "Innervated by the median nerve along with lumbrical 1 — median nerve injury causes clawing of the index and middle fingers because these lumbricals are lost"
+    }
+  },
+  {
+    "id": "lumbrical_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/lumbrical_3_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Lumbrical 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 3",
+      "origin": "Adjacent sides of the tendons of flexor digitorum profundus to the middle and ring fingers",
+      "insertion": "Lateral band of the extensor expansion of the ring finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint and extension of the interphalangeal joints of the ring finger",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Superficial palmar arch",
+      "clinical_note": "Innervated by the ulnar nerve along with lumbrical 4 — ulnar nerve injury causes more pronounced clawing of the ring and little fingers because these lumbricals are lost"
+    }
+  },
+  {
+    "id": "lumbrical_4_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/lumbrical_4_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Lumbrical 4",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 4",
+      "origin": "Adjacent sides of the tendons of flexor digitorum profundus to the ring and little fingers",
+      "insertion": "Lateral band of the extensor expansion of the little finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint and extension of the interphalangeal joints of the little finger",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Superficial palmar arch",
+      "clinical_note": "Ulnar nerve injury causes ulnar claw hand — more pronounced in ring and little fingers because lumbricals 3 and 4 are lost; median nerve injury causes a milder claw in index and middle"
+    }
+  },
+  {
+    "id": "dorsal_interosseous_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/dorsal_interosseous_1_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Dorsal Interosseous 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 1",
+      "origin": "Adjacent sides of the first and second metacarpals",
+      "insertion": "Lateral base of the proximal phalanx and extensor expansion of the index finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the index finger away from the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Palmar Interosseous 1",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "DAB — Dorsal interossei ABduct fingers from the midline of the middle finger; all four dorsal interossei are innervated by the deep branch of the ulnar nerve"
+    }
+  },
+  {
+    "id": "dorsal_interosseous_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/dorsal_interosseous_2_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Dorsal Interosseous 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 2",
+      "origin": "Adjacent sides of the second and third metacarpals",
+      "insertion": "Lateral base of the proximal phalanx and extensor expansion of the middle finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the middle finger toward the index finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Dorsal Interosseous 3",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "The middle finger has two dorsal interossei — dorsal interosseous 2 abducts it toward the index finger and dorsal interosseous 3 abducts it toward the ring finger"
+    }
+  },
+  {
+    "id": "dorsal_interosseous_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/dorsal_interosseous_3_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Dorsal Interosseous 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 3",
+      "origin": "Adjacent sides of the third and fourth metacarpals",
+      "insertion": "Medial base of the proximal phalanx and extensor expansion of the middle finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the middle finger toward the ring finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Dorsal Interosseous 2",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "Along with dorsal interosseous 2 allows the middle finger to spread in both directions — spreading all fingers apart tests all four dorsal interossei simultaneously"
+    }
+  },
+  {
+    "id": "dorsal_interosseous_4_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/dorsal_interosseous_4_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Dorsal Interosseous 4",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 4",
+      "origin": "Adjacent sides of the fourth and fifth metacarpals",
+      "insertion": "Medial base of the proximal phalanx and extensor expansion of the ring finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the ring finger away from the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Palmar Interosseous 2",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "Wasting of the dorsal interossei visible as hollowing between the metacarpals on the dorsum of the hand is a classic sign of ulnar nerve palsy"
+    }
+  },
+  {
+    "id": "palmar_interosseous_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/palmar_interosseous_1_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Palmar Interosseous 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmar Interosseous 1",
+      "origin": "Medial side of the second metacarpal",
+      "insertion": "Medial base of the proximal phalanx and extensor expansion of the index finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Adduction of the index finger toward the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Dorsal Interosseous 1",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "PAD — Palmar interossei ADduct fingers toward the midline of the middle finger; tested by asking the patient to grip a piece of paper between adjacent fingers"
+    }
+  },
+  {
+    "id": "palmar_interosseous_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/palmar_interosseous_2_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Palmar Interosseous 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmar Interosseous 2",
+      "origin": "Lateral side of the fourth metacarpal",
+      "insertion": "Lateral base of the proximal phalanx and extensor expansion of the ring finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Adduction of the ring finger toward the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Dorsal Interosseous 4",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "All palmar interossei are innervated by the deep branch of the ulnar nerve — loss causes inability to adduct fingers and contributes to the claw hand deformity"
+    }
+  },
+  {
+    "id": "palmar_interosseous_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/palmar_interosseous_3_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Palmar Interosseous 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmar Interosseous 3",
+      "origin": "Lateral side of the fifth metacarpal",
+      "insertion": "Lateral base of the proximal phalanx and extensor expansion of the little finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Adduction of the little finger toward the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Abductor Digiti Minimi",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "Remember DAB and PAD — Dorsal interossei ABduct, Palmar interossei ADduct; the middle finger has no palmar interosseous as it is the axis of hand movement"
+    }
+  },
+  {
+    "id": "palmaris_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/palmaris_brevis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Palmaris Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmaris Brevis",
+      "origin": "Flexor retinaculum and palmar aponeurosis",
+      "insertion": "Skin of the medial palm",
+      "innervation": "Superficial branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Wrinkles the skin of the hypothenar eminence, deepens the hollow of the palm, protects the ulnar nerve and artery in Guyon canal",
+      "opposing_muscle": "None",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Only intrinsic hand muscle innervated by the superficial branch of the ulnar nerve — its contraction is preserved in deep ulnar nerve lesions helping to localize the level of injury"
+    }
+  }
+]

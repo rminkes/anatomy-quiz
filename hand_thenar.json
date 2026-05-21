@@ -1,0 +1,74 @@
+[
+  {
+    "id": "abductor_pollicis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/abductor_pollicis_brevis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Abductor Pollicis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Abductor Pollicis Brevis",
+      "origin": "Flexor retinaculum, tubercle of the scaphoid, and tubercle of the trapezium",
+      "insertion": "Lateral side of the base of the proximal phalanx of the thumb",
+      "innervation": "Recurrent branch of the median nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the thumb at the carpometacarpal joint",
+      "opposing_muscle": "Adductor Pollicis",
+      "blood_supply": "Superficial palmar branch of the radial artery",
+      "clinical_note": "First muscle to show wasting in carpal tunnel syndrome — innervated by the recurrent branch of the median nerve which loops around the distal edge of the flexor retinaculum"
+    }
+  },
+  {
+    "id": "flexor_pollicis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/flexor_pollicis_brevis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Flexor Pollicis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Pollicis Brevis",
+      "origin": "Superficial head — flexor retinaculum and trapezium; Deep head — trapezoid and capitate",
+      "insertion": "Base of the proximal phalanx of the thumb",
+      "innervation": "Superficial head — recurrent branch of the median nerve; Deep head — deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint of the thumb",
+      "opposing_muscle": "Extensor Pollicis Brevis",
+      "blood_supply": "Superficial palmar branch of the radial artery",
+      "clinical_note": "Has a dual nerve supply — the only thenar muscle with both median and ulnar innervation; the deep head is spared in carpal tunnel syndrome"
+    }
+  },
+  {
+    "id": "opponens_pollicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/opponens_pollicis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Opponens Pollicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Opponens Pollicis",
+      "origin": "Flexor retinaculum and tubercle of the trapezium",
+      "insertion": "Lateral surface of the first metacarpal along its entire length",
+      "innervation": "Recurrent branch of the median nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Opposition of the thumb — medial rotation and flexion of the first metacarpal",
+      "opposing_muscle": "Adductor Pollicis",
+      "blood_supply": "Superficial palmar branch of the radial artery",
+      "clinical_note": "Produces the uniquely human movement of opposition — loss of opposition from median nerve injury severely impairs pinch and grip; tested by touching thumb to little finger"
+    }
+  },
+  {
+    "id": "adductor_pollicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/adductor_pollicis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Adductor Pollicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Adductor Pollicis",
+      "origin": "Oblique head — bases of second and third metacarpals, capitate, and adjacent carpals; Transverse head — anterior surface of the third metacarpal",
+      "insertion": "Medial side of the base of the proximal phalanx of the thumb",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Adduction of the thumb at the carpometacarpal joint, assists in pinch grip",
+      "opposing_muscle": "Abductor Pollicis Brevis, Abductor Pollicis Longus",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "Innervated by the ulnar nerve — not the median nerve; Froment sign tests adductor pollicis weakness by asking the patient to hold paper between thumb and index finger"
+    }
+  }
+]
