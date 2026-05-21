@@ -1,0 +1,92 @@
+[
+  {
+    "id": "supinator_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/supinator_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Supinator",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Supinator",
+      "origin": "Lateral epicondyle of the humerus, radial collateral ligament, annular ligament, supinator crest of the ulna",
+      "insertion": "Lateral surface of the proximal third of the radius",
+      "innervation": "Deep branch of the radial nerve (posterior interosseous nerve)",
+      "spinal_levels": "C6, C7",
+      "function": "Supination of the forearm at all elbow positions",
+      "opposing_muscle": "Pronator Teres, Pronator Quadratus",
+      "blood_supply": "Posterior interosseous artery, Radial artery",
+      "clinical_note": "The deep branch of the radial nerve passes through the arcade of Frohse between the two heads of supinator — compression causes posterior interosseous nerve syndrome with finger and thumb drop"
+    }
+  },
+  {
+    "id": "abductor_pollicis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/abductor_pollicis_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Abductor Pollicis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Abductor Pollicis Longus",
+      "origin": "Posterior surface of the ulna and radius and the interosseous membrane",
+      "insertion": "Base of the first metacarpal",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Abduction and extension of the thumb at the carpometacarpal joint",
+      "opposing_muscle": "Adductor Pollicis",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Its tendon runs in the first extensor compartment with extensor pollicis brevis — stenosing tenosynovitis of this compartment is called de Quervain tenosynovitis"
+    }
+  },
+  {
+    "id": "extensor_pollicis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_pollicis_brevis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Pollicis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Pollicis Brevis",
+      "origin": "Posterior surface of the radius and interosseous membrane",
+      "insertion": "Base of the proximal phalanx of the thumb",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension of the metacarpophalangeal joint of the thumb, abduction of the wrist",
+      "opposing_muscle": "Flexor Pollicis Longus",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Runs with abductor pollicis longus in the first extensor compartment — both tendons form the lateral border of the anatomical snuffbox"
+    }
+  },
+  {
+    "id": "extensor_pollicis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_pollicis_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Pollicis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Pollicis Longus",
+      "origin": "Posterior surface of the middle third of the ulna and interosseous membrane",
+      "insertion": "Base of the distal phalanx of the thumb",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension of the interphalangeal joint of the thumb, extension and adduction of the thumb at the carpometacarpal joint",
+      "opposing_muscle": "Flexor Pollicis Longus",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Forms the medial border of the anatomical snuffbox — its tendon wraps around Lister's tubercle and can rupture spontaneously after distal radius fractures"
+    }
+  },
+  {
+    "id": "extensor_indicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_indicis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Indicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Indicis",
+      "origin": "Posterior surface of the distal third of the ulna and interosseous membrane",
+      "insertion": "Extensor expansion of the index finger",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Independent extension of the index finger at the metacarpophalangeal joint",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Allows independent pointing with the index finger — commonly harvested for tendon transfer surgery to restore thumb extension after extensor pollicis longus rupture"
+    }
+  }
+]

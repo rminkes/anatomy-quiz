@@ -1,0 +1,56 @@
+[
+  {
+    "id": "flexor_digitorum_profundus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_digitorum_profundus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Digitorum Profundus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digitorum Profundus",
+      "origin": "Anterior and medial surfaces of the proximal three-quarters of the ulna and interosseous membrane",
+      "insertion": "Bases of the distal phalanges of the second through fifth digits",
+      "innervation": "Medial half — ulnar nerve; Lateral half — anterior interosseous branch of the median nerve",
+      "spinal_levels": "C7, C8, T1",
+      "function": "Flexion of the distal interphalangeal joints, flexion of the proximal interphalangeal and metacarpophalangeal joints, weak wrist flexion",
+      "opposing_muscle": "Extensor Digitorum",
+      "blood_supply": "Anterior interosseous artery, Ulnar artery",
+      "clinical_note": "Only muscle that flexes the distal interphalangeal joint — has a dual nerve supply making it useful for distinguishing median versus ulnar nerve injuries"
+    }
+  },
+  {
+    "id": "flexor_pollicis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_pollicis_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Pollicis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Pollicis Longus",
+      "origin": "Anterior surface of the radius and adjacent interosseous membrane",
+      "insertion": "Base of the distal phalanx of the thumb",
+      "innervation": "Anterior interosseous branch of the median nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Flexion of the interphalangeal joint of the thumb, weak flexion of the metacarpophalangeal joint of the thumb",
+      "opposing_muscle": "Extensor Pollicis Longus",
+      "blood_supply": "Anterior interosseous artery",
+      "clinical_note": "Innervated exclusively by the anterior interosseous nerve — injury causes inability to flex the thumb tip; tested by the OK sign pinch test"
+    }
+  },
+  {
+    "id": "pronator_quadratus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/pronator_quadratus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Pronator Quadratus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Pronator Quadratus",
+      "origin": "Anterior surface of the distal quarter of the ulna",
+      "insertion": "Anterior surface of the distal quarter of the radius",
+      "innervation": "Anterior interosseous branch of the median nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Pronation of the forearm — primary pronator of the forearm",
+      "opposing_muscle": "Supinator, Biceps Brachii",
+      "blood_supply": "Anterior interosseous artery",
+      "clinical_note": "Primary pronator of the forearm regardless of elbow position — pronator teres assists only when speed or force is needed; lies deep to all other anterior forearm muscles"
+    }
+  }
+]

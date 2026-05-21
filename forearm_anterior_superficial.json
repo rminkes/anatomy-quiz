@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pronator_teres_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/pronator_teres_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Pronator Teres",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Pronator Teres",
+      "origin": "Humeral head — medial epicondyle of the humerus; Ulnar head — coronoid process of the ulna",
+      "insertion": "Middle of the lateral surface of the radius",
+      "innervation": "Median nerve",
+      "spinal_levels": "C6, C7",
+      "function": "Pronation of the forearm, weak flexion of the elbow",
+      "opposing_muscle": "Supinator, Biceps Brachii",
+      "blood_supply": "Anterior ulnar recurrent artery, Radial artery",
+      "clinical_note": "The median nerve passes between its two heads — compression here causes pronator teres syndrome with forearm pain and weakness of median nerve distribution"
+    }
+  },
+  {
+    "id": "flexor_carpi_radialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_carpi_radialis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Carpi Radialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Carpi Radialis",
+      "origin": "Medial epicondyle of the humerus via the common flexor tendon",
+      "insertion": "Base of the second and third metacarpals",
+      "innervation": "Median nerve",
+      "spinal_levels": "C6, C7",
+      "function": "Flexion and radial deviation of the wrist",
+      "opposing_muscle": "Extensor Carpi Radialis Longus, Extensor Carpi Radialis Brevis",
+      "blood_supply": "Radial artery",
+      "clinical_note": "Its tendon is used as a landmark for radial artery pulse — the radial artery lies just lateral to the FCR tendon at the wrist"
+    }
+  },
+  {
+    "id": "palmaris_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/palmaris_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Palmaris Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmaris Longus",
+      "origin": "Medial epicondyle of the humerus via the common flexor tendon",
+      "insertion": "Flexor retinaculum and palmar aponeurosis",
+      "innervation": "Median nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Weak flexion of the wrist, tenses the palmar aponeurosis",
+      "opposing_muscle": "Extensor Carpi Radialis Longus, Extensor Carpi Ulnaris",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Absent in approximately 14 percent of the population — commonly harvested for tendon graft surgery; its tendon is visible at the wrist when the thumb and little finger are opposed"
+    }
+  },
+  {
+    "id": "flexor_carpi_ulnaris_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_carpi_ulnaris_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Carpi Ulnaris",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Carpi Ulnaris",
+      "origin": "Humeral head — medial epicondyle via common flexor tendon; Ulnar head — olecranon and posterior border of the ulna",
+      "insertion": "Pisiform, hook of hamate, and base of fifth metacarpal",
+      "innervation": "Ulnar nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Flexion and ulnar deviation of the wrist",
+      "opposing_muscle": "Extensor Carpi Ulnaris",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "The only superficial forearm flexor innervated by the ulnar nerve — the ulnar nerve runs along its medial border and can be compressed at the elbow causing cubital tunnel syndrome"
+    }
+  },
+  {
+    "id": "flexor_digitorum_superficialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_digitorum_superficialis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Digitorum Superficialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digitorum Superficialis",
+      "origin": "Humeroulnar head — medial epicondyle and coronoid process; Radial head — anterior oblique line of the radius",
+      "insertion": "Sides of the middle phalanges of the second through fifth digits",
+      "innervation": "Median nerve",
+      "spinal_levels": "C7, C8, T1",
+      "function": "Flexion of the proximal interphalangeal joints, flexion of the metacarpophalangeal joints, weak wrist flexion",
+      "opposing_muscle": "Extensor Digitorum",
+      "blood_supply": "Ulnar artery, Anterior interosseous artery",
+      "clinical_note": "Inserts on the middle phalanx — distinguishes it from flexor digitorum profundus which inserts on the distal phalanx; tested by asking patient to flex one finger while others are held extended"
+    }
+  }
+]

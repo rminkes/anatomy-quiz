@@ -1,0 +1,110 @@
+[
+  {
+    "id": "brachioradialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/brachioradialis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Brachioradialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Brachioradialis",
+      "origin": "Lateral supracondylar ridge of the humerus",
+      "insertion": "Lateral surface of the distal radius just proximal to the styloid process",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion of the elbow, especially when the forearm is in a neutral (semi-pronated) position",
+      "opposing_muscle": "Triceps Brachii",
+      "blood_supply": "Radial artery",
+      "clinical_note": "Anomalous muscle — lies in the posterior compartment but acts as an elbow flexor; innervated by the radial nerve making it the only elbow flexor spared in musculocutaneous nerve injury"
+    }
+  },
+  {
+    "id": "extensor_carpi_radialis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_carpi_radialis_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Carpi Radialis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Carpi Radialis Longus",
+      "origin": "Lateral supracondylar ridge of the humerus",
+      "insertion": "Dorsal surface of the base of the second metacarpal",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C6, C7",
+      "function": "Extension and radial deviation of the wrist",
+      "opposing_muscle": "Flexor Carpi Radialis",
+      "blood_supply": "Radial artery",
+      "clinical_note": "Along with ECRB it is the primary wrist extensor — both tendons run together in the second extensor compartment at the wrist"
+    }
+  },
+  {
+    "id": "extensor_carpi_radialis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_carpi_radialis_brevis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Carpi Radialis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Carpi Radialis Brevis",
+      "origin": "Lateral epicondyle of the humerus via the common extensor tendon",
+      "insertion": "Dorsal surface of the base of the third metacarpal",
+      "innervation": "Deep branch of the radial nerve (posterior interosseous nerve)",
+      "spinal_levels": "C6, C7",
+      "function": "Extension and radial deviation of the wrist",
+      "opposing_muscle": "Flexor Carpi Radialis",
+      "blood_supply": "Radial artery",
+      "clinical_note": "Its origin at the lateral epicondyle is the primary site of lateral epicondylitis (tennis elbow) — pain reproduced by resisted wrist extension"
+    }
+  },
+  {
+    "id": "extensor_digitorum_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_digitorum_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Digitorum",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Digitorum",
+      "origin": "Lateral epicondyle of the humerus via the common extensor tendon",
+      "insertion": "Extensor expansions of the second through fifth digits",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension of the metacarpophalangeal joints of the second through fifth digits, extension of the wrist",
+      "opposing_muscle": "Flexor Digitorum Superficialis, Flexor Digitorum Profundus",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Inserts via the extensor expansion — complete finger extension at all joints requires cooperation of the intrinsic muscles through the same expansion"
+    }
+  },
+  {
+    "id": "extensor_digiti_minimi_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_digiti_minimi_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Digiti Minimi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Digiti Minimi",
+      "origin": "Lateral epicondyle of the humerus via the common extensor tendon",
+      "insertion": "Extensor expansion of the fifth digit",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension of the metacarpophalangeal joint of the little finger",
+      "opposing_muscle": "Flexor Digiti Minimi Brevis",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Allows independent extension of the little finger — its tendon runs in its own sixth extensor compartment at the wrist"
+    }
+  },
+  {
+    "id": "extensor_carpi_ulnaris_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_carpi_ulnaris_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Carpi Ulnaris",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Carpi Ulnaris",
+      "origin": "Lateral epicondyle of the humerus via common extensor tendon, posterior border of the ulna",
+      "insertion": "Base of the fifth metacarpal",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension and ulnar deviation of the wrist",
+      "opposing_muscle": "Flexor Carpi Ulnaris",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Works with flexor carpi ulnaris to produce pure ulnar deviation — its tendon is stabilized at the distal ulna by a separate subsheath that can tear causing painful snapping at the wrist"
+    }
+  }
+]
