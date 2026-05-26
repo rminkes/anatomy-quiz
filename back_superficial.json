@@ -1,0 +1,146 @@
+[
+  {
+    "id": "trapezius_upper_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/trapezius-upper_posterior_01.jpg",
+    "region": "Back — Superficial",
+    "structure_labeled": "Trapezius — Upper Fibers (Descending)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Trapezius — Upper Fibers (Descending)",
+      "origin": "External occipital protuberance, medial one-third of superior nuchal line, ligamentum nuchae, spinous process of C7",
+      "insertion": "Posterior border of lateral one-third of clavicle",
+      "innervation": "Accessory nerve (CN XI) with proprioceptive fibers from C3–C4",
+      "spinal_levels": "CN XI (motor); C3–C4 (proprioception)",
+      "function": "Elevates and upwardly rotates the scapula; extends and laterally flexes the neck; with lower fibers, upwardly rotates glenoid cavity",
+      "opposing_muscle": "Lower fibers of trapezius (for elevation); levator scapulae acts synergistically for elevation but opposes rotation",
+      "blood_supply": "Transverse cervical artery (superficial branch)",
+      "clinical_note": "Also called the superior or descending part of trapezius. Moore classifies trapezius as an extrinsic back muscle (superficial layer). CN XI injury (e.g. posterior triangle lymph node biopsy) causes drooping of the shoulder and inability to shrug — a classic surgical complication to know."
+    }
+  },
+  {
+    "id": "trapezius_middle_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/trapezius-middle_posterior_01.jpg",
+    "region": "Back — Superficial",
+    "structure_labeled": "Trapezius — Middle Fibers (Transverse)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Trapezius — Middle Fibers (Transverse)",
+      "origin": "Spinous processes of T1–T4 (and their supraspinous ligaments)",
+      "insertion": "Medial border of acromion and superior border of spine of scapula",
+      "innervation": "Accessory nerve (CN XI) with proprioceptive fibers from C3–C4",
+      "spinal_levels": "CN XI (motor); C3–C4 (proprioception)",
+      "function": "Retracts (adducts) the scapula; stabilises the scapula against the thoracic wall",
+      "opposing_muscle": "Serratus anterior (protracts scapula)",
+      "blood_supply": "Transverse cervical artery",
+      "clinical_note": "Also called the transverse part of trapezius. Along with the rhomboids, the middle trapezius is a key retractor of the scapula — weakness leads to scapular winging and poor posture. All three parts of trapezius share the same motor nerve: CN XI."
+    }
+  },
+  {
+    "id": "trapezius_lower_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/trapezius-lower_posterior_01.jpg",
+    "region": "Back — Superficial",
+    "structure_labeled": "Trapezius — Lower Fibers (Ascending)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Trapezius — Lower Fibers (Ascending)",
+      "origin": "Spinous processes of T5–T12 (and their supraspinous ligaments)",
+      "insertion": "Medial end of spine of scapula (tubercle at its root)",
+      "innervation": "Accessory nerve (CN XI) with proprioceptive fibers from C3–C4",
+      "spinal_levels": "CN XI (motor); C3–C4 (proprioception)",
+      "function": "Depresses and upwardly rotates the scapula; with upper fibers, rotates glenoid cavity superiorly to allow full shoulder abduction",
+      "opposing_muscle": "Levator scapulae and upper trapezius (for depression vs elevation)",
+      "blood_supply": "Transverse cervical artery (deep branch / dorsal scapular artery)",
+      "clinical_note": "Also called the inferior or ascending part of trapezius. The lower and upper fibers act as a force couple to upwardly rotate the scapula — essential for raising the arm above 90°. Isolated lower trapezius weakness is common in overhead athletes."
+    }
+  },
+  {
+    "id": "latissimus-dorsi_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/latissimus-dorsi_posterior_01.jpg",
+    "region": "Back — Superficial",
+    "structure_labeled": "Latissimus Dorsi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Latissimus Dorsi",
+      "origin": "Spinous processes of T7–T12, thoracolumbar fascia (spinous processes of L1–L5 and sacrum), iliac crest (posterior one-third), inferior 3–4 ribs, inferior angle of scapula (variable)",
+      "insertion": "Floor of intertubercular (bicipital) groove of humerus",
+      "innervation": "Thoracodorsal nerve (C6, C7, C8)",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Extends, adducts, and medially rotates the humerus; depresses the shoulder; assists in inspiration (when arms fixed); used in coughing and climbing",
+      "opposing_muscle": "Deltoid (anterior fibers) for flexion; infraspinatus/teres minor for lateral rotation",
+      "blood_supply": "Thoracodorsal artery (branch of subscapular artery)",
+      "clinical_note": "Moore classifies latissimus dorsi as an extrinsic back muscle (superficial layer). It is the muscle of the 'swimmer's pull' — powerful extension and adduction. Its thoracodorsal pedicle makes it a workhorse flap in reconstructive surgery (latissimus dorsi flap for breast reconstruction). It twists 180° as it inserts — the superior fibers insert inferiorly in the groove."
+    }
+  },
+  {
+    "id": "rhomboid-major_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/rhomboid-major_posterior_01.jpg",
+    "region": "Back — Superficial",
+    "structure_labeled": "Rhomboid Major",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rhomboid Major",
+      "origin": "Spinous processes of T2–T5 and supraspinous ligaments",
+      "insertion": "Medial border of scapula between spine of scapula and inferior angle",
+      "innervation": "Dorsal scapular nerve (C4, C5)",
+      "spinal_levels": "C4, C5",
+      "function": "Retracts and elevates the scapula; rotates glenoid cavity inferiorly (downward rotation); stabilises medial border of scapula",
+      "opposing_muscle": "Serratus anterior (protracts and upwardly rotates scapula)",
+      "blood_supply": "Dorsal scapular artery",
+      "clinical_note": "Moore classifies rhomboids as extrinsic back muscles (superficial layer). Rhomboid major is about twice the size of rhomboid minor. Dorsal scapular nerve injury causes medial winging of the scapula — the medial border lifts away from the thoracic wall. Differentiate from long thoracic nerve injury (serratus anterior palsy) which causes lateral/inferior winging."
+    }
+  },
+  {
+    "id": "rhomboid-minor_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/rhomboid-minor_posterior_01.jpg",
+    "region": "Back — Superficial",
+    "structure_labeled": "Rhomboid Minor",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rhomboid Minor",
+      "origin": "Inferior part of ligamentum nuchae; spinous processes of C7 and T1",
+      "insertion": "Medial border of scapula at the root (base) of the spine of scapula",
+      "innervation": "Dorsal scapular nerve (C4, C5)",
+      "spinal_levels": "C4, C5",
+      "function": "Retracts and elevates the scapula; rotates glenoid cavity inferiorly; stabilises medial border of scapula",
+      "opposing_muscle": "Serratus anterior",
+      "blood_supply": "Dorsal scapular artery",
+      "clinical_note": "Rhomboid minor lies superior to rhomboid major and is separated from it by a thin layer of fat. Both rhomboids share the same nerve (dorsal scapular, C4–C5) and same function. Clinically they are often treated as a single unit. Their downward rotation of the scapula opposes the trapezius force couple — important in shoulder mechanics."
+    }
+  },
+  {
+    "id": "levator-scapulae_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/levator-scapulae_posterior_01.jpg",
+    "region": "Back — Superficial",
+    "structure_labeled": "Levator Scapulae",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Levator Scapulae",
+      "origin": "Posterior tubercles of transverse processes of C1–C4",
+      "insertion": "Medial border of scapula between superior angle and root of spine of scapula",
+      "innervation": "Dorsal scapular nerve (C4, C5) and direct branches from cervical spinal nerves C3–C4",
+      "spinal_levels": "C3, C4, C5",
+      "function": "Elevates the scapula; downwardly rotates the glenoid cavity (with rhomboids); laterally flexes the neck when scapula is fixed",
+      "opposing_muscle": "Lower fibers of trapezius (depresses scapula); upper trapezius acts synergistically for elevation but opposes rotation",
+      "blood_supply": "Dorsal scapular artery; transverse cervical artery",
+      "clinical_note": "Moore classifies levator scapulae as an extrinsic back muscle (superficial layer). It is a common source of neck and shoulder pain — often tender at its insertion on the superior angle of the scapula. It works with the rhomboids to downwardly rotate the scapula, opposing the trapezius–serratus anterior force couple for upward rotation."
+    }
+  },
+  {
+    "id": "serratus-anterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/serratus-anterior_lateral_01.jpg",
+    "region": "Back — Superficial",
+    "structure_labeled": "Serratus Anterior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Anterior",
+      "origin": "Outer surfaces of lateral parts of ribs 1–8 (sometimes rib 9) by digitations",
+      "insertion": "Anterior (costal) surface of medial border of scapula; inferior angle of scapula (lower digitations)",
+      "innervation": "Long thoracic nerve (C5, C6, C7)",
+      "spinal_levels": "C5, C6, C7",
+      "function": "Protracts (abducts) the scapula; holds scapula against thoracic wall; with trapezius, upwardly rotates the scapula (essential for arm elevation above 90°)",
+      "opposing_muscle": "Rhomboids and middle trapezius (retract scapula)",
+      "blood_supply": "Lateral thoracic artery; thoracodorsal artery",
+      "clinical_note": "Note: Moore classifies serratus anterior as an anterior thoracic (pectoral region) muscle, not a true back muscle — it is included here in the superficial back group for convenience. Long thoracic nerve injury (e.g. from axillary surgery, mastectomy, or backpack palsy) causes medial winging of the scapula — the inferior angle and medial border lift away from the thoracic wall, best seen when the patient pushes against a wall. Remember C5, C6, C7 — 'wings of heaven at C5, 6, 7'."
+    }
+  }
+]
