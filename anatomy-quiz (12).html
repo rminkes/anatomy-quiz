@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anatomy Quiz</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #f7f6f3;
+    --surface: #ffffff;
+    --border: #e2e0d8;
+    --border-strong: #c8c5bb;
+    --text: #1a1917;
+    --text-muted: #6b6860;
+    --text-faint: #9c9a94;
+    --blue: #185FA5;
+    --blue-light: #E6F1FB;
+    --green: #3B6D11;
+    --green-light: #EAF3DE;
+    --green-border: #639922;
+    --red: #A32D2D;
+    --red-light: #FCEBEB;
+    --red-border: #E24B4A;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem; }
+  .container { max-width: 680px; margin: 0 auto; }
+  header { margin-bottom: 2rem; }
+  header h1 { font-size: 24px; font-weight: 600; letter-spacing: -0.02em; }
+  header p { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+  .controls { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow); }
+  .controls label { font-size: 13px; color: var(--text-muted); white-space: nowrap; }
+  .controls select { font-size: 14px; padding: 6px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg); color: var(--text); cursor: pointer; }
+  .qt-bar { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.25rem; }
+  .qt-btn { font-size: 12px; padding: 5px 13px; border-radius: 20px; border: 1px solid var(--border); background: var(--surface); color: var(--text-muted); cursor: pointer; transition: all 0.15s; box-shadow: var(--shadow); }
+  .qt-btn:hover { border-color: var(--border-strong); color: var(--text); }
+  .qt-btn.active { background: var(--blue); color: var(--blue-light); border-color: var(--blue); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 1rem; box-shadow: var(--shadow); }
+  .img-box { width: 100%; height: 300px; background: #f0ede6; display: flex; align-items: center; justify-content: center; overflow: hidden; border-bottom: 1px solid var(--border); }
+  .img-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .img-placeholder { text-align: center; color: var(--text-faint); font-size: 13px; }
+  .q-body { padding: 1.5rem; }
+  .q-label { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 10px; }
+  .q-text { font-size: 16px; font-weight: 500; color: var(--text); margin-bottom: 1.25rem; line-height: 1.5; }
+  .muscle-tag { display: inline-block; font-size: 13px; color: var(--text-muted); background: var(--bg); border: 1px solid var(--border); padding: 5px 12px; border-radius: var(--radius-sm); margin-bottom: 1.25rem; }
+  .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .choice { padding: 11px 15px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 13px; cursor: pointer; text-align: left; line-height: 1.4; transition: all 0.12s; font-family: inherit; }
+  .choice:hover:not(:disabled) { background: var(--surface); border-color: var(--border-strong); }
+  .choice.correct { background: var(--green-light); border-color: var(--green-border); color: var(--green); font-weight: 500; }
+  .choice.wrong { background: var(--red-light); border-color: var(--red-border); color: var(--red); }
+  .choice:disabled { cursor: default; }
+  .feedback { margin-top: 1rem; padding: 11px 15px; border-radius: var(--radius-sm); font-size: 13px; line-height: 1.6; display: none; }
+  .feedback.correct { background: var(--green-light); color: var(--green); display: block; border: 1px solid var(--green-border); }
+  .feedback.wrong { background: var(--red-light); color: var(--red); display: block; border: 1px solid var(--red-border); }
+  .next-row { margin-top: 1rem; display: none; }
+  .btn-next { padding: 9px 22px; border-radius: var(--radius-sm); border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); font-size: 14px; font-family: inherit; cursor: pointer; transition: all 0.12s; box-shadow: var(--shadow); }
+  .btn-next:hover { border-color: var(--blue); color: var(--blue); }
+  .score-bar { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; display: flex; gap: 24px; box-shadow: var(--shadow); }
+  .score-item { font-size: 13px; color: var(--text-muted); }
+  .score-item span { font-weight: 600; color: var(--text); margin-left: 4px; }
+  .status { padding: 3rem 2rem; text-align: center; color: var(--text-muted); font-size: 14px; }
+  @media (max-width: 480px) { .choices { grid-template-columns: 1fr; } body { padding: 1rem 0.75rem; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Anatomy Quiz</h1>
+    <p>Image-based muscle identification and recall</p>
+  </header>
+  <div class="controls">
+    <label for="region-sel">Region</label>
+    <select id="region-sel"></select>
+  </div>
+  <div class="qt-bar" id="qt-bar"></div>
+  <div id="quiz"><div class="status">Loading...</div></div>
+  <div class="score-bar">
+    <div class="score-item">Correct <span id="sc-correct">0</span></div>
+    <div class="score-item">Attempted <span id="sc-attempted">0</span></div>
+    <div class="score-item">Streak <span id="sc-streak">0</span></div>
+    <div class="score-item" style="margin-left:auto">
+      <button id="btn-reset" style="font-size:12px;padding:4px 12px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text-muted);cursor:pointer;">Reset stats</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = {
+  index: [
+    { label: "Rotator Cuff", region: "Shoulder", key: "rotator_cuff" },
+    { label: "Shoulder Girdle", region: "Shoulder", key: "shoulder_girdle" },
+    { label: "Arm", region: "Arm", key: "arm" },
+    { label: "Forearm — Anterior Superficial", region: "Forearm", key: "forearm_anterior_superficial" },
+    { label: "Forearm — Anterior Deep", region: "Forearm", key: "forearm_anterior_deep" },
+    { label: "Forearm — Posterior Superficial", region: "Forearm", key: "forearm_posterior_superficial" },
+    { label: "Forearm — Posterior Deep", region: "Forearm", key: "forearm_posterior_deep" },
+    { label: "Hand — Thenar", region: "Hand", key: "hand_thenar" },
+    { label: "Hand — Hypothenar", region: "Hand", key: "hand_hypothenar" },
+    { label: "Hand — Intrinsic", region: "Hand", key: "hand_intrinsic" },
+    { label: "Back — Superficial", region: "Back", key: "back_superficial" },
+    { label: "Back — Intermediate", region: "Back", key: "back_intermediate" }
+  ],
+  rotator_cuff: [
+  {
+    "id": "supraspinatus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/supraspinatus_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Supraspinatus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Supraspinatus",
+      "origin": "Supraspinous fossa of the scapula",
+      "insertion": "Superior facet of the greater tubercle of the humerus",
+      "innervation": "Suprascapular nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Initiates abduction of the arm (first 15 degrees), assists deltoid in full abduction",
+      "opposing_muscle": "Pectoralis Major, Latissimus Dorsi",
+      "blood_supply": "Suprascapular artery",
+      "clinical_note": "Most commonly torn rotator cuff muscle — tested by the empty-can (Jobe) test"
+    }
+  },
+  {
+    "id": "infraspinatus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/infraspinatus_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Infraspinatus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Infraspinatus",
+      "origin": "Infraspinous fossa of the scapula",
+      "insertion": "Middle facet of the greater tubercle of the humerus",
+      "innervation": "Suprascapular nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Lateral (external) rotation of the arm; stabilizes glenohumeral joint",
+      "opposing_muscle": "Subscapularis",
+      "blood_supply": "Suprascapular artery, Circumflex scapular artery",
+      "clinical_note": "Tested by external rotation against resistance with elbow at 90 degrees"
+    }
+  },
+  {
+    "id": "teres_minor_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/teres_minor_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Teres Minor",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Teres Minor",
+      "origin": "Lateral border of the scapula (upper two-thirds)",
+      "insertion": "Inferior facet of the greater tubercle of the humerus",
+      "innervation": "Axillary nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Lateral (external) rotation of the arm; adduction of the arm",
+      "opposing_muscle": "Subscapularis",
+      "blood_supply": "Posterior circumflex humeral artery",
+      "clinical_note": "Only rotator cuff muscle innervated by the axillary nerve — not the suprascapular nerve"
+    }
+  },
+  {
+    "id": "subscapularis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/subscapularis_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Subscapularis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Subscapularis",
+      "origin": "Subscapular fossa of the scapula (anterior surface)",
+      "insertion": "Lesser tubercle of the humerus",
+      "innervation": "Upper and lower subscapular nerves",
+      "spinal_levels": "C5, C6, C7",
+      "function": "Medial (internal) rotation of the arm; adduction of the arm",
+      "opposing_muscle": "Infraspinatus and Teres Minor",
+      "blood_supply": "Subscapular artery",
+      "clinical_note": "Only anterior rotator cuff muscle — tested by the lift-off (Gerber) test and belly-press test"
+    }
+  }
+],
+  shoulder_girdle: [
+  {
+    "id": "deltoid_anterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/deltoid_anterior_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Deltoid — Anterior Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Deltoid — Anterior Head",
+      "origin": "Lateral third of the clavicle",
+      "insertion": "Deltoid tuberosity of the humerus",
+      "innervation": "Axillary nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion and medial rotation of the arm",
+      "opposing_muscle": "Posterior Deltoid",
+      "blood_supply": "Anterior circumflex humeral artery, Thoracoacromial artery",
+      "clinical_note": "All three heads of the deltoid are tested together by resisted abduction — axillary nerve injury causes flattening of the shoulder contour"
+    }
+  },
+  {
+    "id": "deltoid_middle_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/deltoid_middle_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Deltoid — Middle Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Deltoid — Middle Head",
+      "origin": "Acromion of the scapula",
+      "insertion": "Deltoid tuberosity of the humerus",
+      "innervation": "Axillary nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Abduction of the arm (from 15 to 90 degrees)",
+      "opposing_muscle": "Pectoralis Major, Latissimus Dorsi",
+      "blood_supply": "Anterior and posterior circumflex humeral arteries",
+      "clinical_note": "Primary abductor of the arm from 15 to 90 degrees — works with supraspinatus which initiates the first 15 degrees"
+    }
+  },
+  {
+    "id": "deltoid_posterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/deltoid_posterior_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Deltoid — Posterior Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Deltoid — Posterior Head",
+      "origin": "Spine of the scapula",
+      "insertion": "Deltoid tuberosity of the humerus",
+      "innervation": "Axillary nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Extension and lateral rotation of the arm",
+      "opposing_muscle": "Anterior Deltoid",
+      "blood_supply": "Posterior circumflex humeral artery",
+      "clinical_note": "Axillary nerve injury also affects teres minor — both are tested by resisted lateral rotation with arm at side"
+    }
+  },
+  {
+    "id": "teres_major_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/teres_major_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Teres Major",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Teres Major",
+      "origin": "Inferior angle and lower lateral border of the scapula",
+      "insertion": "Medial lip of the intertubercular groove of the humerus",
+      "innervation": "Lower subscapular nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Medial rotation, adduction, and extension of the arm",
+      "opposing_muscle": "Infraspinatus, Teres Minor",
+      "blood_supply": "Subscapular artery, Posterior circumflex humeral artery",
+      "clinical_note": "Often called the little helper of latissimus dorsi — same actions, same insertion area; not part of the rotator cuff"
+    }
+  },
+  {
+    "id": "coracobrachialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/coracobrachialis_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Coracobrachialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Coracobrachialis",
+      "origin": "Coracoid process of the scapula",
+      "insertion": "Middle third of the medial surface of the humerus",
+      "innervation": "Musculocutaneous nerve",
+      "spinal_levels": "C5, C6, C7",
+      "function": "Flexion and adduction of the arm at the glenohumeral joint",
+      "opposing_muscle": "Posterior Deltoid, Teres Major",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "The musculocutaneous nerve pierces coracobrachialis — entrapment here causes weakness of elbow flexion and loss of lateral forearm sensation"
+    }
+  },
+  {
+    "id": "subclavius_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/subclavius_01.jpg",
+    "region": "Shoulder",
+    "structure_labeled": "Subclavius",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Subclavius",
+      "origin": "Junction of the first rib and its costal cartilage",
+      "insertion": "Inferior surface of the middle third of the clavicle",
+      "innervation": "Nerve to subclavius",
+      "spinal_levels": "C5, C6",
+      "function": "Depresses and stabilizes the clavicle; protects the subclavian vessels in clavicle fractures",
+      "opposing_muscle": "Trapezius — Upper Fibers",
+      "blood_supply": "Clavicular branch of the thoracoacromial artery",
+      "clinical_note": "Acts as a buffer protecting the subclavian vein and brachial plexus during clavicle fractures — its own nerve is used to assess C5 and C6 root integrity"
+    }
+  }
+],
+  arm: [
+  {
+    "id": "biceps_brachii_long_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/biceps_brachii_long_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Biceps Brachii — Long Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Biceps Brachii — Long Head",
+      "origin": "Supraglenoid tubercle of the scapula",
+      "insertion": "Radial tuberosity and bicipital aponeurosis",
+      "innervation": "Musculocutaneous nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion of the elbow, supination of the forearm, weak flexion of the shoulder",
+      "opposing_muscle": "Triceps Brachii",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "Long head tendon travels through the intertubercular groove — a common site of tendinitis and rupture causing a Popeye deformity"
+    }
+  },
+  {
+    "id": "biceps_brachii_short_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/biceps_brachii_short_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Biceps Brachii — Short Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Biceps Brachii — Short Head",
+      "origin": "Coracoid process of the scapula",
+      "insertion": "Radial tuberosity and bicipital aponeurosis",
+      "innervation": "Musculocutaneous nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion of the elbow, supination of the forearm, adduction of the arm",
+      "opposing_muscle": "Triceps Brachii",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "Shares origin with coracobrachialis at the coracoid process — both are innervated by the musculocutaneous nerve"
+    }
+  },
+  {
+    "id": "brachialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/brachialis_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Brachialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Brachialis",
+      "origin": "Distal half of the anterior surface of the humerus",
+      "insertion": "Coronoid process and tuberosity of the ulna",
+      "innervation": "Musculocutaneous nerve, small contribution from radial nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion of the elbow in all positions — the workhorse flexor of the elbow",
+      "opposing_muscle": "Triceps Brachii",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "Inserts on the ulna so it is always a pure elbow flexor regardless of forearm pronation or supination — unlike biceps brachii"
+    }
+  },
+  {
+    "id": "coracobrachialis_arm_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/coracobrachialis_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Coracobrachialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Coracobrachialis",
+      "origin": "Coracoid process of the scapula",
+      "insertion": "Middle third of the medial surface of the humerus",
+      "innervation": "Musculocutaneous nerve",
+      "spinal_levels": "C5, C6, C7",
+      "function": "Flexion and adduction of the arm at the glenohumeral joint",
+      "opposing_muscle": "Posterior Deltoid, Teres Major",
+      "blood_supply": "Brachial artery",
+      "clinical_note": "The musculocutaneous nerve pierces coracobrachialis — entrapment here causes weakness of elbow flexion and loss of lateral forearm sensation"
+    }
+  },
+  {
+    "id": "triceps_brachii_long_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/triceps_brachii_long_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Triceps Brachii — Long Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Triceps Brachii — Long Head",
+      "origin": "Infraglenoid tubercle of the scapula",
+      "insertion": "Olecranon process of the ulna",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Extension of the elbow, extension and adduction of the arm at the shoulder",
+      "opposing_muscle": "Biceps Brachii, Brachialis",
+      "blood_supply": "Deep brachial artery",
+      "clinical_note": "Only head of triceps that crosses the shoulder joint — can extend and adduct the arm; radial nerve injury causes wrist drop"
+    }
+  },
+  {
+    "id": "triceps_brachii_lateral_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/triceps_brachii_lateral_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Triceps Brachii — Lateral Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Triceps Brachii — Lateral Head",
+      "origin": "Posterior surface of the humerus superior to the radial groove",
+      "insertion": "Olecranon process of the ulna",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Extension of the elbow",
+      "opposing_muscle": "Biceps Brachii, Brachialis",
+      "blood_supply": "Deep brachial artery",
+      "clinical_note": "Forms the lateral surface of the posterior arm — the most visible head during elbow extension against resistance"
+    }
+  },
+  {
+    "id": "triceps_brachii_medial_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/triceps_brachii_medial_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Triceps Brachii — Medial Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Triceps Brachii — Medial Head",
+      "origin": "Posterior surface of the humerus inferior to the radial groove",
+      "insertion": "Olecranon process of the ulna",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Extension of the elbow — the primary workhorse head of the triceps",
+      "opposing_muscle": "Biceps Brachii, Brachialis",
+      "blood_supply": "Deep brachial artery",
+      "clinical_note": "Deepest and most active head — active in all elbow extension; the lateral and long heads are recruited for forceful extension"
+    }
+  },
+  {
+    "id": "anconeus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/arm/anconeus_01.jpg",
+    "region": "Arm",
+    "structure_labeled": "Anconeus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Anconeus",
+      "origin": "Lateral epicondyle of the humerus",
+      "insertion": "Lateral surface of the olecranon and proximal posterior ulna",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Assists triceps in elbow extension, stabilizes the elbow joint, abducts the ulna during pronation",
+      "opposing_muscle": "Biceps Brachii, Brachialis",
+      "blood_supply": "Posterior interosseous artery, Deep brachial artery",
+      "clinical_note": "Small triangular muscle considered a continuation of the medial head of triceps — used as a surgical landmark at the lateral elbow"
+    }
+  }
+],
+  forearm_anterior_superficial: [
+  {
+    "id": "pronator_teres_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/pronator_teres_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Pronator Teres",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Pronator Teres",
+      "origin": "Humeral head — medial epicondyle of the humerus; Ulnar head — coronoid process of the ulna",
+      "insertion": "Middle of the lateral surface of the radius",
+      "innervation": "Median nerve",
+      "spinal_levels": "C6, C7",
+      "function": "Pronation of the forearm, weak flexion of the elbow",
+      "opposing_muscle": "Supinator, Biceps Brachii",
+      "blood_supply": "Anterior ulnar recurrent artery, Radial artery",
+      "clinical_note": "The median nerve passes between its two heads — compression here causes pronator teres syndrome with forearm pain and weakness of median nerve distribution"
+    }
+  },
+  {
+    "id": "flexor_carpi_radialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_carpi_radialis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Carpi Radialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Carpi Radialis",
+      "origin": "Medial epicondyle of the humerus via the common flexor tendon",
+      "insertion": "Base of the second and third metacarpals",
+      "innervation": "Median nerve",
+      "spinal_levels": "C6, C7",
+      "function": "Flexion and radial deviation of the wrist",
+      "opposing_muscle": "Extensor Carpi Radialis Longus, Extensor Carpi Radialis Brevis",
+      "blood_supply": "Radial artery",
+      "clinical_note": "Its tendon is used as a landmark for radial artery pulse — the radial artery lies just lateral to the FCR tendon at the wrist"
+    }
+  },
+  {
+    "id": "palmaris_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/palmaris_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Palmaris Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmaris Longus",
+      "origin": "Medial epicondyle of the humerus via the common flexor tendon",
+      "insertion": "Flexor retinaculum and palmar aponeurosis",
+      "innervation": "Median nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Weak flexion of the wrist, tenses the palmar aponeurosis",
+      "opposing_muscle": "Extensor Carpi Radialis Longus, Extensor Carpi Ulnaris",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Absent in approximately 14 percent of the population — commonly harvested for tendon graft surgery; its tendon is visible at the wrist when the thumb and little finger are opposed"
+    }
+  },
+  {
+    "id": "flexor_carpi_ulnaris_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_carpi_ulnaris_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Carpi Ulnaris",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Carpi Ulnaris",
+      "origin": "Humeral head — medial epicondyle via common flexor tendon; Ulnar head — olecranon and posterior border of the ulna",
+      "insertion": "Pisiform, hook of hamate, and base of fifth metacarpal",
+      "innervation": "Ulnar nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Flexion and ulnar deviation of the wrist",
+      "opposing_muscle": "Extensor Carpi Ulnaris",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "The only superficial forearm flexor innervated by the ulnar nerve — the ulnar nerve runs along its medial border and can be compressed at the elbow causing cubital tunnel syndrome"
+    }
+  },
+  {
+    "id": "flexor_digitorum_superficialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_digitorum_superficialis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Digitorum Superficialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digitorum Superficialis",
+      "origin": "Humeroulnar head — medial epicondyle and coronoid process; Radial head — anterior oblique line of the radius",
+      "insertion": "Sides of the middle phalanges of the second through fifth digits",
+      "innervation": "Median nerve",
+      "spinal_levels": "C7, C8, T1",
+      "function": "Flexion of the proximal interphalangeal joints, flexion of the metacarpophalangeal joints, weak wrist flexion",
+      "opposing_muscle": "Extensor Digitorum",
+      "blood_supply": "Ulnar artery, Anterior interosseous artery",
+      "clinical_note": "Inserts on the middle phalanx — distinguishes it from flexor digitorum profundus which inserts on the distal phalanx; tested by asking patient to flex one finger while others are held extended"
+    }
+  }
+],
+  forearm_anterior_deep: [
+  {
+    "id": "flexor_digitorum_profundus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_digitorum_profundus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Digitorum Profundus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digitorum Profundus",
+      "origin": "Anterior and medial surfaces of the proximal three-quarters of the ulna and interosseous membrane",
+      "insertion": "Bases of the distal phalanges of the second through fifth digits",
+      "innervation": "Medial half — ulnar nerve; Lateral half — anterior interosseous branch of the median nerve",
+      "spinal_levels": "C7, C8, T1",
+      "function": "Flexion of the distal interphalangeal joints, flexion of the proximal interphalangeal and metacarpophalangeal joints, weak wrist flexion",
+      "opposing_muscle": "Extensor Digitorum",
+      "blood_supply": "Anterior interosseous artery, Ulnar artery",
+      "clinical_note": "Only muscle that flexes the distal interphalangeal joint — has a dual nerve supply making it useful for distinguishing median versus ulnar nerve injuries"
+    }
+  },
+  {
+    "id": "flexor_pollicis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/flexor_pollicis_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Flexor Pollicis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Pollicis Longus",
+      "origin": "Anterior surface of the radius and adjacent interosseous membrane",
+      "insertion": "Base of the distal phalanx of the thumb",
+      "innervation": "Anterior interosseous branch of the median nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Flexion of the interphalangeal joint of the thumb, weak flexion of the metacarpophalangeal joint of the thumb",
+      "opposing_muscle": "Extensor Pollicis Longus",
+      "blood_supply": "Anterior interosseous artery",
+      "clinical_note": "Innervated exclusively by the anterior interosseous nerve — injury causes inability to flex the thumb tip; tested by the OK sign pinch test"
+    }
+  },
+  {
+    "id": "pronator_quadratus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/pronator_quadratus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Pronator Quadratus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Pronator Quadratus",
+      "origin": "Anterior surface of the distal quarter of the ulna",
+      "insertion": "Anterior surface of the distal quarter of the radius",
+      "innervation": "Anterior interosseous branch of the median nerve",
+      "spinal_levels": "C7, C8",
+      "function": "Pronation of the forearm — primary pronator of the forearm",
+      "opposing_muscle": "Supinator, Biceps Brachii",
+      "blood_supply": "Anterior interosseous artery",
+      "clinical_note": "Primary pronator of the forearm regardless of elbow position — pronator teres assists only when speed or force is needed; lies deep to all other anterior forearm muscles"
+    }
+  }
+],
+  forearm_posterior_superficial: [
+  {
+    "id": "brachioradialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/brachioradialis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Brachioradialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Brachioradialis",
+      "origin": "Lateral supracondylar ridge of the humerus",
+      "insertion": "Lateral surface of the distal radius just proximal to the styloid process",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C5, C6",
+      "function": "Flexion of the elbow, especially when the forearm is in a neutral (semi-pronated) position",
+      "opposing_muscle": "Triceps Brachii",
+      "blood_supply": "Radial artery",
+      "clinical_note": "Anomalous muscle — lies in the posterior compartment but acts as an elbow flexor; innervated by the radial nerve making it the only elbow flexor spared in musculocutaneous nerve injury"
+    }
+  },
+  {
+    "id": "extensor_carpi_radialis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_carpi_radialis_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Carpi Radialis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Carpi Radialis Longus",
+      "origin": "Lateral supracondylar ridge of the humerus",
+      "insertion": "Dorsal surface of the base of the second metacarpal",
+      "innervation": "Radial nerve",
+      "spinal_levels": "C6, C7",
+      "function": "Extension and radial deviation of the wrist",
+      "opposing_muscle": "Flexor Carpi Radialis",
+      "blood_supply": "Radial artery",
+      "clinical_note": "Along with ECRB it is the primary wrist extensor — both tendons run together in the second extensor compartment at the wrist"
+    }
+  },
+  {
+    "id": "extensor_carpi_radialis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_carpi_radialis_brevis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Carpi Radialis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Carpi Radialis Brevis",
+      "origin": "Lateral epicondyle of the humerus via the common extensor tendon",
+      "insertion": "Dorsal surface of the base of the third metacarpal",
+      "innervation": "Deep branch of the radial nerve (posterior interosseous nerve)",
+      "spinal_levels": "C6, C7",
+      "function": "Extension and radial deviation of the wrist",
+      "opposing_muscle": "Flexor Carpi Radialis",
+      "blood_supply": "Radial artery",
+      "clinical_note": "Its origin at the lateral epicondyle is the primary site of lateral epicondylitis (tennis elbow) — pain reproduced by resisted wrist extension"
+    }
+  },
+  {
+    "id": "extensor_digitorum_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_digitorum_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Digitorum",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Digitorum",
+      "origin": "Lateral epicondyle of the humerus via the common extensor tendon",
+      "insertion": "Extensor expansions of the second through fifth digits",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension of the metacarpophalangeal joints of the second through fifth digits, extension of the wrist",
+      "opposing_muscle": "Flexor Digitorum Superficialis, Flexor Digitorum Profundus",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Inserts via the extensor expansion — complete finger extension at all joints requires cooperation of the intrinsic muscles through the same expansion"
+    }
+  },
+  {
+    "id": "extensor_digiti_minimi_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_digiti_minimi_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Digiti Minimi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Digiti Minimi",
+      "origin": "Lateral epicondyle of the humerus via the common extensor tendon",
+      "insertion": "Extensor expansion of the fifth digit",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension of the metacarpophalangeal joint of the little finger",
+      "opposing_muscle": "Flexor Digiti Minimi Brevis",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Allows independent extension of the little finger — its tendon runs in its own sixth extensor compartment at the wrist"
+    }
+  },
+  {
+    "id": "extensor_carpi_ulnaris_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_carpi_ulnaris_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Carpi Ulnaris",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Carpi Ulnaris",
+      "origin": "Lateral epicondyle of the humerus via common extensor tendon, posterior border of the ulna",
+      "insertion": "Base of the fifth metacarpal",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension and ulnar deviation of the wrist",
+      "opposing_muscle": "Flexor Carpi Ulnaris",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Works with flexor carpi ulnaris to produce pure ulnar deviation — its tendon is stabilized at the distal ulna by a separate subsheath that can tear causing painful snapping at the wrist"
+    }
+  }
+],
+  forearm_posterior_deep: [
+  {
+    "id": "supinator_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/supinator_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Supinator",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Supinator",
+      "origin": "Lateral epicondyle of the humerus, radial collateral ligament, annular ligament, supinator crest of the ulna",
+      "insertion": "Lateral surface of the proximal third of the radius",
+      "innervation": "Deep branch of the radial nerve (posterior interosseous nerve)",
+      "spinal_levels": "C6, C7",
+      "function": "Supination of the forearm at all elbow positions",
+      "opposing_muscle": "Pronator Teres, Pronator Quadratus",
+      "blood_supply": "Posterior interosseous artery, Radial artery",
+      "clinical_note": "The deep branch of the radial nerve passes through the arcade of Frohse between the two heads of supinator — compression causes posterior interosseous nerve syndrome with finger and thumb drop"
+    }
+  },
+  {
+    "id": "abductor_pollicis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/abductor_pollicis_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Abductor Pollicis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Abductor Pollicis Longus",
+      "origin": "Posterior surface of the ulna and radius and the interosseous membrane",
+      "insertion": "Base of the first metacarpal",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Abduction and extension of the thumb at the carpometacarpal joint",
+      "opposing_muscle": "Adductor Pollicis",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Its tendon runs in the first extensor compartment with extensor pollicis brevis — stenosing tenosynovitis of this compartment is called de Quervain tenosynovitis"
+    }
+  },
+  {
+    "id": "extensor_pollicis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_pollicis_brevis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Pollicis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Pollicis Brevis",
+      "origin": "Posterior surface of the radius and interosseous membrane",
+      "insertion": "Base of the proximal phalanx of the thumb",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension of the metacarpophalangeal joint of the thumb, abduction of the wrist",
+      "opposing_muscle": "Flexor Pollicis Longus",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Runs with abductor pollicis longus in the first extensor compartment — both tendons form the lateral border of the anatomical snuffbox"
+    }
+  },
+  {
+    "id": "extensor_pollicis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_pollicis_longus_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Pollicis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Pollicis Longus",
+      "origin": "Posterior surface of the middle third of the ulna and interosseous membrane",
+      "insertion": "Base of the distal phalanx of the thumb",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Extension of the interphalangeal joint of the thumb, extension and adduction of the thumb at the carpometacarpal joint",
+      "opposing_muscle": "Flexor Pollicis Longus",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Forms the medial border of the anatomical snuffbox — its tendon wraps around Lister's tubercle and can rupture spontaneously after distal radius fractures"
+    }
+  },
+  {
+    "id": "extensor_indicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/forearm/extensor_indicis_01.jpg",
+    "region": "Forearm",
+    "structure_labeled": "Extensor Indicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Indicis",
+      "origin": "Posterior surface of the distal third of the ulna and interosseous membrane",
+      "insertion": "Extensor expansion of the index finger",
+      "innervation": "Posterior interosseous nerve (deep branch of the radial nerve)",
+      "spinal_levels": "C7, C8",
+      "function": "Independent extension of the index finger at the metacarpophalangeal joint",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Posterior interosseous artery",
+      "clinical_note": "Allows independent pointing with the index finger — commonly harvested for tendon transfer surgery to restore thumb extension after extensor pollicis longus rupture"
+    }
+  }
+],
+  hand_thenar: [
+  {
+    "id": "abductor_pollicis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/abductor_pollicis_brevis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Abductor Pollicis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Abductor Pollicis Brevis",
+      "origin": "Flexor retinaculum, tubercle of the scaphoid, and tubercle of the trapezium",
+      "insertion": "Lateral side of the base of the proximal phalanx of the thumb",
+      "innervation": "Recurrent branch of the median nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the thumb at the carpometacarpal joint",
+      "opposing_muscle": "Adductor Pollicis",
+      "blood_supply": "Superficial palmar branch of the radial artery",
+      "clinical_note": "First muscle to show wasting in carpal tunnel syndrome — innervated by the recurrent branch of the median nerve which loops around the distal edge of the flexor retinaculum"
+    }
+  },
+  {
+    "id": "flexor_pollicis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/flexor_pollicis_brevis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Flexor Pollicis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Pollicis Brevis",
+      "origin": "Superficial head — flexor retinaculum and trapezium; Deep head — trapezoid and capitate",
+      "insertion": "Base of the proximal phalanx of the thumb",
+      "innervation": "Superficial head — recurrent branch of the median nerve; Deep head — deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint of the thumb",
+      "opposing_muscle": "Extensor Pollicis Brevis",
+      "blood_supply": "Superficial palmar branch of the radial artery",
+      "clinical_note": "Has a dual nerve supply — the only thenar muscle with both median and ulnar innervation; the deep head is spared in carpal tunnel syndrome"
+    }
+  },
+  {
+    "id": "opponens_pollicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/opponens_pollicis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Opponens Pollicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Opponens Pollicis",
+      "origin": "Flexor retinaculum and tubercle of the trapezium",
+      "insertion": "Lateral surface of the first metacarpal along its entire length",
+      "innervation": "Recurrent branch of the median nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Opposition of the thumb — medial rotation and flexion of the first metacarpal",
+      "opposing_muscle": "Adductor Pollicis",
+      "blood_supply": "Superficial palmar branch of the radial artery",
+      "clinical_note": "Produces the uniquely human movement of opposition — loss of opposition from median nerve injury severely impairs pinch and grip; tested by touching thumb to little finger"
+    }
+  },
+  {
+    "id": "adductor_pollicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/adductor_pollicis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Adductor Pollicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Adductor Pollicis",
+      "origin": "Oblique head — bases of second and third metacarpals, capitate, and adjacent carpals; Transverse head — anterior surface of the third metacarpal",
+      "insertion": "Medial side of the base of the proximal phalanx of the thumb",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Adduction of the thumb at the carpometacarpal joint, assists in pinch grip",
+      "opposing_muscle": "Abductor Pollicis Brevis, Abductor Pollicis Longus",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "Innervated by the ulnar nerve — not the median nerve; Froment sign tests adductor pollicis weakness by asking the patient to hold paper between thumb and index finger"
+    }
+  }
+],
+  hand_hypothenar: [
+  {
+    "id": "abductor_digiti_minimi_hand_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/abductor_digiti_minimi_hand_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Abductor Digiti Minimi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Abductor Digiti Minimi",
+      "origin": "Pisiform and tendon of flexor carpi ulnaris",
+      "insertion": "Medial side of the base of the proximal phalanx of the little finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the little finger at the metacarpophalangeal joint",
+      "opposing_muscle": "Palmar Interosseous 3",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Most medial hypothenar muscle — hypothenar wasting indicates ulnar nerve injury; the ulnar nerve and artery enter the hand through Guyon canal just lateral to the pisiform"
+    }
+  },
+  {
+    "id": "flexor_digiti_minimi_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/flexor_digiti_minimi_brevis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Flexor Digiti Minimi Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digiti Minimi Brevis",
+      "origin": "Hook of the hamate and flexor retinaculum",
+      "insertion": "Medial side of the base of the proximal phalanx of the little finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint of the little finger",
+      "opposing_muscle": "Extensor Digiti Minimi",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Originates from the hook of the hamate — a fractured hook of hamate can compress the deep branch of the ulnar nerve causing hypothenar and intrinsic muscle weakness"
+    }
+  },
+  {
+    "id": "opponens_digiti_minimi_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/opponens_digiti_minimi_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Opponens Digiti Minimi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Opponens Digiti Minimi",
+      "origin": "Hook of the hamate and flexor retinaculum",
+      "insertion": "Medial border of the fifth metacarpal along its entire length",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Opposition of the little finger — draws the fifth metacarpal anteriorly and rotates it to face the thumb",
+      "opposing_muscle": "Opponens Pollicis",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Deepest hypothenar muscle — mirrors opponens pollicis in structure and function; together they allow the palm to cup for gripping"
+    }
+  }
+],
+  hand_intrinsic: [
+  {
+    "id": "lumbrical_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/lumbrical_1_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Lumbrical 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 1",
+      "origin": "Lateral side of the tendon of flexor digitorum profundus to the index finger",
+      "insertion": "Lateral band of the extensor expansion of the index finger",
+      "innervation": "Median nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint and extension of the interphalangeal joints of the index finger",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Superficial palmar arch",
+      "clinical_note": "Lumbricals 1 and 2 are innervated by the median nerve; lumbricals 3 and 4 are innervated by the ulnar nerve — unique muscles that arise from and modulate their own antagonist"
+    }
+  },
+  {
+    "id": "lumbrical_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/lumbrical_2_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Lumbrical 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 2",
+      "origin": "Lateral side of the tendon of flexor digitorum profundus to the middle finger",
+      "insertion": "Lateral band of the extensor expansion of the middle finger",
+      "innervation": "Median nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint and extension of the interphalangeal joints of the middle finger",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Superficial palmar arch",
+      "clinical_note": "Innervated by the median nerve along with lumbrical 1 — median nerve injury causes clawing of the index and middle fingers because these lumbricals are lost"
+    }
+  },
+  {
+    "id": "lumbrical_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/lumbrical_3_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Lumbrical 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 3",
+      "origin": "Adjacent sides of the tendons of flexor digitorum profundus to the middle and ring fingers",
+      "insertion": "Lateral band of the extensor expansion of the ring finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint and extension of the interphalangeal joints of the ring finger",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Superficial palmar arch",
+      "clinical_note": "Innervated by the ulnar nerve along with lumbrical 4 — ulnar nerve injury causes more pronounced clawing of the ring and little fingers because these lumbricals are lost"
+    }
+  },
+  {
+    "id": "lumbrical_4_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/lumbrical_4_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Lumbrical 4",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 4",
+      "origin": "Adjacent sides of the tendons of flexor digitorum profundus to the ring and little fingers",
+      "insertion": "Lateral band of the extensor expansion of the little finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Flexion of the metacarpophalangeal joint and extension of the interphalangeal joints of the little finger",
+      "opposing_muscle": "Flexor Digitorum Profundus",
+      "blood_supply": "Superficial palmar arch",
+      "clinical_note": "Ulnar nerve injury causes ulnar claw hand — more pronounced in ring and little fingers because lumbricals 3 and 4 are lost; median nerve injury causes a milder claw in index and middle"
+    }
+  },
+  {
+    "id": "dorsal_interosseous_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/dorsal_interosseous_1_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Dorsal Interosseous 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 1",
+      "origin": "Adjacent sides of the first and second metacarpals",
+      "insertion": "Lateral base of the proximal phalanx and extensor expansion of the index finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the index finger away from the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Palmar Interosseous 1",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "DAB — Dorsal interossei ABduct fingers from the midline of the middle finger; all four dorsal interossei are innervated by the deep branch of the ulnar nerve"
+    }
+  },
+  {
+    "id": "dorsal_interosseous_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/dorsal_interosseous_2_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Dorsal Interosseous 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 2",
+      "origin": "Adjacent sides of the second and third metacarpals",
+      "insertion": "Lateral base of the proximal phalanx and extensor expansion of the middle finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the middle finger toward the index finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Dorsal Interosseous 3",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "The middle finger has two dorsal interossei — dorsal interosseous 2 abducts it toward the index finger and dorsal interosseous 3 abducts it toward the ring finger"
+    }
+  },
+  {
+    "id": "dorsal_interosseous_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/dorsal_interosseous_3_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Dorsal Interosseous 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 3",
+      "origin": "Adjacent sides of the third and fourth metacarpals",
+      "insertion": "Medial base of the proximal phalanx and extensor expansion of the middle finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the middle finger toward the ring finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Dorsal Interosseous 2",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "Along with dorsal interosseous 2 allows the middle finger to spread in both directions — spreading all fingers apart tests all four dorsal interossei simultaneously"
+    }
+  },
+  {
+    "id": "dorsal_interosseous_4_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/dorsal_interosseous_4_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Dorsal Interosseous 4",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 4",
+      "origin": "Adjacent sides of the fourth and fifth metacarpals",
+      "insertion": "Medial base of the proximal phalanx and extensor expansion of the ring finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Abduction of the ring finger away from the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Palmar Interosseous 2",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "Wasting of the dorsal interossei visible as hollowing between the metacarpals on the dorsum of the hand is a classic sign of ulnar nerve palsy"
+    }
+  },
+  {
+    "id": "palmar_interosseous_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/palmar_interosseous_1_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Palmar Interosseous 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmar Interosseous 1",
+      "origin": "Medial side of the second metacarpal",
+      "insertion": "Medial base of the proximal phalanx and extensor expansion of the index finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Adduction of the index finger toward the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Dorsal Interosseous 1",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "PAD — Palmar interossei ADduct fingers toward the midline of the middle finger; tested by asking the patient to grip a piece of paper between adjacent fingers"
+    }
+  },
+  {
+    "id": "palmar_interosseous_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/palmar_interosseous_2_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Palmar Interosseous 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmar Interosseous 2",
+      "origin": "Lateral side of the fourth metacarpal",
+      "insertion": "Lateral base of the proximal phalanx and extensor expansion of the ring finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Adduction of the ring finger toward the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Dorsal Interosseous 4",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "All palmar interossei are innervated by the deep branch of the ulnar nerve — loss causes inability to adduct fingers and contributes to the claw hand deformity"
+    }
+  },
+  {
+    "id": "palmar_interosseous_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/palmar_interosseous_3_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Palmar Interosseous 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmar Interosseous 3",
+      "origin": "Lateral side of the fifth metacarpal",
+      "insertion": "Lateral base of the proximal phalanx and extensor expansion of the little finger",
+      "innervation": "Deep branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Adduction of the little finger toward the middle finger, flexion of the metacarpophalangeal joint, extension of the interphalangeal joints",
+      "opposing_muscle": "Abductor Digiti Minimi",
+      "blood_supply": "Deep palmar arch",
+      "clinical_note": "Remember DAB and PAD — Dorsal interossei ABduct, Palmar interossei ADduct; the middle finger has no palmar interosseous as it is the axis of hand movement"
+    }
+  },
+  {
+    "id": "palmaris_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/hand/palmaris_brevis_01.jpg",
+    "region": "Hand",
+    "structure_labeled": "Palmaris Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Palmaris Brevis",
+      "origin": "Flexor retinaculum and palmar aponeurosis",
+      "insertion": "Skin of the medial palm",
+      "innervation": "Superficial branch of the ulnar nerve",
+      "spinal_levels": "C8, T1",
+      "function": "Wrinkles the skin of the hypothenar eminence, deepens the hollow of the palm, protects the ulnar nerve and artery in Guyon canal",
+      "opposing_muscle": "None",
+      "blood_supply": "Ulnar artery",
+      "clinical_note": "Only intrinsic hand muscle innervated by the superficial branch of the ulnar nerve — its contraction is preserved in deep ulnar nerve lesions helping to localize the level of injury"
+    }
+  }
+],
+  back_superficial: [
+  {
+    "id": "trapezius_upper_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/trapezius-upper_posterior_01.jpg",
+    "region": "Back \u2014 Superficial",
+    "structure_labeled": "Trapezius \u2014 Upper Fibers (Descending)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Trapezius \u2014 Upper Fibers (Descending)",
+      "origin": "External occipital protuberance, medial one-third of superior nuchal line, ligamentum nuchae, spinous process of C7",
+      "insertion": "Posterior border of lateral one-third of clavicle",
+      "innervation": "Accessory nerve (CN XI) with proprioceptive fibers from C3\u2013C4",
+      "spinal_levels": "CN XI (motor); C3\u2013C4 (proprioception)",
+      "function": "Elevates and upwardly rotates the scapula; extends and laterally flexes the neck; with lower fibers, upwardly rotates glenoid cavity",
+      "opposing_muscle": "Lower fibers of trapezius (for elevation); levator scapulae acts synergistically for elevation but opposes rotation",
+      "blood_supply": "Transverse cervical artery (superficial branch)",
+      "clinical_note": "Also called the superior or descending part of trapezius. Moore classifies trapezius as an extrinsic back muscle (superficial layer). CN XI injury (e.g. posterior triangle lymph node biopsy) causes drooping of the shoulder and inability to shrug \u2014 a classic surgical complication to know."
+    }
+  },
+  {
+    "id": "trapezius_middle_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/trapezius-middle_posterior_01.jpg",
+    "region": "Back \u2014 Superficial",
+    "structure_labeled": "Trapezius \u2014 Middle Fibers (Transverse)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Trapezius \u2014 Middle Fibers (Transverse)",
+      "origin": "Spinous processes of T1\u2013T4 (and their supraspinous ligaments)",
+      "insertion": "Medial border of acromion and superior border of spine of scapula",
+      "innervation": "Accessory nerve (CN XI) with proprioceptive fibers from C3\u2013C4",
+      "spinal_levels": "CN XI (motor); C3\u2013C4 (proprioception)",
+      "function": "Retracts (adducts) the scapula; stabilises the scapula against the thoracic wall",
+      "opposing_muscle": "Serratus anterior (protracts scapula)",
+      "blood_supply": "Transverse cervical artery",
+      "clinical_note": "Also called the transverse part of trapezius. Along with the rhomboids, the middle trapezius is a key retractor of the scapula \u2014 weakness leads to scapular winging and poor posture. All three parts of trapezius share the same motor nerve: CN XI."
+    }
+  },
+  {
+    "id": "trapezius_lower_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/trapezius-lower_posterior_01.jpg",
+    "region": "Back \u2014 Superficial",
+    "structure_labeled": "Trapezius \u2014 Lower Fibers (Ascending)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Trapezius \u2014 Lower Fibers (Ascending)",
+      "origin": "Spinous processes of T5\u2013T12 (and their supraspinous ligaments)",
+      "insertion": "Medial end of spine of scapula (tubercle at its root)",
+      "innervation": "Accessory nerve (CN XI) with proprioceptive fibers from C3\u2013C4",
+      "spinal_levels": "CN XI (motor); C3\u2013C4 (proprioception)",
+      "function": "Depresses and upwardly rotates the scapula; with upper fibers, rotates glenoid cavity superiorly to allow full shoulder abduction",
+      "opposing_muscle": "Levator scapulae and upper trapezius (for depression vs elevation)",
+      "blood_supply": "Transverse cervical artery (deep branch / dorsal scapular artery)",
+      "clinical_note": "Also called the inferior or ascending part of trapezius. The lower and upper fibers act as a force couple to upwardly rotate the scapula \u2014 essential for raising the arm above 90\u00b0. Isolated lower trapezius weakness is common in overhead athletes."
+    }
+  },
+  {
+    "id": "latissimus-dorsi_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/latissimus-dorsi_posterior_01.jpg",
+    "region": "Back \u2014 Superficial",
+    "structure_labeled": "Latissimus Dorsi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Latissimus Dorsi",
+      "origin": "Spinous processes of T7\u2013T12, thoracolumbar fascia (spinous processes of L1\u2013L5 and sacrum), iliac crest (posterior one-third), inferior 3\u20134 ribs, inferior angle of scapula (variable)",
+      "insertion": "Floor of intertubercular (bicipital) groove of humerus",
+      "innervation": "Thoracodorsal nerve (C6, C7, C8)",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Extends, adducts, and medially rotates the humerus; depresses the shoulder; assists in inspiration (when arms fixed); used in coughing and climbing",
+      "opposing_muscle": "Deltoid (anterior fibers) for flexion; infraspinatus/teres minor for lateral rotation",
+      "blood_supply": "Thoracodorsal artery (branch of subscapular artery)",
+      "clinical_note": "Moore classifies latissimus dorsi as an extrinsic back muscle (superficial layer). It is the muscle of the 'swimmer's pull' \u2014 powerful extension and adduction. Its thoracodorsal pedicle makes it a workhorse flap in reconstructive surgery (latissimus dorsi flap for breast reconstruction). It twists 180\u00b0 as it inserts \u2014 the superior fibers insert inferiorly in the groove."
+    }
+  },
+  {
+    "id": "rhomboid-major_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/rhomboid-major_posterior_01.jpg",
+    "region": "Back \u2014 Superficial",
+    "structure_labeled": "Rhomboid Major",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rhomboid Major",
+      "origin": "Spinous processes of T2\u2013T5 and supraspinous ligaments",
+      "insertion": "Medial border of scapula between spine of scapula and inferior angle",
+      "innervation": "Dorsal scapular nerve (C4, C5)",
+      "spinal_levels": "C4, C5",
+      "function": "Retracts and elevates the scapula; rotates glenoid cavity inferiorly (downward rotation); stabilises medial border of scapula",
+      "opposing_muscle": "Serratus anterior (protracts and upwardly rotates scapula)",
+      "blood_supply": "Dorsal scapular artery",
+      "clinical_note": "Moore classifies rhomboids as extrinsic back muscles (superficial layer). Rhomboid major is about twice the size of rhomboid minor. Dorsal scapular nerve injury causes medial winging of the scapula \u2014 the medial border lifts away from the thoracic wall. Differentiate from long thoracic nerve injury (serratus anterior palsy) which causes lateral/inferior winging."
+    }
+  },
+  {
+    "id": "rhomboid-minor_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/rhomboid-minor_posterior_01.jpg",
+    "region": "Back \u2014 Superficial",
+    "structure_labeled": "Rhomboid Minor",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rhomboid Minor",
+      "origin": "Inferior part of ligamentum nuchae; spinous processes of C7 and T1",
+      "insertion": "Medial border of scapula at the root (base) of the spine of scapula",
+      "innervation": "Dorsal scapular nerve (C4, C5)",
+      "spinal_levels": "C4, C5",
+      "function": "Retracts and elevates the scapula; rotates glenoid cavity inferiorly; stabilises medial border of scapula",
+      "opposing_muscle": "Serratus anterior",
+      "blood_supply": "Dorsal scapular artery",
+      "clinical_note": "Rhomboid minor lies superior to rhomboid major and is separated from it by a thin layer of fat. Both rhomboids share the same nerve (dorsal scapular, C4\u2013C5) and same function. Clinically they are often treated as a single unit. Their downward rotation of the scapula opposes the trapezius force couple \u2014 important in shoulder mechanics."
+    }
+  },
+  {
+    "id": "levator-scapulae_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/levator-scapulae_posterior_01.jpg",
+    "region": "Back \u2014 Superficial",
+    "structure_labeled": "Levator Scapulae",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Levator Scapulae",
+      "origin": "Posterior tubercles of transverse processes of C1\u2013C4",
+      "insertion": "Medial border of scapula between superior angle and root of spine of scapula",
+      "innervation": "Dorsal scapular nerve (C4, C5) and direct branches from cervical spinal nerves C3\u2013C4",
+      "spinal_levels": "C3, C4, C5",
+      "function": "Elevates the scapula; downwardly rotates the glenoid cavity (with rhomboids); laterally flexes the neck when scapula is fixed",
+      "opposing_muscle": "Lower fibers of trapezius (depresses scapula); upper trapezius acts synergistically for elevation but opposes rotation",
+      "blood_supply": "Dorsal scapular artery; transverse cervical artery",
+      "clinical_note": "Moore classifies levator scapulae as an extrinsic back muscle (superficial layer). It is a common source of neck and shoulder pain \u2014 often tender at its insertion on the superior angle of the scapula. It works with the rhomboids to downwardly rotate the scapula, opposing the trapezius\u2013serratus anterior force couple for upward rotation."
+    }
+  },
+  {
+    "id": "serratus-anterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/serratus-anterior_lateral_01.jpg",
+    "region": "Back \u2014 Superficial",
+    "structure_labeled": "Serratus Anterior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Anterior",
+      "origin": "Outer surfaces of lateral parts of ribs 1\u20138 (sometimes rib 9) by digitations",
+      "insertion": "Anterior (costal) surface of medial border of scapula; inferior angle of scapula (lower digitations)",
+      "innervation": "Long thoracic nerve (C5, C6, C7)",
+      "spinal_levels": "C5, C6, C7",
+      "function": "Protracts (abducts) the scapula; holds scapula against thoracic wall; with trapezius, upwardly rotates the scapula (essential for arm elevation above 90\u00b0)",
+      "opposing_muscle": "Rhomboids and middle trapezius (retract scapula)",
+      "blood_supply": "Lateral thoracic artery; thoracodorsal artery",
+      "clinical_note": "Note: Moore classifies serratus anterior as an anterior thoracic (pectoral region) muscle, not a true back muscle \u2014 it is included here in the superficial back group for convenience. Long thoracic nerve injury (e.g. from axillary surgery, mastectomy, or backpack palsy) causes medial winging of the scapula \u2014 the inferior angle and medial border lift away from the thoracic wall, best seen when the patient pushes against a wall. Remember C5, C6, C7 \u2014 'wings of heaven at C5, 6, 7'."
+    }
+  }
+],
+  back_intermediate: [
+  {
+    "id": "serratus_posterior_superior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/serratus_posterior_superior_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Serratus Posterior Superior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Posterior Superior",
+      "origin": "Inferior part of ligamentum nuchae; spinous processes of C7\u2013T3 and their supraspinous ligaments",
+      "insertion": "Superior borders of ribs 2\u20135, just lateral to their angles",
+      "innervation": "Intercostal nerves (anterior rami of T2\u2013T5)",
+      "spinal_levels": "T2, T3, T4, T5",
+      "function": "Elevates ribs 2\u20135 during forced inspiration; assists in expanding the thoracic cavity",
+      "opposing_muscle": "Serratus Posterior Inferior",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Moore classifies this as an extrinsic back muscle \u2014 intermediate layer. It lies deep to the rhomboids and is a respiratory muscle, not a back mover. Often mistaken for a deep back muscle but has no role in spinal movement. Clinically implicated in myofascial pain of the upper back and shoulder region."
+    }
+  },
+  {
+    "id": "serratus_posterior_inferior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/serratus_posterior_inferior_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Serratus Posterior Inferior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Posterior Inferior",
+      "origin": "Spinous processes of T11\u2013L2 and their supraspinous ligaments; thoracolumbar fascia",
+      "insertion": "Inferior borders of ribs 9\u201312, just lateral to their angles",
+      "innervation": "Intercostal nerves (anterior rami of T9\u2013T12)",
+      "spinal_levels": "T9, T10, T11, T12",
+      "function": "Depresses and fixes ribs 9\u201312 during forced expiration; counteracts the upward pull of the diaphragm on the lower ribs",
+      "opposing_muscle": "Serratus Posterior Superior",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Moore classifies this as an extrinsic back muscle \u2014 intermediate layer. Lies deep to latissimus dorsi. Its role is to anchor the lower ribs during forced expiration and coughing. Along with serratus posterior superior, these muscles are sometimes called the accessory muscles of respiration. Both are thin and often difficult to distinguish from underlying aponeuroses."
+    }
+  }
+]
+};
+
+const QT = [
+  { key: "name",            label: "Identify muscle" },
+  { key: "innervation",     label: "Innervation" },
+  { key: "function",        label: "Function" },
+  { key: "opposing_muscle", label: "Opposing muscle" },
+  { key: "spinal_levels",   label: "Spinal levels" },
+  { key: "origin",          label: "Origin" },
+  { key: "insertion",       label: "Insertion" },
+];
+
+let muscles = [], activeRegion = null;
+let activeTypes = new Set(["name", "innervation", "function", "opposing_muscle"]);
+// Load score from localStorage or start fresh
+function loadScore() {
+  const saved = localStorage.getItem('anatomy_quiz_score');
+  return saved ? JSON.parse(saved) : { correct: 0, attempted: 0, streak: 0 };
+}
+
+function saveScore(s) {
+  localStorage.setItem('anatomy_quiz_score', JSON.stringify(s));
+}
+
+function resetScore() {
+  const fresh = { correct: 0, attempted: 0, streak: 0 };
+  localStorage.removeItem('anatomy_quiz_score');
+  return fresh;
+}
+
+let score = loadScore();
+let currentQ = null, answered = false;
+let questionDeck = [], deckIndex = 0;
+
+function buildDeck() {
+  const deck = [];
+  const pool = muscles.filter(m => [...activeTypes].some(t => m.qa[t]));
+  pool.forEach(muscle => {
+    const types = [...activeTypes].filter(t => muscle.qa[t]);
+    types.forEach(qType => deck.push({ muscle, qType }));
+  });
+  for (let i = deck.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [deck[i], deck[j]] = [deck[j], deck[i]];
+  }
+  return deck;
+}
+
+function init() {
+  // Restore saved score display on load
+  document.getElementById("sc-correct").textContent = score.correct;
+  document.getElementById("sc-attempted").textContent = score.attempted;
+  document.getElementById("sc-streak").textContent = score.streak;
+
+  const sel = document.getElementById("region-sel");
+  sel.innerHTML = DATA.index.map((r, i) => `<option value="${i}">${r.label}</option>`).join("");
+  sel.onchange = () => loadRegion(DATA.index[+sel.value]);
+  buildQTBar();
+  loadRegion(DATA.index[0]);
+}
+
+function buildQTBar() {
+  document.getElementById("qt-bar").innerHTML = QT.map(q =>
+    `<button class="qt-btn${activeTypes.has(q.key) ? " active" : ""}" data-k="${q.key}">${q.label}</button>`
+  ).join("");
+  document.querySelectorAll(".qt-btn").forEach(b => {
+    b.onclick = () => {
+      const k = b.dataset.k;
+      if (activeTypes.has(k)) { if (activeTypes.size > 1) activeTypes.delete(k); }
+      else activeTypes.add(k);
+      buildQTBar();
+      questionDeck = buildDeck();
+      deckIndex = 0;
+      nextQuestion();
+    };
+  });
+}
+
+function loadRegion(region) {
+  activeRegion = region;
+  muscles = DATA[region.key];
+  questionDeck = buildDeck();
+  deckIndex = 0;
+  nextQuestion();
+}
+
+const rand = arr => arr[Math.floor(Math.random() * arr.length)];
+
+function nextQuestion() {
+  answered = false;
+  if (!questionDeck.length) { document.getElementById("quiz").innerHTML = `<div class="status">No muscles match selected question types.</div>`; return; }
+  if (deckIndex >= questionDeck.length) {
+    questionDeck = buildDeck();
+    deckIndex = 0;
+  }
+  const { muscle, qType } = questionDeck[deckIndex++];
+  const correct = muscle.qa[qType];
+  const wrongPool = muscles.filter(m => m.id !== muscle.id && m.qa[qType] && m.qa[qType] !== correct);
+  const used = new Set([correct]);
+  const wrongs = [];
+  for (const m of wrongPool.sort(() => Math.random() - 0.5)) {
+    if (!used.has(m.qa[qType])) { wrongs.push(m.qa[qType]); used.add(m.qa[qType]); }
+    if (wrongs.length === 3) break;
+  }
+  if (wrongs.length < 3) {
+    const fallbacks = {
+      name:            ["Deltoid","Teres Major","Coracobrachialis","Biceps Brachii","Triceps Brachii","Pectoralis Minor","Serratus Anterior","Rhomboid Major"],
+      innervation:     ["Axillary nerve","Musculocutaneous nerve","Radial nerve","Median nerve","Ulnar nerve","Suprascapular nerve","Long thoracic nerve","Thoracodorsal nerve"],
+      function:        ["Flexion of the elbow","Extension of the shoulder","Abduction of the arm","Adduction of the arm","Internal rotation of the arm","External rotation of the arm","Scapular retraction","Scapular protraction"],
+      opposing_muscle: ["Deltoid","Teres Major","Biceps Brachii","Triceps Brachii","Pectoralis Major","Latissimus Dorsi","Coracobrachialis","Serratus Anterior"],
+      spinal_levels:   ["C4, C5","C6, C7","C7, C8","C5, C6, C7","C4, C5, C6","C6, C7, C8","C8, T1","C5"],
+      origin:          ["Coracoid process of the scapula","Acromion of the scapula","Spine of the scapula","Glenoid labrum","Posterior scapula","Clavicle","Medial border of the scapula","Inferior angle of the scapula"],
+      insertion:       ["Greater tubercle of the humerus","Lesser tubercle of the humerus","Intertubercular groove","Deltoid tuberosity","Radial tuberosity","Medial epicondyle","Coracoid process","Bicipital aponeurosis"],
+    };
+    const pool = (fallbacks[qType] || fallbacks.name).filter(x => !used.has(x)).sort(() => Math.random() - 0.5);
+    for (const f of pool) {
+      if (wrongs.length === 3) break;
+      wrongs.push(f);
+      used.add(f);
+    }
+  }
+  currentQ = { muscle, qType, correct, choices: [correct, ...wrongs].sort(() => Math.random() - 0.5) };
+  render();
+}
+
+const qText = (t) => ({
+  name:            "What muscle is indicated?",
+  innervation:     "What nerve innervates this muscle?",
+  function:        "What is the primary function of this muscle?",
+  opposing_muscle: "What is the primary opposing muscle?",
+  spinal_levels:   "What spinal levels supply this muscle?",
+  origin:          "Where does this muscle originate?",
+  insertion:       "Where does this muscle insert?",
+}[t] || "What is this muscle's " + t + "?");
+
+function render() {
+  const { muscle, qType, correct, choices } = currentQ;
+  const rawUrl = muscle.image_url;
+  const hasImg = rawUrl && rawUrl !== "PASTE_YOUR_URL_HERE";
+  const imgHTML = hasImg
+    ? `<div class="img-box"><img src="${rawUrl}" alt="${muscle.structure_labeled}" onerror="this.parentElement.innerHTML='<div class=&quot;img-placeholder&quot;>Image unavailable</div>'"/></div>`
+    : `<div class="img-box"><div class="img-placeholder">No image — add image URL to data</div></div>`;
+  const tag = "";
+
+  document.getElementById("quiz").innerHTML = `
+    <div class="card">
+      ${imgHTML}
+      <div class="q-body">
+        <div class="q-label">${muscle.region} &mdash; ${activeRegion.label}</div>
+        <div class="q-text">${qText(qType)}</div>
+        ${tag}
+        <div class="choices">
+          ${choices.map(c => `<button class="choice" data-val="${c.replace(/"/g,'&quot;')}">${c}</button>`).join("")}
+        </div>
+        <div id="feedback" class="feedback"></div>
+        <div class="next-row" id="next-row"><button class="btn-next" id="btn-next">Next question &rarr;</button></div>
+      </div>
+    </div>`;
+
+  document.querySelectorAll(".choice").forEach(b => b.onclick = () => answer(b.dataset.val, b));
+  document.getElementById("btn-next").onclick = nextQuestion;
+}
+
+function answer(val, btn) {
+  if (answered) return;
+  answered = true;
+  score.attempted++;
+  const ok = val === currentQ.correct;
+  if (ok) { score.correct++; score.streak++; } else { score.streak = 0; }
+  document.querySelectorAll(".choice").forEach(b => {
+    b.disabled = true;
+    if (b.dataset.val === currentQ.correct) b.classList.add("correct");
+    else if (b === btn && !ok) b.classList.add("wrong");
+  });
+  const fb = document.getElementById("feedback");
+  fb.className = "feedback " + (ok ? "correct" : "wrong");
+  fb.innerHTML = ok
+    ? `<strong>Correct!</strong>${currentQ.muscle.qa.clinical_note ? " " + currentQ.muscle.qa.clinical_note : ""}`
+    : `<strong>Incorrect.</strong> The answer is: ${currentQ.correct}`;
+  document.getElementById("next-row").style.display = "block";
+  document.getElementById("sc-correct").textContent = score.correct;
+  document.getElementById("sc-attempted").textContent = score.attempted;
+  document.getElementById("sc-streak").textContent = score.streak;
+  saveScore(score);
+}
+
+init();
+</script>
+</body>
+</html>
