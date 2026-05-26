@@ -1,0 +1,74 @@
+[
+  {
+    "id": "rectus_capitis_posterior_major_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/rectus_capitis_posterior_major_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Rectus Capitis Posterior Major",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rectus Capitis Posterior Major",
+      "origin": "Spinous process of the axis (C2)",
+      "insertion": "Lateral portion of the inferior nuchal line of the occipital bone",
+      "innervation": "Suboccipital nerve (posterior ramus of C1)",
+      "spinal_levels": "C1",
+      "function": "Bilateral: extends the head at the atlanto-axial and atlanto-occipital joints. Unilateral: rotates the head to the same side",
+      "opposing_muscle": "Rectus Capitis Anterior, Longus Capitis",
+      "blood_supply": "Vertebral artery, occipital artery",
+      "clinical_note": "The suboccipital group lies in the suboccipital triangle, deep to semispinalis capitis. The four muscles are: Rectus Capitis Posterior Major and Minor, Obliquus Capitis Superior and Inferior. All are innervated by the suboccipital nerve (posterior ramus of C1) — the only posterior ramus without a cutaneous branch. Rectus Capitis Posterior Major is larger than Minor and originates from C2 (the axis), while Minor originates from C1 (the atlas). The suboccipital triangle contains the vertebral artery and suboccipital nerve."
+    }
+  },
+  {
+    "id": "rectus_capitis_posterior_minor_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/rectus_capitis_posterior_minor_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Rectus Capitis Posterior Minor",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rectus Capitis Posterior Minor",
+      "origin": "Posterior tubercle of the atlas (C1)",
+      "insertion": "Medial portion of the inferior nuchal line of the occipital bone",
+      "innervation": "Suboccipital nerve (posterior ramus of C1)",
+      "spinal_levels": "C1",
+      "function": "Extends the head at the atlanto-occipital joint; does not rotate (originates from atlas which has no spinous process)",
+      "opposing_muscle": "Rectus Capitis Anterior",
+      "blood_supply": "Vertebral artery, occipital artery",
+      "clinical_note": "Rectus Capitis Posterior Minor originates from the atlas (C1) — which has a posterior tubercle rather than a true spinous process — so it can only extend, not rotate the head. Contrast with Rectus Capitis Posterior Major which originates from the axis (C2 spinous process) and can rotate. A connective tissue bridge between this muscle and the dura mater has been proposed as a mechanism for cervicogenic headaches. Both recti are innervated by the suboccipital nerve (C1 posterior ramus)."
+    }
+  },
+  {
+    "id": "obliquus_capitis_superior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/obliquus_capitis_superior_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Obliquus Capitis Superior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Obliquus Capitis Superior",
+      "origin": "Transverse process of the atlas (C1)",
+      "insertion": "Occipital bone between the superior and inferior nuchal lines, lateral to semispinalis capitis",
+      "innervation": "Suboccipital nerve (posterior ramus of C1)",
+      "spinal_levels": "C1",
+      "function": "Extends the head at the atlanto-occipital joint; lateral flexion of the head to the same side",
+      "opposing_muscle": "Rectus Capitis Anterior, Rectus Capitis Lateralis",
+      "blood_supply": "Vertebral artery, occipital artery",
+      "clinical_note": "Obliquus Capitis Superior forms the superolateral boundary of the suboccipital triangle. The suboccipital triangle is bounded by: Rectus Capitis Posterior Major (medially), Obliquus Capitis Superior (superolaterally), and Obliquus Capitis Inferior (inferolaterally). The floor is the posterior atlanto-occipital membrane and posterior arch of the atlas. The triangle contains the vertebral artery (C1 segment) and the suboccipital nerve. This is a key surgical landmark in posterior cranial fossa and upper cervical spine surgery."
+    }
+  },
+  {
+    "id": "obliquus_capitis_inferior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/obliquus_capitis_inferior_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Obliquus Capitis Inferior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Obliquus Capitis Inferior",
+      "origin": "Spinous process of the axis (C2)",
+      "insertion": "Transverse process of the atlas (C1)",
+      "innervation": "Suboccipital nerve (posterior ramus of C1)",
+      "spinal_levels": "C1",
+      "function": "Rotates the atlas (and therefore the head) to the same side at the atlanto-axial joint — the pivot joint responsible for approximately 50% of cervical rotation",
+      "opposing_muscle": "Contralateral Obliquus Capitis Inferior",
+      "blood_supply": "Vertebral artery, occipital artery",
+      "clinical_note": "Obliquus Capitis Inferior is the only suboccipital muscle that does NOT attach to the skull — it runs from C2 to C1. It is the primary rotator of the atlas on the axis, responsible for the 'no' movement. It forms the inferolateral boundary of the suboccipital triangle. The greater occipital nerve (posterior ramus of C2) passes inferior to this muscle as it ascends to supply the posterior scalp — entrapment here is a cause of occipital neuralgia and cervicogenic headache."
+    }
+  }
+]
