@@ -48,5 +48,10 @@
     "label": "Hand — Intrinsic",
     "region": "Hand",
     "file": "hand_intrinsic.json"
+  },
+  {
+    "label": "Back — Superficial",
+    "region": "Back",
+    "file": "back_superficial.json"
   }
 ]
