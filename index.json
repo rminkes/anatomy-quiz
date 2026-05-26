@@ -1,3 +1,4 @@
+
 [
   {
     "label": "Rotator Cuff",
@@ -53,5 +54,10 @@
     "label": "Back — Superficial",
     "region": "Back",
     "file": "back_superficial.json"
+  },
+  {
+    "label": "Back — Intermediate",
+    "region": "Back",
+    "file": "back_intermediate.json"
   }
 ]
