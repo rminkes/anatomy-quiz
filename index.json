@@ -68,5 +68,20 @@
     "label": "Back — Deep: Erector Spinae",
     "region": "Back",
     "file": "back_deep_erector_spinae.json"
+  },
+  {
+    "label": "Back — Deep: Transversospinalis",
+    "region": "Back",
+    "file": "back_deep_transversospinalis.json"
+  },
+  {
+    "label": "Back — Deep: Short Segmental",
+    "region": "Back",
+    "file": "back_deep_short_segmental.json"
+  },
+  {
+    "label": "Back — Deep: Suboccipital",
+    "region": "Back",
+    "file": "back_deep_suboccipital.json"
   }
 ]
