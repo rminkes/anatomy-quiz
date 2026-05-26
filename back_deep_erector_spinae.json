@@ -1,0 +1,218 @@
+[
+  {
+    "id": "iliocostalis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/iliocostalis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Iliocostalis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Iliocostalis",
+      "origin": "Common erector spinae origin: posterior iliac crest, sacrum, and spinous processes of lumbar vertebrae via the erector spinae aponeurosis",
+      "insertion": "Angles of ribs and transverse processes of cervical vertebrae \u2014 divided into three regional parts: Lumborum (lower 6 ribs), Thoracis (upper 6 ribs), Cervicis (transverse processes of C4\u2013C6)",
+      "innervation": "Posterior rami of spinal nerves (cervical, thoracic, and lumbar levels \u2014 lateral column)",
+      "spinal_levels": "Posterior rami of cervical, thoracic, and lumbar spinal nerves",
+      "function": "Bilateral: extends the vertebral column and maintains erect posture. Unilateral: laterally flexes the vertebral column to the same side",
+      "opposing_muscle": "Rectus Abdominis, External and Internal Obliques",
+      "blood_supply": "Posterior intercostal arteries, lumbar arteries, lateral sacral arteries",
+      "clinical_note": "Iliocostalis is the most lateral column of the erector spinae \u2014 the three columns from lateral to medial are Iliocostalis, Longissimus, Spinalis (mnemonic: 'I Like Spine'). It is one continuous muscle spanning the full length of the back, divided into three regional parts named by their lower attachment: Lumborum, Thoracis, and Cervicis. Moore classifies erector spinae as the intermediate intrinsic layer of the back. All intrinsic back muscles are innervated by posterior rami \u2014 distinguishing them from extrinsic back muscles which are innervated by anterior rami or cranial nerves."
+    }
+  },
+  {
+    "id": "iliocostalis_lumborum_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/iliocostalis_lumborum_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Iliocostalis Lumborum",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Iliocostalis Lumborum",
+      "origin": "Erector spinae aponeurosis from posterior iliac crest and sacrum",
+      "insertion": "Inferior borders of the angles of the lower 6 ribs (ribs 7\u201312)",
+      "innervation": "Posterior rami of lumbar spinal nerves (L1\u2013L5)",
+      "spinal_levels": "L1, L2, L3, L4, L5",
+      "function": "Bilateral: extends the lumbar spine. Unilateral: laterally flexes the lumbar spine to the same side",
+      "opposing_muscle": "Rectus Abdominis",
+      "blood_supply": "Lumbar arteries, lateral sacral arteries",
+      "clinical_note": "Iliocostalis Lumborum is the lowest regional part of Iliocostalis \u2014 one continuous muscle with three named parts (Lumborum, Thoracis, Cervicis) based on their lower attachment. It is the most caudal part of the erector spinae and a key stabiliser of the lumbar spine. Fatty atrophy of the lumbar erector spinae visible on MRI is associated with chronic low back pain and lumbar instability. All erector spinae are innervated by posterior rami \u2014 part of the intermediate intrinsic layer of the back per Moore."
+    }
+  },
+  {
+    "id": "iliocostalis_thoracis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/iliocostalis_thoracis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Iliocostalis Thoracis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Iliocostalis Thoracis",
+      "origin": "Superior borders of the angles of the lower 6 ribs (ribs 7\u201312), medial to the insertions of Iliocostalis Lumborum",
+      "insertion": "Angles of the upper 6 ribs (ribs 1\u20136) and transverse process of C7",
+      "innervation": "Posterior rami of thoracic spinal nerves (T1\u2013T12); lateral erector spinae column",
+      "spinal_levels": "T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12",
+      "function": "Bilateral: extends the thoracic spine. Unilateral: laterally flexes the thoracic spine to the same side; assists in depression of ribs during forced expiration",
+      "opposing_muscle": "Rectus Abdominis, External Oblique",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Iliocostalis Thoracis is the middle regional part of Iliocostalis \u2014 bridging between Lumborum below and Cervicis above. It is the only part that originates and inserts on ribs, making it unique in being able to influence rib movement as well as spinal extension. Iliocostalis is one continuous muscle; the three parts (Lumborum, Thoracis, Cervicis) are named by their lower attachment. Part of the intermediate intrinsic layer per Moore, innervated by posterior rami."
+    }
+  },
+  {
+    "id": "iliocostalis_cervicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/iliocostalis_cervicis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Iliocostalis Cervicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Iliocostalis Cervicis",
+      "origin": "Angles of ribs 3\u20136",
+      "insertion": "Posterior tubercles of transverse processes of C4\u2013C6",
+      "innervation": "Posterior rami of cervical spinal nerves (C4\u2013C6)",
+      "spinal_levels": "C4, C5, C6",
+      "function": "Bilateral: extends the cervical spine. Unilateral: laterally flexes the cervical spine to the same side",
+      "opposing_muscle": "Longus Colli, Scalenes",
+      "blood_supply": "Deep cervical artery, posterior intercostal arteries",
+      "clinical_note": "Iliocostalis Cervicis is the uppermost regional part of Iliocostalis, extending the muscle's reach from the sacrum all the way to the mid-cervical spine. Iliocostalis is one continuous muscle with three named parts (Lumborum, Thoracis, Cervicis). It is the most lateral erector spinae column \u2014 lateral to Longissimus and Spinalis. Part of the intermediate intrinsic layer per Moore, innervated by posterior rami of spinal nerves."
+    }
+  },
+  {
+    "id": "longissimus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/longissimus_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Longissimus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Longissimus",
+      "origin": "Common erector spinae origin: posterior iliac crest, sacrum, and spinous processes of lumbar vertebrae via the erector spinae aponeurosis",
+      "insertion": "Transverse processes of thoracic and cervical vertebrae and mastoid process of temporal bone \u2014 divided into three regional parts: Thoracis, Cervicis, and Capitis",
+      "innervation": "Posterior rami of spinal nerves (cervical, thoracic, and lumbar levels \u2014 middle column)",
+      "spinal_levels": "Posterior rami of cervical, thoracic, and lumbar spinal nerves",
+      "function": "Bilateral: extends the vertebral column and head. Unilateral: laterally flexes the vertebral column; Longissimus Capitis also rotates the head to the same side",
+      "opposing_muscle": "Rectus Abdominis, External and Internal Obliques",
+      "blood_supply": "Posterior intercostal arteries, lumbar arteries",
+      "clinical_note": "Longissimus is the middle and largest erector spinae column \u2014 between Iliocostalis (lateral) and Spinalis (medial). It is one continuous muscle divided into three regional parts: Thoracis, Cervicis, and Capitis \u2014 the only erector spinae column to reach the skull. Moore classifies erector spinae as the intermediate intrinsic layer of the back. All are innervated by posterior rami. Longissimus is the most commonly visible erector spinae column on axial MRI of the lumbar spine."
+    }
+  },
+  {
+    "id": "longissimus_thoracis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/longissimus_thoracis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Longissimus Thoracis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Longissimus Thoracis",
+      "origin": "Erector spinae aponeurosis from posterior iliac crest, sacrum, and lumbar transverse processes",
+      "insertion": "Transverse processes of all thoracic vertebrae and inferior borders of ribs between tubercles and angles",
+      "innervation": "Posterior rami of thoracic and lumbar spinal nerves (T1\u2013L5)",
+      "spinal_levels": "T1\u2013L5",
+      "function": "Bilateral: extends the thoracic and lumbar spine. Unilateral: laterally flexes the spine to the same side; assists depression of ribs",
+      "opposing_muscle": "Rectus Abdominis, External Oblique",
+      "blood_supply": "Posterior intercostal arteries, lumbar arteries",
+      "clinical_note": "Longissimus Thoracis is the largest and most powerful regional part of Longissimus \u2014 it forms the prominent muscular column visible and palpable on either side of the lumbar spinous processes. Longissimus is one continuous muscle with three named parts: Thoracis, Cervicis, and Capitis. It is the middle erector spinae column between Iliocostalis (lateral) and Spinalis (medial). Part of the intermediate intrinsic layer per Moore, innervated by posterior rami."
+    }
+  },
+  {
+    "id": "longissimus_cervicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/longissimus_cervicis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Longissimus Cervicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Longissimus Cervicis",
+      "origin": "Transverse processes of T1\u2013T5",
+      "insertion": "Posterior tubercles of transverse processes of C2\u2013C6",
+      "innervation": "Posterior rami of cervical spinal nerves (C2\u2013C6)",
+      "spinal_levels": "C2, C3, C4, C5, C6",
+      "function": "Bilateral: extends the cervical spine. Unilateral: laterally flexes the cervical spine to the same side",
+      "opposing_muscle": "Longus Colli, Scalenes",
+      "blood_supply": "Deep cervical artery",
+      "clinical_note": "Longissimus Cervicis is the middle regional part of Longissimus, bridging the thoracic and skull portions. Longissimus is one continuous muscle with three named parts: Thoracis, Cervicis, and Capitis. It is the only erector spinae column to have three parts that reach both the cervical spine and the skull. Part of the intermediate intrinsic layer per Moore, innervated by posterior rami of spinal nerves."
+    }
+  },
+  {
+    "id": "longissimus_capitis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/longissimus_capitis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Longissimus Capitis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Longissimus Capitis",
+      "origin": "Transverse processes of T1\u2013T5 and articular processes of C4\u2013C7",
+      "insertion": "Posterior margin of the mastoid process of the temporal bone",
+      "innervation": "Posterior rami of cervical spinal nerves (C1\u2013C5)",
+      "spinal_levels": "C1, C2, C3, C4, C5",
+      "function": "Bilateral: extends the head. Unilateral: laterally flexes and rotates the head to the same side",
+      "opposing_muscle": "Longus Capitis, Sternocleidomastoid",
+      "blood_supply": "Deep cervical artery, occipital artery",
+      "clinical_note": "Longissimus Capitis is the uppermost part of Longissimus and the only erector spinae subdivision to reach the skull, inserting on the mastoid process. Longissimus is one continuous muscle with three named parts: Thoracis, Cervicis, and Capitis. It lies deep to splenius capitis in the posterior neck. Part of the intermediate intrinsic layer per Moore, innervated by posterior rami of spinal nerves."
+    }
+  },
+  {
+    "id": "spinalis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/spinalis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Spinalis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Spinalis",
+      "origin": "Spinous processes of upper lumbar and lower thoracic vertebrae (T10\u2013L2)",
+      "insertion": "Spinous processes of upper thoracic and cervical vertebrae \u2014 divided into three regional parts: Thoracis, Cervicis (inconstant), Capitis (blends with semispinalis)",
+      "innervation": "Posterior rami of spinal nerves (thoracic and cervical levels \u2014 medial column)",
+      "spinal_levels": "Posterior rami of thoracic and cervical spinal nerves",
+      "function": "Bilateral: extends the vertebral column. Unilateral: laterally flexes the vertebral column to the same side",
+      "opposing_muscle": "Rectus Abdominis",
+      "blood_supply": "Posterior intercostal arteries, deep cervical artery",
+      "clinical_note": "Spinalis is the most medial and smallest erector spinae column \u2014 medial to Longissimus and Spinalis (mnemonic lateral to medial: 'I Like Spine'). It is one continuous muscle divided into three regional parts: Thoracis, Cervicis, and Capitis. Spinalis Cervicis and Capitis are inconstant and often blend with semispinalis, making Spinalis the least distinct erector spinae column. Moore classifies erector spinae as the intermediate intrinsic layer of the back. All are innervated by posterior rami."
+    }
+  },
+  {
+    "id": "spinalis_thoracis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/spinalis_thoracis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Spinalis Thoracis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Spinalis Thoracis",
+      "origin": "Spinous processes of T10\u2013L2",
+      "insertion": "Spinous processes of T1\u2013T8 (upper thoracic vertebrae)",
+      "innervation": "Posterior rami of thoracic spinal nerves (T1\u2013T12); medial erector spinae column",
+      "spinal_levels": "T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12",
+      "function": "Bilateral: extends the thoracic spine. Unilateral: laterally flexes the thoracic spine to the same side",
+      "opposing_muscle": "Rectus Abdominis",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Spinalis Thoracis is the most consistent and well-developed part of Spinalis \u2014 running from spinous process to spinous process in the thoracic region. Spinalis is one continuous muscle with three named parts: Thoracis, Cervicis, and Capitis. It is the most medial erector spinae column. The Spinalis Cervicis and Capitis parts are inconstant and often rudimentary or fused with semispinalis. Part of the intermediate intrinsic layer per Moore, innervated by posterior rami."
+    }
+  },
+  {
+    "id": "spinalis_cervicis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/spinalis_cervicis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Spinalis Cervicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Spinalis Cervicis",
+      "origin": "Spinous processes of C5\u2013T2 and ligamentum nuchae",
+      "insertion": "Spinous process of C2 (axis)",
+      "innervation": "Posterior rami of cervical spinal nerves (C2\u2013C5)",
+      "spinal_levels": "C2, C3, C4, C5",
+      "function": "Bilateral: extends the cervical spine. Unilateral: laterally flexes the cervical spine to the same side",
+      "opposing_muscle": "Longus Colli",
+      "blood_supply": "Deep cervical artery",
+      "clinical_note": "Spinalis Cervicis is inconstant and often absent or rudimentary \u2014 it is the least reliably present subdivision of the erector spinae. When present it blends with semispinalis cervicis. Spinalis is one continuous muscle with three named parts: Thoracis, Cervicis, and Capitis. It is the most medial erector spinae column. Part of the intermediate intrinsic layer per Moore, innervated by posterior rami of spinal nerves."
+    }
+  },
+  {
+    "id": "spinalis_capitis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/spinalis_capitis_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Spinalis Capitis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Spinalis Capitis",
+      "origin": "Spinous processes of C7\u2013T2 and articular processes of C4\u2013C6",
+      "insertion": "Occipital bone \u2014 usually blends with semispinalis capitis between the superior and inferior nuchal lines",
+      "innervation": "Posterior rami of cervical spinal nerves (C1\u2013C4)",
+      "spinal_levels": "C1, C2, C3, C4",
+      "function": "Bilateral: extends the head. Unilateral: laterally flexes the head to the same side",
+      "opposing_muscle": "Longus Capitis",
+      "blood_supply": "Deep cervical artery, occipital artery",
+      "clinical_note": "Spinalis Capitis is inconstant and almost always fused with semispinalis capitis, making it difficult to identify as a distinct structure. Some anatomy texts do not list it separately. Spinalis is one continuous muscle with three named parts: Thoracis, Cervicis, and Capitis. It is the most medial erector spinae column \u2014 medial to Longissimus Capitis and lateral to semispinalis. Part of the intermediate intrinsic layer per Moore, innervated by posterior rami."
+    }
+  }
+]
