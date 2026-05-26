@@ -1,0 +1,38 @@
+[
+  {
+    "id": "serratus_posterior_superior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/serratus_posterior_superior_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Serratus Posterior Superior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Posterior Superior",
+      "origin": "Inferior part of ligamentum nuchae; spinous processes of C7–T3 and their supraspinous ligaments",
+      "insertion": "Superior borders of ribs 2–5, just lateral to their angles",
+      "innervation": "Intercostal nerves (anterior rami of T2–T5)",
+      "spinal_levels": "T2, T3, T4, T5",
+      "function": "Elevates ribs 2–5 during forced inspiration; assists in expanding the thoracic cavity",
+      "opposing_muscle": "Serratus Posterior Inferior",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Moore classifies this as an extrinsic back muscle — intermediate layer. It lies deep to the rhomboids and is a respiratory muscle, not a back mover. Often mistaken for a deep back muscle but has no role in spinal movement. Clinically implicated in myofascial pain of the upper back and shoulder region."
+    }
+  },
+  {
+    "id": "serratus_posterior_inferior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/back/serratus_posterior_inferior_01.jpg",
+    "region": "Back",
+    "structure_labeled": "Serratus Posterior Inferior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Posterior Inferior",
+      "origin": "Spinous processes of T11–L2 and their supraspinous ligaments; thoracolumbar fascia",
+      "insertion": "Inferior borders of ribs 9–12, just lateral to their angles",
+      "innervation": "Intercostal nerves (anterior rami of T9–T12)",
+      "spinal_levels": "T9, T10, T11, T12",
+      "function": "Depresses and fixes ribs 9–12 during forced expiration; counteracts the upward pull of the diaphragm on the lower ribs",
+      "opposing_muscle": "Serratus Posterior Superior",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Moore classifies this as an extrinsic back muscle — intermediate layer. Lies deep to latissimus dorsi. Its role is to anchor the lower ribs during forced expiration and coughing. Along with serratus posterior superior, these muscles are sometimes called the accessory muscles of respiration. Both are thin and often difficult to distinguish from underlying aponeuroses."
+    }
+  }
+]
