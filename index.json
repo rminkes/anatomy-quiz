@@ -1,4 +1,3 @@
-
 [
   {
     "label": "Rotator Cuff",
@@ -59,5 +58,15 @@
     "label": "Back — Intermediate",
     "region": "Back",
     "file": "back_intermediate.json"
+  },
+  {
+    "label": "Back — Splenius",
+    "region": "Back",
+    "file": "back_splenius.json"
+  },
+  {
+    "label": "Back — Deep: Erector Spinae",
+    "region": "Back",
+    "file": "back_deep_erector_spinae.json"
   }
 ]
