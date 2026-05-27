@@ -103,5 +103,15 @@
     "label": "Abdomen — Posterior Wall",
     "region": "Abdomen",
     "file": "abdomen_posterior.json"
+  },
+  {
+    "label": "Gluteal — Superficial",
+    "region": "Gluteal",
+    "file": "gluteal_superficial.json"
+  },
+  {
+    "label": "Gluteal — Deep Rotators",
+    "region": "Gluteal",
+    "file": "gluteal_deep.json"
   }
 ]
