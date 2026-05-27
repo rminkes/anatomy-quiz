@@ -83,5 +83,15 @@
     "label": "Back — Deep: Suboccipital",
     "region": "Back",
     "file": "back_deep_suboccipital.json"
+  },
+  {
+    "label": "Chest — Pectoral",
+    "region": "Chest",
+    "file": "chest_pectoral.json"
+  },
+  {
+    "label": "Chest — Thoracic Wall",
+    "region": "Chest",
+    "file": "chest_thoracic_wall.json"
   }
 ]
