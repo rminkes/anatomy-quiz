@@ -1,3 +1,4 @@
+
 [
   {
     "label": "Rotator Cuff",
@@ -128,5 +129,25 @@
     "label": "Thigh — Posterior",
     "region": "Thigh",
     "file": "thigh_posterior.json"
+  },
+  {
+    "label": "Leg — Anterior",
+    "region": "Leg",
+    "file": "leg_anterior.json"
+  },
+  {
+    "label": "Leg — Lateral",
+    "region": "Leg",
+    "file": "leg_lateral.json"
+  },
+  {
+    "label": "Leg — Posterior Superficial",
+    "region": "Leg",
+    "file": "leg_posterior_superficial.json"
+  },
+  {
+    "label": "Leg — Posterior Deep",
+    "region": "Leg",
+    "file": "leg_posterior_deep.json"
   }
 ]
