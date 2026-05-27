@@ -1,0 +1,74 @@
+[
+  {
+    "id": "pectoralis_major_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/pectoralis_major_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Pectoralis Major",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Pectoralis Major",
+      "origin": "Clavicular head: anterior surface of medial half of clavicle. Sternocostal head: anterior surface of sternum, costal cartilages of ribs 1\u20136, and aponeurosis of external oblique",
+      "insertion": "Lateral lip of the intertubercular (bicipital) groove of the humerus; fibers twist so clavicular head inserts inferiorly and sternocostal head inserts superiorly",
+      "innervation": "Medial and lateral pectoral nerves (C5, C6, C7, C8, T1)",
+      "spinal_levels": "C5, C6, C7, C8, T1",
+      "function": "Adducts and medially rotates the humerus; clavicular head flexes the humerus; sternocostal head extends the flexed humerus. With arm fixed: elevates the thorax during forced inspiration",
+      "opposing_muscle": "Posterior deltoid and infraspinatus (for lateral rotation); middle deltoid (for abduction)",
+      "blood_supply": "Pectoral branch of thoracoacromial artery; lateral thoracic artery",
+      "clinical_note": "Pectoralis Major has two heads with different innervations \u2014 the clavicular head is innervated by the lateral pectoral nerve (C5\u2013C6) and the sternocostal head by both medial and lateral pectoral nerves (C6\u2013T1). Its tendon twists 90\u00b0 before insertion \u2014 the clavicular fibers end up inferior and sternocostal fibers superior at the humerus. Rupture typically occurs at the tendon during heavy bench press and presents with a visible deformity of the anterior axillary fold. The pectoralis major flap is a major workhorse in head and neck reconstructive surgery."
+    }
+  },
+  {
+    "id": "pectoralis_minor_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/pectoralis_minor_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Pectoralis Minor",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Pectoralis Minor",
+      "origin": "Outer surfaces of ribs 3\u20135 near their costal cartilages",
+      "insertion": "Medial border and superior surface of the coracoid process of the scapula",
+      "innervation": "Medial pectoral nerve (C8, T1)",
+      "spinal_levels": "C8, T1",
+      "function": "Protracts and depresses the scapula; rotates the glenoid cavity inferiorly; elevates ribs 3\u20135 during forced inspiration when scapula is fixed",
+      "opposing_muscle": "Lower trapezius (elevates and upwardly rotates scapula)",
+      "blood_supply": "Pectoral branch of thoracoacromial artery; lateral thoracic artery",
+      "clinical_note": "Pectoralis Minor lies deep to pectoralis major and is an important surgical landmark \u2014 the brachial plexus and axillary vessels pass posterior to it. It divides the axillary artery into three parts (medial, posterior, and lateral to pectoralis minor). Pectoralis minor tightness is associated with anterior shoulder impingement and rounded shoulder posture. In axillary lymph node dissection for breast cancer, the muscle is often retracted or divided to access level II and III nodes."
+    }
+  },
+  {
+    "id": "subclavius_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/subclavius_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Subclavius",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Subclavius",
+      "origin": "Junction of the first rib and its costal cartilage",
+      "insertion": "Groove on the inferior surface of the middle third of the clavicle",
+      "innervation": "Nerve to subclavius (C5, C6)",
+      "spinal_levels": "C5, C6",
+      "function": "Depresses and anchors the clavicle; stabilises the sternoclavicular joint; acts as a protective buffer between the clavicle and subclavian vessels during a fracture",
+      "opposing_muscle": "Upper trapezius (elevates clavicle)",
+      "blood_supply": "Clavicular branch of thoracoacromial artery",
+      "clinical_note": "Subclavius is a small muscle also covered in the Shoulder Girdle region. Its most important clinical role is protective \u2014 it cushions the subclavian vessels and brachial plexus from injury during a clavicle fracture. This is why neurovascular injury is relatively uncommon in isolated clavicle fractures despite the proximity of these structures. The nerve to subclavius (C5\u2013C6) occasionally gives a branch to the phrenic nerve \u2014 an accessory phrenic nerve."
+    }
+  },
+  {
+    "id": "serratus_anterior_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/serratus_anterior_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Serratus Anterior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Anterior",
+      "origin": "Outer surfaces of lateral parts of ribs 1\u20138 (sometimes rib 9) by saw-toothed digitations",
+      "insertion": "Anterior (costal) surface of the medial border of the scapula; lower digitations insert into the inferior angle",
+      "innervation": "Long thoracic nerve (C5, C6, C7)",
+      "spinal_levels": "C5, C6, C7",
+      "function": "Protracts (abducts) the scapula; holds the scapula against the thoracic wall; with trapezius forms a force couple for upward rotation of the scapula \u2014 essential for arm elevation above 90\u00b0",
+      "opposing_muscle": "Rhomboids and middle trapezius (retract scapula)",
+      "blood_supply": "Lateral thoracic artery; thoracodorsal artery",
+      "clinical_note": "Moore classifies Serratus Anterior in the pectoral region \u2014 it is an anterior thoracic muscle despite acting on the scapula. Long thoracic nerve injury (C5\u2013C7) causes medial winging of the scapula \u2014 the inferior angle and medial border lift away from the thoracic wall, best seen when the patient pushes against a wall. Causes include axillary surgery, mastectomy, and backpack palsy (compression from heavy straps). Mnemonic: 'C5, 6, 7 \u2014 wings of heaven'. Note: also included in Back \u2014 Superficial for reference."
+    }
+  }
+]

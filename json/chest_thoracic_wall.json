@@ -1,0 +1,146 @@
+[
+  {
+    "id": "serratus_posterior_superior_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/serratus_posterior_superior_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Serratus Posterior Superior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Posterior Superior",
+      "origin": "Inferior part of ligamentum nuchae; spinous processes of C7\u2013T3 and their supraspinous ligaments",
+      "insertion": "Superior borders of ribs 2\u20135, just lateral to their angles",
+      "innervation": "Intercostal nerves (anterior rami of T2\u2013T5)",
+      "spinal_levels": "T2, T3, T4, T5",
+      "function": "Elevates ribs 2\u20135 during forced inspiration; assists in expanding the thoracic cavity",
+      "opposing_muscle": "Serratus Posterior Inferior",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Serratus Posterior Superior appears in both the thoracic wall group (VH Dissector classification) and the Back \u2014 Intermediate region (Moore's extrinsic back muscle classification). This dual placement reflects its transitional position \u2014 it originates from the posterior neck and upper thoracic spine but acts on the anterior rib cage. It lies deep to the rhomboids. Its primary role is respiratory \u2014 elevating the upper ribs during forced inspiration. Clinically implicated in myofascial pain of the upper back."
+    }
+  },
+  {
+    "id": "serratus_posterior_inferior_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/serratus_posterior_inferior_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Serratus Posterior Inferior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Serratus Posterior Inferior",
+      "origin": "Spinous processes of T11\u2013L2 and their supraspinous ligaments; thoracolumbar fascia",
+      "insertion": "Inferior borders of ribs 9\u201312, just lateral to their angles",
+      "innervation": "Intercostal nerves (anterior rami of T9\u2013T12)",
+      "spinal_levels": "T9, T10, T11, T12",
+      "function": "Depresses and fixes ribs 9\u201312 during forced expiration; counteracts the upward pull of the diaphragm on the lower ribs",
+      "opposing_muscle": "Serratus Posterior Superior",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Serratus Posterior Inferior appears in both the thoracic wall group (VH Dissector) and Back \u2014 Intermediate (Moore). It lies deep to latissimus dorsi. Its role is to anchor the lower ribs during forced expiration and coughing \u2014 acting as a counterforce to the diaphragm. Together with Serratus Posterior Superior they are sometimes called the accessory muscles of respiration. Both are thin muscles that can be difficult to distinguish from underlying aponeuroses on dissection."
+    }
+  },
+  {
+    "id": "levatores_costarum_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/levatores_costarum_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Levatores Costarum",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Levatores Costarum",
+      "origin": "Transverse processes of C7\u2013T11 vertebrae",
+      "insertion": "Outer surface of the rib immediately below (Levatores Costarum Breves); or 2 ribs below (Levatores Costarum Longi)",
+      "innervation": "Posterior rami of thoracic spinal nerves (T1\u2013T11)",
+      "spinal_levels": "T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11",
+      "function": "Elevates the ribs assisting inspiration; lateral flexion and extension of the vertebral column",
+      "opposing_muscle": "Internal intercostals (depress ribs)",
+      "blood_supply": "Posterior intercostal arteries",
+      "clinical_note": "Levatores Costarum appear in both the thoracic wall group (VH Dissector) and Back \u2014 Deep: Short Segmental (Moore's minor deep intrinsic layer). VH Dissector groups them here because of their direct action on the ribs. There are 12 fan-shaped muscles, one at each thoracic level. The short form (Breves) inserts one rib below; the long form (Longi) skips a rib. Innervated by posterior rami \u2014 notable as one of the few posterior rami muscles with a direct effect on rib movement."
+    }
+  },
+  {
+    "id": "external_intercostals_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/external_intercostals_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "External Intercostals",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "External Intercostals",
+      "origin": "Inferior border of each rib (ribs 1\u201311)",
+      "insertion": "Superior border of the rib below; fibers run downward and forward. Replaced anteriorly by the external intercostal membrane",
+      "innervation": "Intercostal nerves (anterior rami of T1\u2013T11); outermost intercostal layer",
+      "spinal_levels": "T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11",
+      "function": "Elevates the ribs during inspiration; increases anteroposterior and transverse diameters of the thorax",
+      "opposing_muscle": "Internal intercostals",
+      "blood_supply": "Posterior intercostal arteries; anterior intercostal arteries",
+      "clinical_note": "The three intercostal layers from external to internal are: External Intercostals, Internal Intercostals, Innermost Intercostals. The intercostal neurovascular bundle (VAN \u2014 vein, artery, nerve, superior to inferior) runs between the internal and innermost layers in the costal groove. Always insert a chest drain above the rib to avoid the neurovascular bundle. External intercostal fibers run downward and forward \u2014 like hands in front pockets. Replaced anteriorly by the external intercostal membrane between costal cartilages."
+    }
+  },
+  {
+    "id": "internal_intercostals_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/internal_intercostals_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Internal Intercostals",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Internal Intercostals",
+      "origin": "Superior border of each rib and costal cartilage; costal groove",
+      "insertion": "Inferior border of the rib above; fibers run upward and forward, perpendicular to external intercostals. Replaced posteriorly by the internal intercostal membrane",
+      "innervation": "Intercostal nerves (anterior rami of T1\u2013T11); middle intercostal layer",
+      "spinal_levels": "T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11",
+      "function": "Interosseous part: depresses ribs during forced expiration. Interchondral part: may assist elevation of costal cartilages during inspiration",
+      "opposing_muscle": "External intercostals",
+      "blood_supply": "Posterior and anterior intercostal arteries",
+      "clinical_note": "Internal intercostal fibers run upward and forward \u2014 like hands in back pockets \u2014 at right angles to the external intercostals. The intercostal neurovascular bundle (VAN) travels in the costal groove deep to the internal intercostals and superficial to the innermost intercostals. The internal intercostals extend from sternum to vertebral column, unlike the external intercostals which are replaced anteriorly by membrane. This layer is incised during thoracotomy. Intercostal nerve block targets the space between internal and innermost layers."
+    }
+  },
+  {
+    "id": "innermost_intercostals_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/innermost_intercostals_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Innermost Intercostals",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Innermost Intercostals",
+      "origin": "Inner surface of ribs; occupy the middle half of each intercostal space",
+      "insertion": "Inner surface of the adjacent rib above; fibers run in same direction as internal intercostals",
+      "innervation": "Intercostal nerves (anterior rami of T1\u2013T11); innermost intercostal layer",
+      "spinal_levels": "T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11",
+      "function": "Depresses ribs; acts with internal intercostals during forced expiration",
+      "opposing_muscle": "External intercostals",
+      "blood_supply": "Posterior and anterior intercostal arteries",
+      "clinical_note": "The innermost intercostals are the deepest of the three intercostal layers and are separated from the internal intercostals by the intercostal neurovascular bundle (VAN \u2014 vein, artery, nerve). They are part of the same muscle sheet as Transversus Thoracis anteriorly and subcostals posteriorly. The intercostal nerve block is placed in the costal groove between internal and innermost intercostal layers \u2014 making knowledge of this layer essential for regional anaesthesia and chest drain insertion."
+    }
+  },
+  {
+    "id": "transversus_thoracis_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/transversus_thoracis_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Transversus Thoracis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Transversus Thoracis",
+      "origin": "Posterior surface of the lower sternum and xiphoid process",
+      "insertion": "Inner surfaces of costal cartilages of ribs 2\u20136",
+      "innervation": "Intercostal nerves (anterior rami of T2\u2013T6)",
+      "spinal_levels": "T2, T3, T4, T5, T6",
+      "function": "Depresses costal cartilages of ribs 2\u20136; assists in forced expiration",
+      "opposing_muscle": "External intercostals, diaphragm",
+      "blood_supply": "Internal thoracic artery",
+      "clinical_note": "Transversus Thoracis (also called Sternocostalis) lies on the inner surface of the anterior chest wall and is considered the anterior continuation of the innermost intercostal layer. It is a key surgical landmark in coronary artery bypass grafting \u2014 the internal thoracic (mammary) artery runs immediately deep to it and is harvested as a conduit. VH Dissector groups it with the thoracic wall muscles. Moore considers it part of the same innermost layer as the innermost intercostals and subcostals."
+    }
+  },
+  {
+    "id": "diaphragm_chest_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/chest/diaphragm_chest_01.jpg",
+    "region": "Chest",
+    "structure_labeled": "Diaphragm",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Diaphragm",
+      "origin": "Sternal part: posterior surface of xiphoid process. Costal part: inner surfaces of costal cartilages and adjacent bony surfaces of ribs 7\u201312. Lumbar part: right and left crura from bodies of L1\u2013L3 (right) and L1\u2013L2 (left); medial and lateral arcuate ligaments",
+      "insertion": "Central tendon \u2014 a trefoil-shaped aponeurosis with no bony insertion",
+      "innervation": "Phrenic nerve (C3, C4, C5) for motor and central sensory; lower intercostal nerves (T6\u2013T12) for peripheral sensory only",
+      "spinal_levels": "C3, C4, C5 (motor); T6\u2013T12 (peripheral sensory)",
+      "function": "Primary muscle of inspiration \u2014 contraction flattens the dome, increasing thoracic volume and decreasing intrathoracic pressure. Also increases intra-abdominal pressure during defecation, micturition, and parturition",
+      "opposing_muscle": "Abdominal muscles (raise diaphragm during forced expiration)",
+      "blood_supply": "Superior and inferior phrenic arteries; musculophrenic artery; pericardiacophrenic artery",
+      "clinical_note": "Three major openings: aortic hiatus (T12 \u2014 aorta, azygos vein, thoracic duct), oesophageal hiatus (T10 \u2014 oesophagus, vagal trunks), caval foramen (T8 \u2014 IVC). Mnemonic: 'I 8 (ate) 10 eggs At 12' \u2014 IVC T8, Oesophagus T10, Aorta T12. Motor innervation exclusively from the phrenic nerve \u2014 'C3, 4, 5 keeps the diaphragm alive'. Referred shoulder tip pain from diaphragmatic irritation (subphrenic abscess, ruptured spleen) travels via phrenic nerve to C3\u2013C5 dermatomes. Hiatus hernia involves herniation through the oesophageal hiatus."
+    }
+  }
+]
