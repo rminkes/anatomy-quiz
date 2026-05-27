@@ -93,5 +93,15 @@
     "label": "Chest — Thoracic Wall",
     "region": "Chest",
     "file": "chest_thoracic_wall.json"
+  },
+  {
+    "label": "Abdomen — Anterior Wall",
+    "region": "Abdomen",
+    "file": "abdomen_anterior.json"
+  },
+  {
+    "label": "Abdomen — Posterior Wall",
+    "region": "Abdomen",
+    "file": "abdomen_posterior.json"
   }
 ]
