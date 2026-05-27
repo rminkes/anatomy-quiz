@@ -113,5 +113,20 @@
     "label": "Gluteal — Deep Rotators",
     "region": "Gluteal",
     "file": "gluteal_deep.json"
+  },
+  {
+    "label": "Thigh — Anterior",
+    "region": "Thigh",
+    "file": "thigh_anterior.json"
+  },
+  {
+    "label": "Thigh — Medial",
+    "region": "Thigh",
+    "file": "thigh_medial.json"
+  },
+  {
+    "label": "Thigh — Posterior",
+    "region": "Thigh",
+    "file": "thigh_posterior.json"
   }
 ]
