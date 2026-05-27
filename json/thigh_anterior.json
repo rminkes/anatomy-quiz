@@ -1,0 +1,128 @@
+[
+  {
+    "id": "iliopsoas_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/iliopsoas_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Iliopsoas",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Iliopsoas",
+      "origin": "Psoas Major: transverse processes and bodies of T12\u2013L5 vertebrae. Iliacus: iliac fossa and ala of sacrum",
+      "insertion": "Lesser trochanter of the femur via a shared tendon",
+      "innervation": "Psoas Major: anterior rami of L1\u2013L3. Iliacus: femoral nerve (L2, L3)",
+      "spinal_levels": "L1, L2, L3",
+      "function": "Powerful flexion of the hip; assists lateral rotation of the thigh; psoas major also flexes the lumbar spine when femur is fixed",
+      "opposing_muscle": "Gluteus Maximus (hip extension)",
+      "blood_supply": "Iliolumbar artery; medial circumflex femoral artery",
+      "clinical_note": "Iliopsoas is the combined muscle formed by Psoas Major and Iliacus \u2014 individually covered in Abdomen \u2014 Posterior Wall. It is the most powerful hip flexor in the body. The femoral nerve passes between the two components in the femoral triangle. A psoas abscess tracks along the psoas sheath and may present as a groin swelling \u2014 the hip is held in flexion to reduce tension and pain. Iliopsoas tightness is assessed with Thomas' test and is a common finding in anterior hip impingement and low back pain."
+    }
+  },
+  {
+    "id": "sartorius_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/sartorius_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Sartorius",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Sartorius",
+      "origin": "Anterior superior iliac spine (ASIS)",
+      "insertion": "Upper medial surface of the tibia (pes anserinus \u2014 with gracilis and semitendinosus)",
+      "innervation": "Femoral nerve (L2, L3)",
+      "spinal_levels": "L2, L3",
+      "function": "Flexes, abducts, and laterally rotates the hip; flexes the knee; assists medial rotation of the tibia on the femur when knee is flexed \u2014 the cross-legged sitting position",
+      "opposing_muscle": "Hip adductors (for abduction); gluteus maximus (for hip flexion vs extension)",
+      "blood_supply": "Femoral artery branches",
+      "clinical_note": "Sartorius is the longest muscle in the body, running obliquely from ASIS to the medial tibia. Its name derives from the Latin for tailor \u2014 it produces the cross-legged sitting position used by tailors. It forms the lateral boundary of the femoral triangle (medial boundary = adductor longus; floor = iliopsoas and pectineus). It forms the roof of the adductor (Hunter's) canal in the middle third of the thigh. The pes anserinus bursa lies between its insertion and the medial collateral ligament \u2014 a common site of bursitis in osteoarthritis."
+    }
+  },
+  {
+    "id": "rectus_femoris_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/rectus_femoris_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Rectus Femoris",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rectus Femoris",
+      "origin": "Straight head: anterior inferior iliac spine (AIIS). Reflected head: groove above acetabulum",
+      "insertion": "Quadriceps tendon to patella, then patellar ligament to tibial tuberosity",
+      "innervation": "Femoral nerve (L2, L3, L4)",
+      "spinal_levels": "L2, L3, L4",
+      "function": "Extends the knee; flexes the hip. Only quadriceps muscle to cross both the hip and knee joints",
+      "opposing_muscle": "Hamstrings (knee flexion); iliopsoas acts synergistically for hip flexion",
+      "blood_supply": "Lateral circumflex femoral artery",
+      "clinical_note": "Rectus Femoris is the only quadriceps muscle that crosses both the hip and knee \u2014 making it a two-joint muscle. The four quadriceps muscles are: Rectus Femoris, Vastus Lateralis, Vastus Medialis, and Vastus Intermedius \u2014 all innervated by the femoral nerve (L2\u2013L4) and all inserting via the quadriceps tendon. Rectus femoris avulsion fractures at the AIIS are seen in adolescent athletes during kicking sports. It is the most commonly injured quadriceps muscle in sprinting and kicking \u2014 typically at the myotendinous junction."
+    }
+  },
+  {
+    "id": "vastus_lateralis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/vastus_lateralis_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Vastus Lateralis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Vastus Lateralis",
+      "origin": "Intertrochanteric line, greater trochanter, lateral lip of linea aspera, lateral intermuscular septum",
+      "insertion": "Lateral border of patella and quadriceps tendon; tibial tuberosity via patellar ligament",
+      "innervation": "Femoral nerve (L2, L3, L4); lateral division",
+      "spinal_levels": "L2, L3, L4",
+      "function": "Extends the knee; stabilises the patella laterally",
+      "opposing_muscle": "Hamstrings (knee flexion); vastus medialis (balances patellar tracking)",
+      "blood_supply": "Lateral circumflex femoral artery",
+      "clinical_note": "Vastus Lateralis is the largest of the four quadriceps muscles. It is the preferred site for intramuscular injection in infants. Its lateral pull on the patella must be balanced by Vastus Medialis Obliquus (VMO) \u2014 imbalance leads to lateral patellar maltracking and patellofemoral pain syndrome. The quadriceps group (Rectus Femoris, Vastus Lateralis, Medialis, Intermedius) all share femoral nerve innervation (L2\u2013L4) and insert via the quadriceps tendon. Vastus Lateralis is harvested as a flap in reconstructive surgery."
+    }
+  },
+  {
+    "id": "vastus_medialis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/vastus_medialis_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Vastus Medialis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Vastus Medialis",
+      "origin": "Intertrochanteric line, medial lip of linea aspera, medial intermuscular septum, tendon of adductor magnus",
+      "insertion": "Medial border of patella and quadriceps tendon; tibial tuberosity via patellar ligament",
+      "innervation": "Femoral nerve (L2, L3, L4); medial division",
+      "spinal_levels": "L2, L3, L4",
+      "function": "Extends the knee; the oblique fibers (VMO) stabilise the patella medially, preventing lateral subluxation",
+      "opposing_muscle": "Hamstrings; vastus lateralis (patellar balance)",
+      "blood_supply": "Femoral artery; medial circumflex femoral artery",
+      "clinical_note": "Vastus Medialis Obliquus (VMO) \u2014 the oblique distal fibers of vastus medialis \u2014 is critical for patellar tracking. VMO weakness (common after knee injury or surgery) causes lateral patellar tilt and patellofemoral pain syndrome. VMO is the last part of the quadriceps to recover after knee surgery and the first to atrophy \u2014 targeted specifically in knee rehabilitation. The quadriceps (Rectus Femoris + 3 Vasti) all share femoral nerve (L2\u2013L4) innervation. Vastus medialis is also the roof of the distal adductor canal."
+    }
+  },
+  {
+    "id": "vastus_intermedius_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/vastus_intermedius_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Vastus Intermedius",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Vastus Intermedius",
+      "origin": "Anterior and lateral surfaces of the upper two-thirds of the femoral shaft",
+      "insertion": "Deep part of quadriceps tendon; tibial tuberosity via patellar ligament",
+      "innervation": "Femoral nerve (L2, L3, L4); deep division",
+      "spinal_levels": "L2, L3, L4",
+      "function": "Extends the knee; lies deep to rectus femoris and is the deepest of the four quadriceps",
+      "opposing_muscle": "Hamstrings (knee flexion)",
+      "blood_supply": "Lateral circumflex femoral artery; femoral artery",
+      "clinical_note": "Vastus Intermedius is the deepest quadriceps muscle, lying directly on the femoral shaft deep to rectus femoris. It is the most difficult to identify separately on dissection and imaging. The articularis genu is a small muscle deep to vastus intermedius that retracts the suprapatellar bursa during knee extension. The quadriceps group (Rectus Femoris + Vastus Lateralis + Vastus Medialis + Vastus Intermedius) all insert via the quadriceps tendon into the patella, then via the patellar ligament to the tibial tuberosity \u2014 all innervated by the femoral nerve (L2\u2013L4)."
+    }
+  },
+  {
+    "id": "pectineus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/pectineus_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Pectineus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Pectineus",
+      "origin": "Pecten pubis (pectineal line of pubis) and pubic tubercle",
+      "insertion": "Pectineal line of the femur (between lesser trochanter and linea aspera)",
+      "innervation": "Femoral nerve (L2, L3); may also receive a branch from the obturator nerve",
+      "spinal_levels": "L2, L3",
+      "function": "Adducts and flexes the hip; assists medial rotation",
+      "opposing_muscle": "Gluteus medius and minimus (abduction); gluteus maximus (extension)",
+      "blood_supply": "Medial circumflex femoral artery; obturator artery",
+      "clinical_note": "Pectineus forms the floor of the femoral triangle medially (iliopsoas forms the lateral floor). It has a dual innervation \u2014 primarily femoral nerve but sometimes also obturator nerve \u2014 making it transitional between the anterior and medial compartments. It is the most anterior of the adductor group. The femoral triangle is bounded by: inguinal ligament (superiorly), sartorius (laterally), adductor longus (medially); its floor is formed by iliopsoas and pectineus. Contents from lateral to medial: femoral nerve, artery, vein, lymphatics (NAVAL)."
+    }
+  }
+]

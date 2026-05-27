@@ -1,0 +1,92 @@
+[
+  {
+    "id": "adductor_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/adductor_longus_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Adductor Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Adductor Longus",
+      "origin": "Body of pubis just below the pubic crest and pubic symphysis",
+      "insertion": "Middle third of linea aspera of the femur",
+      "innervation": "Obturator nerve, anterior division (L2, L3, L4); most anterior adductor",
+      "spinal_levels": "L2, L3, L4",
+      "function": "Adducts and flexes the hip; assists medial rotation",
+      "opposing_muscle": "Gluteus medius and minimus (abduction); gluteus maximus (extension)",
+      "blood_supply": "Medial circumflex femoral artery; obturator artery; profunda femoris artery",
+      "clinical_note": "Adductor Longus is the most anterior adductor and forms the medial boundary of the femoral triangle. It is the most commonly strained adductor \u2014 groin strain typically involves the proximal musculotendinous junction, common in football, hockey, and horse riding. The medial compartment adductors (Longus, Brevis, Magnus, Gracilis, and Obturator Externus) are all innervated primarily by the obturator nerve (L2\u2013L4). The adductor canal (Hunter's canal) runs deep to sartorius between vastus medialis and adductor longus/magnus."
+    }
+  },
+  {
+    "id": "adductor_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/adductor_brevis_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Adductor Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Adductor Brevis",
+      "origin": "Body and inferior ramus of pubis",
+      "insertion": "Posterior surface of femur \u2014 pectineal line and proximal part of linea aspera",
+      "innervation": "Obturator nerve, anterior division (L2, L3, L4); deep to adductor longus",
+      "spinal_levels": "L2, L3, L4",
+      "function": "Adducts and flexes the hip; assists medial rotation",
+      "opposing_muscle": "Gluteus medius and minimus (abduction)",
+      "blood_supply": "Medial circumflex femoral artery; obturator artery",
+      "clinical_note": "Adductor Brevis lies deep to pectineus and adductor longus \u2014 the three adductors (Longus, Brevis, Magnus) are arranged in three layers from anterior to posterior. Adductor Brevis divides the obturator nerve into its anterior and posterior divisions as they descend into the thigh. The anterior division passes anterior to brevis; the posterior division passes posterior. This relationship is a key anatomical landmark for obturator nerve blocks used in hip and knee surgery."
+    }
+  },
+  {
+    "id": "adductor_magnus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/adductor_magnus_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Adductor Magnus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Adductor Magnus",
+      "origin": "Adductor part: inferior pubic ramus and ischial ramus. Hamstring part: ischial tuberosity",
+      "insertion": "Adductor part: medial lip of linea aspera and medial supracondylar line. Hamstring part: adductor tubercle of medial femoral condyle",
+      "innervation": "Adductor part: obturator nerve, posterior division (L2, L3, L4). Hamstring part: sciatic nerve \u2014 tibial division (L4)",
+      "spinal_levels": "L2, L3, L4 (adductor part); L4 (hamstring part)",
+      "function": "Adductor part: adducts and flexes the hip. Hamstring part: adducts and extends the hip. Together: the most powerful adductor",
+      "opposing_muscle": "Gluteus medius and minimus (abduction)",
+      "blood_supply": "Medial circumflex femoral artery; profunda femoris perforating branches; obturator artery",
+      "clinical_note": "Adductor Magnus is the largest and most powerful adductor \u2014 it has a dual innervation reflecting its dual embryological origin: the adductor part from the obturator nerve and the hamstring part from the sciatic nerve. The adductor hiatus is a gap in its tendon near the adductor tubercle through which the femoral artery and vein pass to become the popliteal artery and vein \u2014 a key vascular landmark. The adductor tubercle is palpable on the medial femoral condyle and is the insertion of the hamstring part."
+    }
+  },
+  {
+    "id": "gracilis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/gracilis_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Gracilis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Gracilis",
+      "origin": "Body and inferior ramus of pubis; inferior pubic symphysis",
+      "insertion": "Upper medial surface of tibia (pes anserinus \u2014 with sartorius and semitendinosus)",
+      "innervation": "Obturator nerve, anterior division (L2, L3); two-joint adductor",
+      "spinal_levels": "L2, L3",
+      "function": "Adducts the hip; flexes and medially rotates the knee",
+      "opposing_muscle": "Hip abductors; knee extensors (quadriceps)",
+      "blood_supply": "Medial circumflex femoral artery; obturator artery",
+      "clinical_note": "Gracilis is the only two-joint adductor \u2014 crossing both the hip and knee. It is a slender strap muscle running the full length of the medial thigh. Its tendon inserts at the pes anserinus alongside sartorius (anteriorly) and semitendinosus (posteriorly) \u2014 mnemonic: 'Say Grace before Tea' (Sartorius, Gracilis, Semitendinosus). Gracilis is a workhorse in reconstructive surgery \u2014 its neurovascular pedicle makes it suitable for free muscle transfer to restore function in facial reanimation, forearm reconstruction, and sphincter repair."
+    }
+  },
+  {
+    "id": "obturator_externus_thigh_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/obturator_externus_thigh_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Obturator Externus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Obturator Externus",
+      "origin": "External surface of obturator membrane and surrounding margins of the obturator foramen",
+      "insertion": "Trochanteric fossa of femur (posterior aspect of greater trochanter)",
+      "innervation": "Obturator nerve, posterior division (L3, L4)",
+      "spinal_levels": "L3, L4",
+      "function": "Laterally rotates the hip; adducts the thigh; stabilises the femoral head in the acetabulum",
+      "opposing_muscle": "Gluteus medius and minimus (medial rotation); hip abductors",
+      "blood_supply": "Obturator artery; medial circumflex femoral artery",
+      "clinical_note": "Obturator Externus is included in both the medial thigh compartment (innervated by the obturator nerve) and the gluteal deep rotators group. In the medial compartment context it is the deepest adductor, lying on the external surface of the obturator membrane. It is the only deep external rotator innervated by the obturator nerve (L3\u2013L4) rather than the sacral plexus \u2014 a high-yield distinction. Note: also covered in Gluteal \u2014 Deep Rotators."
+    }
+  }
+]

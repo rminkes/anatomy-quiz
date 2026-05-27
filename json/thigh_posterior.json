@@ -1,0 +1,92 @@
+[
+  {
+    "id": "biceps_femoris_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/biceps_femoris_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Biceps Femoris",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Biceps Femoris",
+      "origin": "Long head: ischial tuberosity (common hamstring origin with semitendinosus). Short head: lateral lip of linea aspera and lateral supracondylar line of femur",
+      "insertion": "Head of fibula; lateral condyle of tibia",
+      "innervation": "Long head: sciatic \u2014 tibial division (L5, S1, S2); Short head: sciatic \u2014 common fibular division (L5, S1, S2)",
+      "spinal_levels": "L5, S1, S2",
+      "function": "Both heads: flex the knee and laterally rotate the leg. Long head only: extends and laterally rotates the hip",
+      "opposing_muscle": "Quadriceps (knee extension); iliopsoas (hip extension vs flexion)",
+      "blood_supply": "Perforating branches of profunda femoris; inferior gluteal artery (long head)",
+      "clinical_note": "Biceps Femoris has two heads with different nerve divisions \u2014 the long head from the tibial division and the short head from the common fibular (peroneal) division of the sciatic nerve. It is one of three hamstrings (with Semitendinosus and Semimembranosus). The hamstrings originate from the ischial tuberosity \u2014 except the short head of biceps femoris which originates from the femur, making it the only hamstring that does NOT cross the hip joint. Hamstring strains are the most common muscle injury in sport \u2014 typically at the proximal myotendinous junction."
+    }
+  },
+  {
+    "id": "biceps_femoris_long_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/biceps_femoris_long_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Biceps Femoris \u2014 Long Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Biceps Femoris \u2014 Long Head",
+      "origin": "Ischial tuberosity (common hamstring tendon, shared with semitendinosus); sacrotuberous ligament",
+      "insertion": "Head of fibula; lateral condyle of tibia (with short head)",
+      "innervation": "Sciatic nerve \u2014 tibial division (L5, S1, S2); long head",
+      "spinal_levels": "L5, S1, S2",
+      "function": "Extends and laterally rotates the hip; flexes and laterally rotates the knee",
+      "opposing_muscle": "Iliopsoas (hip flexion); quadriceps (knee extension)",
+      "blood_supply": "Inferior gluteal artery; perforating branches of profunda femoris",
+      "clinical_note": "The long head is a true hamstring \u2014 crossing both the hip and knee joints. It shares the ischial tuberosity origin with semitendinosus (common tendon) and semimembranosus (separate tendon). Biceps Femoris is one muscle with two heads \u2014 the long head is innervated by the tibial division of the sciatic nerve while the short head is innervated by the common fibular division. This dual innervation is a classic exam question. The long head is the most commonly injured hamstring muscle."
+    }
+  },
+  {
+    "id": "biceps_femoris_short_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/biceps_femoris_short_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Biceps Femoris \u2014 Short Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Biceps Femoris \u2014 Short Head",
+      "origin": "Lateral lip of linea aspera and lateral supracondylar line of femur",
+      "insertion": "Head of fibula; lateral condyle of tibia (with long head)",
+      "innervation": "Sciatic nerve \u2014 common fibular (peroneal) division (L5, S1, S2); short head",
+      "spinal_levels": "L5, S1, S2",
+      "function": "Flexes and laterally rotates the knee only \u2014 does NOT act on the hip as it does not cross it",
+      "opposing_muscle": "Quadriceps (knee extension)",
+      "blood_supply": "Perforating branches of profunda femoris",
+      "clinical_note": "The short head is the only hamstring muscle that does NOT originate from the ischial tuberosity and does NOT cross the hip joint \u2014 it originates from the femoral shaft. It is innervated by the common fibular (peroneal) division of the sciatic nerve, in contrast to the long head which is innervated by the tibial division. This makes Biceps Femoris unique among the hamstrings in having a split nerve supply. The two heads join distally to form a common tendon inserting on the fibular head \u2014 palpable on the lateral side of the popliteal fossa."
+    }
+  },
+  {
+    "id": "semitendinosus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/semitendinosus_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Semitendinosus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Semitendinosus",
+      "origin": "Ischial tuberosity (common hamstring tendon, shared with long head of biceps femoris)",
+      "insertion": "Upper medial surface of tibia (pes anserinus \u2014 with sartorius and gracilis)",
+      "innervation": "Sciatic nerve \u2014 tibial division (L5, S1, S2); long cordlike tendon",
+      "spinal_levels": "L5, S1, S2",
+      "function": "Extends and medially rotates the hip; flexes and medially rotates the knee",
+      "opposing_muscle": "Iliopsoas (hip flexion); quadriceps (knee extension); biceps femoris (lateral vs medial rotation)",
+      "blood_supply": "Perforating branches of profunda femoris; inferior gluteal artery",
+      "clinical_note": "Semitendinosus has a long slender tendon that occupies nearly half its length \u2014 hence the name. It inserts at the pes anserinus alongside sartorius and gracilis \u2014 mnemonic 'Say Grace before Tea'. Its tendon is commonly harvested as a graft for ACL reconstruction (along with gracilis) as it regenerates well and causes minimal donor site morbidity. It medially rotates the tibia, opposing biceps femoris which laterally rotates \u2014 important in rotational knee stability."
+    }
+  },
+  {
+    "id": "semimembranosus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/thigh/semimembranosus_01.jpg",
+    "region": "Thigh",
+    "structure_labeled": "Semimembranosus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Semimembranosus",
+      "origin": "Ischial tuberosity (separate flat membranous tendon, medial to semitendinosus origin)",
+      "insertion": "Posterior aspect of medial tibial condyle; also gives expansions to: posterior capsule of knee (oblique popliteal ligament), medial meniscus, and popliteus fascia",
+      "innervation": "Sciatic nerve \u2014 tibial division (L5, S1, S2); broad flat membranous origin",
+      "spinal_levels": "L5, S1, S2",
+      "function": "Extends and medially rotates the hip; flexes and medially rotates the knee; tightens the posterior knee capsule",
+      "opposing_muscle": "Iliopsoas (hip flexion); quadriceps (knee extension)",
+      "blood_supply": "Perforating branches of profunda femoris; inferior gluteal artery",
+      "clinical_note": "Semimembranosus has a broad flat membranous origin \u2014 hence the name \u2014 in contrast to the long cordlike tendon of semitendinosus. It has multiple insertions including the oblique popliteal ligament which reinforces the posterior knee capsule. A semimembranosus bursa can communicate with the knee joint and present as a popliteal (Baker's) cyst \u2014 a fluctuant swelling in the medial popliteal fossa, common in osteoarthritis and rheumatoid arthritis. It lies deep to semitendinosus in the posterior thigh."
+    }
+  }
+]

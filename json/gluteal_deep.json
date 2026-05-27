@@ -1,0 +1,110 @@
+[
+  {
+    "id": "piriformis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/gluteal/piriformis_01.jpg",
+    "region": "Gluteal",
+    "structure_labeled": "Piriformis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Piriformis",
+      "origin": "Anterior surface of sacrum (S2\u2013S4) between the sacral foramina; sacrotuberous ligament",
+      "insertion": "Superior border of greater trochanter of femur",
+      "innervation": "Nerve to piriformis (S1, S2)",
+      "spinal_levels": "S1, S2",
+      "function": "Laterally rotates the extended hip; abducts the flexed hip; stabilises the femoral head in the acetabulum",
+      "opposing_muscle": "Gluteus medius and minimus (medial rotation); hip adductors",
+      "blood_supply": "Superior and inferior gluteal arteries",
+      "clinical_note": "Piriformis is the key landmark of the gluteal region \u2014 all other structures are defined relative to it. The sciatic nerve typically exits below piriformis through the greater sciatic foramen; in 15% of people it passes through or above it. The superior gluteal nerve and vessels exit above piriformis; the inferior gluteal nerve, pudendal nerve, and nerve to obturator internus exit below it. Piriformis syndrome (compression of the sciatic nerve by piriformis) causes buttock pain radiating down the leg \u2014 mimicking lumbar disc herniation. The safe zone for gluteal injections is the upper outer quadrant, above and lateral to piriformis."
+    }
+  },
+  {
+    "id": "obturator_internus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/gluteal/obturator_internus_01.jpg",
+    "region": "Gluteal",
+    "structure_labeled": "Obturator Internus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Obturator Internus",
+      "origin": "Internal surface of obturator membrane and surrounding bone of the obturator foramen",
+      "insertion": "Medial surface of greater trochanter of femur (with gemelli, above trochanteric fossa)",
+      "innervation": "Nerve to obturator internus (L5, S1); exits pelvis through lesser sciatic foramen",
+      "spinal_levels": "L5, S1",
+      "function": "Laterally rotates the extended hip; abducts the flexed hip; stabilises the femoral head in the acetabulum",
+      "opposing_muscle": "Gluteus medius and minimus (medial rotation)",
+      "blood_supply": "Internal pudendal artery; inferior gluteal artery",
+      "clinical_note": "Obturator Internus is one of the six deep external rotators of the hip \u2014 the group also includes Piriformis, Obturator Externus, Gemellus Superior, Gemellus Inferior, and Quadratus Femoris. The muscle exits the pelvis by bending 90\u00b0 around the lesser sciatic notch (ischial spine), where it is separated from bone by the obturator internus bursa. The two gemelli act as accessory muscles sandwiching its tendon \u2014 Superior above, Inferior below \u2014 forming a triceps coxae. It also forms part of the pelvic floor (levator ani lies medial to it)."
+    }
+  },
+  {
+    "id": "obturator_externus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/gluteal/obturator_externus_01.jpg",
+    "region": "Gluteal",
+    "structure_labeled": "Obturator Externus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Obturator Externus",
+      "origin": "External surface of obturator membrane and surrounding margins of the obturator foramen",
+      "insertion": "Trochanteric fossa of femur (posterior aspect of greater trochanter)",
+      "innervation": "Obturator nerve (L3, L4)",
+      "spinal_levels": "L3, L4",
+      "function": "Laterally rotates the hip; stabilises the femoral head in the acetabulum",
+      "opposing_muscle": "Gluteus medius and minimus (medial rotation)",
+      "blood_supply": "Obturator artery; medial circumflex femoral artery",
+      "clinical_note": "Obturator Externus is the deepest of the six deep external rotators and the only one innervated by the obturator nerve (L3\u2013L4) rather than branches of the sacral plexus. It lies on the external surface of the obturator membrane, in contrast to Obturator Internus which lies on the internal surface \u2014 they are mirror images. Its tendon crosses posterior to the hip joint capsule to reach the trochanteric fossa. It is rarely injured in isolation but contributes to hip stability and is seen on MRI in deep hip pain workups."
+    }
+  },
+  {
+    "id": "gemellus_superior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/gluteal/gemellus_superior_01.jpg",
+    "region": "Gluteal",
+    "structure_labeled": "Gemellus Superior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Gemellus Superior",
+      "origin": "Outer surface of ischial spine",
+      "insertion": "Medial surface of greater trochanter (blends with tendon of obturator internus)",
+      "innervation": "Nerve to obturator internus (L5, S1); superior gemellus \u2014 from ischial spine",
+      "spinal_levels": "L5, S1",
+      "function": "Laterally rotates the extended hip; abducts the flexed hip; assists obturator internus",
+      "opposing_muscle": "Gluteus medius and minimus (medial rotation)",
+      "blood_supply": "Inferior gluteal artery",
+      "clinical_note": "Gemellus Superior is the smaller of the two gemelli and originates from the ischial spine \u2014 superior to obturator internus. Together with Gemellus Inferior it sandwiches the obturator internus tendon, forming the triceps coxae. They are sometimes called the 'obturator internus helpers'. Gemellus Superior shares its nerve with obturator internus (nerve to obturator internus, L5\u2013S1). The ischial spine is also the attachment point of the sacrospinous ligament \u2014 an important landmark in pudendal nerve block and sacrospinous ligament fixation procedures."
+    }
+  },
+  {
+    "id": "gemellus_inferior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/gluteal/gemellus_inferior_01.jpg",
+    "region": "Gluteal",
+    "structure_labeled": "Gemellus Inferior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Gemellus Inferior",
+      "origin": "Upper part of ischial tuberosity",
+      "insertion": "Medial surface of greater trochanter (blends with tendon of obturator internus)",
+      "innervation": "Nerve to quadratus femoris (L4, L5, S1); inferior gemellus \u2014 from ischial tuberosity",
+      "spinal_levels": "L4, L5, S1",
+      "function": "Laterally rotates the extended hip; abducts the flexed hip; assists obturator internus",
+      "opposing_muscle": "Gluteus medius and minimus (medial rotation)",
+      "blood_supply": "Inferior gluteal artery; medial circumflex femoral artery",
+      "clinical_note": "Gemellus Inferior originates from the ischial tuberosity \u2014 inferior to obturator internus \u2014 and blends with its tendon superiorly. Despite having a similar function and appearance to Gemellus Superior, it has a different nerve supply: Gemellus Superior is innervated by the nerve to obturator internus (L5\u2013S1) while Gemellus Inferior shares the nerve to quadratus femoris (L4\u2013S1). This difference in innervation despite similar function is a classic exam question. Together with Gemellus Superior and Obturator Internus they form the triceps coxae."
+    }
+  },
+  {
+    "id": "quadratus_femoris_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/gluteal/quadratus_femoris_01.jpg",
+    "region": "Gluteal",
+    "structure_labeled": "Quadratus Femoris",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Quadratus Femoris",
+      "origin": "Lateral border of ischial tuberosity",
+      "insertion": "Quadrate tubercle on the intertrochanteric crest of the femur",
+      "innervation": "Nerve to quadratus femoris (L4, L5, S1); most inferior deep rotator",
+      "spinal_levels": "L4, L5, S1",
+      "function": "Laterally rotates the hip; adducts the thigh; stabilises the femoral head in the acetabulum",
+      "opposing_muscle": "Gluteus medius and minimus (medial rotation)",
+      "blood_supply": "Medial circumflex femoral artery; inferior gluteal artery",
+      "clinical_note": "Quadratus Femoris is the most inferior and largest of the six deep external rotators \u2014 a flat quadrilateral muscle running horizontally between the ischium and femur. It lies deep to gluteus maximus and superficial to the obturator externus. The nerve to quadratus femoris also innervates Gemellus Inferior and the hip joint. Ischiofemoral impingement syndrome involves narrowing of the space between the ischial tuberosity and lesser trochanter \u2014 quadratus femoris is the structure most commonly compressed, causing deep buttock and groin pain."
+    }
+  }
+]
