@@ -1,0 +1,56 @@
+[
+  {
+    "id": "scalenus_anterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/scalenus_anterior_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Scalenus Anterior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Scalenus Anterior",
+      "origin": "Anterior tubercles of the transverse processes of C3–C6",
+      "insertion": "Scalene tubercle on the inner border of the first rib",
+      "innervation": "Anterior rami of cervical spinal nerves (C4, C5, C6)",
+      "spinal_levels": "C4, C5, C6",
+      "function": "Bilateral: flexes the cervical spine; elevates the first rib during forced inspiration. Unilateral: laterally flexes and rotates the neck to the same side",
+      "opposing_muscle": "Contralateral scalenes; splenius capitis (rotation to same side)",
+      "blood_supply": "Ascending cervical artery",
+      "clinical_note": "Scalenus Anterior is the most important scalene muscle clinically. The phrenic nerve (C3–C5) descends on its anterior surface — making it a key landmark in neck surgery. The subclavian artery passes posterior to scalenus anterior (between anterior and middle scalenes) while the subclavian vein passes anterior to it — this relationship is essential in thoracic outlet syndrome. Thoracic outlet syndrome involves compression of the brachial plexus and/or subclavian vessels between scalenus anterior and medius or by a cervical rib."
+    }
+  },
+  {
+    "id": "scalenus_medius_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/scalenus_medius_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Scalenus Medius",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Scalenus Medius",
+      "origin": "Posterior tubercles of the transverse processes of C2–C7",
+      "insertion": "Upper surface of the first rib posterior to the groove for the subclavian artery",
+      "innervation": "Anterior rami of cervical spinal nerves (C3, C4, C5, C6, C7, C8)",
+      "spinal_levels": "C3, C4, C5, C6, C7, C8",
+      "function": "Bilateral: flexes the cervical spine; elevates the first rib during forced inspiration. Unilateral: laterally flexes the neck to the same side",
+      "opposing_muscle": "Contralateral scalenes",
+      "blood_supply": "Ascending cervical artery; deep cervical artery",
+      "clinical_note": "Scalenus Medius is the largest of the three scalenes and inserts posterior to the subclavian artery groove on the first rib. The brachial plexus (C5–T1 roots) passes between scalenus anterior and scalenus medius — this interscalene space is the site of interscalene brachial plexus block, used for shoulder and upper arm surgery. The long thoracic nerve (C5–C7) pierces scalenus medius before entering the axilla. Scalene muscle blocks are used to treat thoracic outlet syndrome."
+    }
+  },
+  {
+    "id": "scalenus_posterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/scalenus_posterior_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Scalenus Posterior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Scalenus Posterior",
+      "origin": "Posterior tubercles of the transverse processes of C4–C6",
+      "insertion": "Outer surface of the second rib",
+      "innervation": "Anterior rami of cervical spinal nerves (C6, C7, C8)",
+      "spinal_levels": "C6, C7, C8",
+      "function": "Elevates the second rib during forced inspiration; laterally flexes the neck to the same side",
+      "opposing_muscle": "Contralateral scalenes",
+      "blood_supply": "Ascending cervical artery; deep cervical artery",
+      "clinical_note": "Scalenus Posterior is the smallest and most posterior of the three scalenes, often considered part of scalenus medius in some texts. Unlike the other scalenes it inserts on the second rib rather than the first. It is not typically involved in thoracic outlet syndrome. The three scalenes together form the scalene triangle — the key landmark of the root of the neck — with scalenus anterior and medius bounding the interscalene space through which the brachial plexus and subclavian artery pass."
+    }
+  }
+]

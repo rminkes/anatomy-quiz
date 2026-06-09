@@ -1,0 +1,110 @@
+[
+  {
+    "id": "sternocleidomastoid_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/sternocleidomastoid_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Sternocleidomastoid",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Sternocleidomastoid",
+      "origin": "Sternal head: anterior surface of the manubrium sterni. Clavicular head: superior surface of the medial third of the clavicle",
+      "insertion": "Lateral surface of the mastoid process and lateral half of the superior nuchal line of the occipital bone",
+      "innervation": "Accessory nerve (CN XI) for motor; anterior rami of C2\u2013C3 for proprioception and sensation",
+      "spinal_levels": "CN XI (motor); C2, C3 (proprioception/sensation)",
+      "function": "Bilateral: flexes the neck; extends the head at the atlanto-occipital joint (chin juts up). Unilateral: laterally flexes the neck to the same side; rotates the face to the opposite side",
+      "opposing_muscle": "Contralateral SCM (for rotation); splenius capitis (for lateral flexion to same side)",
+      "blood_supply": "Occipital artery; superior thyroid artery; suprascapular artery",
+      "clinical_note": "SCM is the key landmark of the neck \u2014 dividing it into anterior and posterior triangles. It is innervated by CN XI (accessory nerve) which crosses the posterior triangle of the neck and is vulnerable to injury during posterior triangle lymph node biopsy, causing shoulder drop. Torticollis (wry neck) involves unilateral SCM contracture causing the head to tilt toward and rotate away from the affected side. Congenital muscular torticollis results from SCM fibrosis after birth trauma. CN XI also innervates trapezius \u2014 testing both is essential in suspected accessory nerve palsy."
+    }
+  },
+  {
+    "id": "splenius_capitis_neck_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/splenius_capitis_neck_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Splenius Capitis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Splenius Capitis",
+      "origin": "Inferior half of ligamentum nuchae; spinous processes of C7\u2013T3",
+      "insertion": "Mastoid process of the temporal bone and lateral portion of the superior nuchal line",
+      "innervation": "Posterior rami of middle cervical spinal nerves (C3\u2013C4)",
+      "spinal_levels": "C3, C4",
+      "function": "Bilateral: extends the head and neck. Unilateral: laterally flexes and rotates the head and neck to the same side",
+      "opposing_muscle": "Contralateral SCM (rotation); longus capitis and rectus capitis anterior (flexion)",
+      "blood_supply": "Occipital artery; deep cervical artery",
+      "clinical_note": "Splenius Capitis is classified by Moore as the superficial intrinsic back muscle \u2014 also included here in the neck region as it is a major mover of the head and neck. It lies deep to trapezius in the posterior neck. The greater occipital nerve (posterior ramus of C2) emerges between splenius capitis and semispinalis capitis \u2014 entrapment here causes occipital neuralgia. Note: also covered in Back \u2014 Splenius."
+    }
+  },
+  {
+    "id": "splenius_cervicis_neck_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/splenius_cervicis_neck_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Splenius Cervicis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Splenius Cervicis",
+      "origin": "Spinous processes of T3\u2013T6",
+      "insertion": "Posterior tubercles of transverse processes of C1\u2013C3",
+      "innervation": "Posterior rami of lower cervical spinal nerves (C5\u2013C8)",
+      "spinal_levels": "C5, C6, C7, C8",
+      "function": "Bilateral: extends the cervical spine. Unilateral: laterally flexes and rotates the neck to the same side",
+      "opposing_muscle": "Longus colli (cervical flexion); scalenes (lateral flexion)",
+      "blood_supply": "Deep cervical artery; transverse cervical artery",
+      "clinical_note": "Splenius Cervicis lies deep to Splenius Capitis and acts on the cervical vertebrae rather than the skull. It inserts on the transverse processes of C1\u2013C3, sharing this attachment with levator scapulae. Moore classifies it as the superficial intrinsic back muscle \u2014 also included here as it is an important neck mover. Note: also covered in Back \u2014 Splenius."
+    }
+  },
+  {
+    "id": "levator_scapulae_neck_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/levator_scapulae_neck_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Levator Scapulae",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Levator Scapulae",
+      "origin": "Posterior tubercles of transverse processes of C1\u2013C4",
+      "insertion": "Medial border of scapula between superior angle and root of spine of scapula",
+      "innervation": "Dorsal scapular nerve (C4, C5) and direct branches from cervical spinal nerves C3\u2013C4",
+      "spinal_levels": "C3, C4, C5",
+      "function": "Elevates the scapula; downwardly rotates the glenoid cavity; laterally flexes the neck when scapula is fixed",
+      "opposing_muscle": "Lower trapezius (depresses scapula); upper trapezius acts synergistically for elevation",
+      "blood_supply": "Dorsal scapular artery; transverse cervical artery",
+      "clinical_note": "Levator Scapulae is a common source of neck and shoulder pain \u2014 often tender at its insertion on the superior angle of the scapula. In the neck context it is an important lateral flexor and connects the cervical spine to the shoulder girdle. It works with the rhomboids to downwardly rotate the scapula, opposing the trapezius\u2013serratus anterior force couple. Note: also covered in Back \u2014 Superficial."
+    }
+  },
+  {
+    "id": "platysma_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/platysma_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Platysma",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Platysma",
+      "origin": "Fascia overlying the pectoralis major and deltoid (below the clavicle)",
+      "insertion": "Inferior border of the mandible; skin and subcutaneous tissue of the lower face and angle of the mouth; blends with facial muscles",
+      "innervation": "Cervical branch of the facial nerve (CN VII)",
+      "spinal_levels": "CN VII",
+      "function": "Tenses the skin of the neck; depresses the mandible and lower lip; assists in forced inspiration by elevating the chest wall",
+      "opposing_muscle": "Muscles of mastication (elevate mandible)",
+      "blood_supply": "Submental artery; suprascapular artery",
+      "clinical_note": "Platysma is a broad flat muscle of facial expression lying in the superficial fascia of the neck \u2014 the most superficial neck muscle. It is innervated by the cervical branch of CN VII. In neck surgery (thyroidectomy, carotid endarterectomy) platysma is divided as a separate layer \u2014 closing it as a distinct layer improves cosmesis and reduces scar widening. Platysma bands become prominent with ageing and are addressed in neck lift (platysmaplasty) procedures. It is a muscle of facial expression despite its location in the neck."
+    }
+  },
+  {
+    "id": "trapezius_neck_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/trapezius_neck_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Trapezius",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Trapezius",
+      "origin": "External occipital protuberance, medial superior nuchal line, ligamentum nuchae, spinous processes of C7\u2013T12",
+      "insertion": "Posterior border of lateral clavicle (upper fibers); acromion and spine of scapula (middle and lower fibers)",
+      "innervation": "Accessory nerve (CN XI) for motor; C3\u2013C4 for proprioception",
+      "spinal_levels": "CN XI (motor); C3, C4 (proprioception)",
+      "function": "Upper fibers: elevate and upwardly rotate the scapula; extend and laterally flex the neck. Middle fibers: retract the scapula. Lower fibers: depress and upwardly rotate the scapula",
+      "opposing_muscle": "Serratus anterior (protraction); SCM (for neck rotation)",
+      "blood_supply": "Transverse cervical artery",
+      "clinical_note": "Trapezius is included here as a major mover of the head and neck via its upper fibers. CN XI (accessory nerve) crosses the posterior triangle of the neck on the superficial surface of the muscle \u2014 vulnerable to injury during posterior triangle lymph node biopsy or neck dissection, causing shoulder drop and inability to abduct the arm above 90\u00b0. Testing trapezius (shoulder shrug) and SCM (head rotation) are standard CN XI examination manoeuvres. Note: also covered in detail in Back \u2014 Superficial."
+    }
+  }
+]

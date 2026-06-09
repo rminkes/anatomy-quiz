@@ -1,0 +1,110 @@
+[
+  {
+    "id": "digastric_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/digastric_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Digastric",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Digastric",
+      "origin": "Anterior belly: digastric fossa on the inner surface of the mandible near the symphysis. Posterior belly: mastoid notch of the temporal bone",
+      "insertion": "Both bellies attach via an intermediate tendon to the body and greater horn of the hyoid bone (tendon held by a fibrous loop)",
+      "innervation": "Anterior belly: mylohyoid nerve (branch of inferior alveolar nerve — V3). Posterior belly: facial nerve (CN VII) — digastric branch",
+      "spinal_levels": "CN V3 (anterior belly); CN VII (posterior belly)",
+      "function": "Depresses the mandible (opens the mouth) when hyoid is fixed; elevates the hyoid and larynx during swallowing; retracts the mandible",
+      "opposing_muscle": "Muscles of mastication — masseter, temporalis, medial pterygoid (close mouth)",
+      "blood_supply": "Anterior belly: submental artery. Posterior belly: occipital and posterior auricular arteries",
+      "clinical_note": "Digastric is one muscle with two bellies and different nerve supplies — a classic exam question. The anterior belly is innervated by CN V3 (mylohyoid nerve) and the posterior belly by CN VII (digastric branch). Both bellies meet at an intermediate tendon which is held to the hyoid by a fibrous pulley. This dual innervation reflects the different branchial arch origins: anterior belly from arch 1 (mandibular), posterior belly from arch 2 (hyoid). The posterior belly forms the posterior boundary of the anterior triangle of the neck."
+    }
+  },
+  {
+    "id": "digastric_anterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/digastric_anterior_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Digastric — Anterior Belly",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Digastric — Anterior Belly",
+      "origin": "Digastric fossa on the inner surface of the mandible near the symphysis menti",
+      "insertion": "Intermediate tendon (held to hyoid by fibrous loop) — shared with posterior belly",
+      "innervation": "Mylohyoid nerve, a branch of the inferior alveolar nerve (CN V3)",
+      "spinal_levels": "CN V3",
+      "function": "Depresses the mandible when hyoid is fixed; elevates the hyoid when mandible is fixed",
+      "opposing_muscle": "Masseter, temporalis, medial pterygoid (elevate mandible)",
+      "blood_supply": "Submental artery (branch of facial artery)",
+      "clinical_note": "The anterior belly of digastric is innervated by CN V3 — the same nerve as the other first arch muscles (masseter, temporalis, pterygoids, mylohyoid, tensor veli palatini, tensor tympani). It forms the lateral boundary of the submental triangle. Digastric is one muscle with two bellies and crucially different nerve supplies: anterior belly = CN V3, posterior belly = CN VII. This distinction is a high-yield exam question reflecting their different branchial arch origins."
+    }
+  },
+  {
+    "id": "digastric_posterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/digastric_posterior_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Digastric — Posterior Belly",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Digastric — Posterior Belly",
+      "origin": "Mastoid notch (digastric groove) on the medial surface of the mastoid process of the temporal bone",
+      "insertion": "Intermediate tendon (held to hyoid by fibrous loop) — shared with anterior belly",
+      "innervation": "Digastric branch of the facial nerve (CN VII)",
+      "spinal_levels": "CN VII",
+      "function": "Elevates the hyoid and larynx during swallowing; retracts the mandible",
+      "opposing_muscle": "Infrahyoid muscles (depress hyoid)",
+      "blood_supply": "Occipital artery; posterior auricular artery",
+      "clinical_note": "The posterior belly of digastric is innervated by CN VII — a second branchial arch muscle. It forms the posterior boundary of the anterior triangle and the superior boundary of the posterior triangle of the neck. It is a key surgical landmark in parotid surgery — the facial nerve exits the stylomastoid foramen just medial to the posterior belly. The posterior belly, stylohyoid, and styloid process form the styloid complex — important landmarks in deep neck surgery and carotid endarterectomy."
+    }
+  },
+  {
+    "id": "mylohyoid_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/mylohyoid_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Mylohyoid",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Mylohyoid",
+      "origin": "Mylohyoid line on the inner surface of the mandible",
+      "insertion": "Median fibrous raphe and body of the hyoid bone",
+      "innervation": "Mylohyoid nerve (branch of inferior alveolar nerve — CN V3)",
+      "spinal_levels": "CN V3",
+      "function": "Forms the muscular floor of the mouth; elevates the hyoid, tongue, and floor of mouth during swallowing; depresses the mandible when hyoid is fixed",
+      "opposing_muscle": "Infrahyoid muscles (depress hyoid)",
+      "blood_supply": "Mylohyoid branch of inferior alveolar artery; submental artery",
+      "clinical_note": "Mylohyoid forms the muscular floor of the oral cavity — a hammock-shaped muscle supporting the tongue. Dental infections in the lower molar region can spread through mylohyoid into the submandibular space, then to the parapharyngeal and retropharyngeal spaces — Ludwig's angina is a life-threatening bilateral cellulitis of these spaces causing airway compromise. Mylohyoid is innervated by CN V3 — a first branchial arch muscle. It is pierced by the mylohyoid nerve and vessels, and the sublingual gland wraps around its posterior free edge."
+    }
+  },
+  {
+    "id": "geniohyoid_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/geniohyoid_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Geniohyoid",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Geniohyoid",
+      "origin": "Inferior mental spine (genial tubercle) on the inner surface of the mandibular symphysis",
+      "insertion": "Anterior surface of the body of the hyoid bone",
+      "innervation": "Anterior ramus of C1 travelling with the hypoglossal nerve (CN XII)",
+      "spinal_levels": "C1",
+      "function": "Pulls the hyoid anterosuperiorly during swallowing; shortens the floor of the mouth; depresses the mandible when hyoid is fixed",
+      "opposing_muscle": "Infrahyoid muscles (depress hyoid)",
+      "blood_supply": "Submental artery; lingual artery",
+      "clinical_note": "Geniohyoid is unusual among the suprahyoid muscles — it is NOT innervated by a cranial nerve but by C1 fibres travelling with the hypoglossal nerve (CN XII). This is a classic exam question. It lies above mylohyoid on the floor of the mouth, running horizontally from the chin to the hyoid. It is the most direct elevator of the hyoid and is important in the first stage of swallowing. The C1 fibres that supply geniohyoid also supply thyrohyoid — both are innervated by C1 via CN XII."
+    }
+  },
+  {
+    "id": "stylohyoid_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/stylohyoid_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Stylohyoid",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Stylohyoid",
+      "origin": "Posterior surface of the styloid process of the temporal bone",
+      "insertion": "Body of the hyoid bone at the junction with the greater horn; the tendon is split by the intermediate tendon of digastric",
+      "innervation": "Stylohyoid branch of the facial nerve (CN VII)",
+      "spinal_levels": "CN VII",
+      "function": "Elevates and retracts the hyoid bone during swallowing; elongates the floor of the mouth",
+      "opposing_muscle": "Infrahyoid muscles (depress hyoid); geniohyoid (protracts hyoid)",
+      "blood_supply": "Occipital artery; posterior auricular artery",
+      "clinical_note": "Stylohyoid is a second branchial arch muscle innervated by CN VII — same as the posterior belly of digastric. It is a thin muscle that runs parallel and anterior to the posterior belly of digastric. Its tendon is split (perforated) by the intermediate tendon of digastric near the hyoid — a unique anatomical relationship. Eagle syndrome is elongation of the styloid process causing pain on swallowing and head turning — stylohyoid is the muscle directly involved. Stylohyoid forms part of the styloid complex with the posterior belly of digastric."
+    }
+  }
+]

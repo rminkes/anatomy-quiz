@@ -1,0 +1,110 @@
+[
+  {
+    "id": "sternohyoid_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/sternohyoid_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Sternohyoid",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Sternohyoid",
+      "origin": "Posterior surface of the manubrium sterni and medial end of the clavicle",
+      "insertion": "Inferior border of the body of the hyoid bone",
+      "innervation": "Ansa cervicalis (C1, C2, C3); most superficial strap muscle",
+      "spinal_levels": "C1, C2, C3",
+      "function": "Depresses the hyoid bone after it has been elevated during swallowing",
+      "opposing_muscle": "Suprahyoid muscles (elevate hyoid)",
+      "blood_supply": "Superior thyroid artery branches",
+      "clinical_note": "Sternohyoid is the most superficial infrahyoid (strap) muscle. All four infrahyoid muscles are innervated by the ansa cervicalis (C1\u2013C3) \u2014 a loop formed from the superior root (C1\u2013C2 via CN XII) and inferior root (C2\u2013C3) of the cervical plexus. Exception: thyrohyoid is innervated by C1 via CN XII only. The infrahyoid muscles depress the hyoid and larynx after swallowing, returning them to the rest position. They are routinely divided during thyroidectomy and carotid endarterectomy."
+    }
+  },
+  {
+    "id": "sternothyroid_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/sternothyroid_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Sternothyroid",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Sternothyroid",
+      "origin": "Posterior surface of the manubrium sterni (below the origin of sternohyoid) and first costal cartilage",
+      "insertion": "Oblique line on the lamina of the thyroid cartilage",
+      "innervation": "Ansa cervicalis (C2, C3)",
+      "spinal_levels": "C2, C3",
+      "function": "Depresses the thyroid cartilage and larynx after elevation during swallowing",
+      "opposing_muscle": "Thyrohyoid (elevates thyroid cartilage relative to hyoid)",
+      "blood_supply": "Superior thyroid artery branches",
+      "clinical_note": "Sternothyroid lies deep to sternohyoid and inserts on the thyroid cartilage (not the hyoid). It is the key muscle for depressing the larynx. In thyroid surgery, sternothyroid must be divided to access the thyroid gland \u2014 it is cut transversely in the upper third (where cutting causes least denervation) rather than longitudinally. Its relationship to the thyroid gland is a critical surgical anatomy landmark. Ansa cervicalis (C2\u2013C3) innervates sternothyroid \u2014 it does not receive C1 fibres unlike sternohyoid."
+    }
+  },
+  {
+    "id": "thyrohyoid_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/thyrohyoid_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Thyrohyoid",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Thyrohyoid",
+      "origin": "Oblique line on the lamina of the thyroid cartilage",
+      "insertion": "Inferior border of the greater horn and body of the hyoid bone",
+      "innervation": "Anterior ramus of C1 travelling with the hypoglossal nerve (CN XII)",
+      "spinal_levels": "C1",
+      "function": "Depresses the hyoid; elevates the thyroid cartilage and larynx toward the hyoid during swallowing",
+      "opposing_muscle": "Sternothyroid (depresses larynx); suprahyoid muscles (elevate hyoid)",
+      "blood_supply": "Superior thyroid artery",
+      "clinical_note": "Thyrohyoid appears to be an upward continuation of sternothyroid. It is innervated by C1 fibres travelling with CN XII \u2014 NOT by the ansa cervicalis \u2014 making it the exception among the infrahyoid muscles. This is a classic exam question. Geniohyoid is also innervated by C1 via CN XII \u2014 both are C1 muscles hitching a ride on the hypoglossal nerve. The thyrohyoid membrane lies deep to it and contains the superior laryngeal nerve and vessels, which pierce it to enter the larynx."
+    }
+  },
+  {
+    "id": "omohyoid_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/omohyoid_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Omohyoid",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Omohyoid",
+      "origin": "Superior border of the scapula medial to the suprascapular notch (inferior belly)",
+      "insertion": "Inferior border of the body of the hyoid bone (superior belly)",
+      "innervation": "Ansa cervicalis (C1, C2, C3); two-bellied strap muscle",
+      "spinal_levels": "C1, C2, C3",
+      "function": "Depresses and retracts the hyoid; tenses the deep cervical fascia \u2014 thought to prevent venous compression during neck movements",
+      "opposing_muscle": "Suprahyoid muscles (elevate hyoid)",
+      "blood_supply": "Superior thyroid artery; transverse cervical artery",
+      "clinical_note": "Omohyoid has two bellies \u2014 superior and inferior \u2014 connected by an intermediate tendon held by a fascial sling to the clavicle. It crosses the internal jugular vein obliquely, dividing the anterior triangle into upper (carotid) and lower (muscular) triangles. Its intermediate tendon is a landmark for the brachial plexus in supraclavicular approaches. Unlike the other strap muscles, omohyoid has a long course from the scapula to the hyoid. All infrahyoid muscles are innervated by ansa cervicalis (C1\u2013C3) except thyrohyoid (C1 via CN XII)."
+    }
+  },
+  {
+    "id": "omohyoid_superior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/omohyoid_superior_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Omohyoid \u2014 Superior Belly",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Omohyoid \u2014 Superior Belly",
+      "origin": "Intermediate tendon (held by fascial sling to clavicle and first rib)",
+      "insertion": "Inferior border of the body of the hyoid bone",
+      "innervation": "Ansa cervicalis (C1, C2, C3); superior belly \u2014 anterior triangle",
+      "spinal_levels": "C1, C2, C3",
+      "function": "Depresses the hyoid; tenses the deep cervical fascia lateral to the neck",
+      "opposing_muscle": "Suprahyoid muscles",
+      "blood_supply": "Superior thyroid artery",
+      "clinical_note": "The superior belly of omohyoid runs from the intermediate tendon superiorly to the hyoid. It forms the posterior boundary of the superior carotid triangle. Omohyoid is one muscle with two bellies \u2014 superior and inferior \u2014 connected by an intermediate tendon anchored to the clavicle by a fascial sling. VH Dissector labels the bellies separately. The superior belly is the visible portion in the anterior neck; the inferior belly crosses the posterior triangle of the neck."
+    }
+  },
+  {
+    "id": "omohyoid_inferior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/omohyoid_inferior_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Omohyoid \u2014 Inferior Belly",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Omohyoid \u2014 Inferior Belly",
+      "origin": "Superior border of the scapula medial to the suprascapular notch",
+      "insertion": "Intermediate tendon (held by fascial sling to clavicle and first rib)",
+      "innervation": "Ansa cervicalis (C1, C2, C3); inferior belly \u2014 posterior triangle",
+      "spinal_levels": "C1, C2, C3",
+      "function": "Depresses and retracts the hyoid via the intermediate tendon; tenses the deep cervical fascia",
+      "opposing_muscle": "Suprahyoid muscles",
+      "blood_supply": "Transverse cervical artery",
+      "clinical_note": "The inferior belly of omohyoid crosses the posterior triangle of the neck, passing deep to sternocleidomastoid. It is a key landmark in neck dissection \u2014 it marks the inferior boundary of level III and superior boundary of level IV cervical lymph nodes in the oncological neck dissection classification. The intermediate tendon between the inferior and superior bellies lies at the level of the internal jugular vein and is anchored by a fascial sling to the clavicle and first rib."
+    }
+  }
+]

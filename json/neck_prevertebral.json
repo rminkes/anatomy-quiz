@@ -1,0 +1,74 @@
+[
+  {
+    "id": "longus_colli_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/longus_colli_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Longus Colli",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Longus Colli",
+      "origin": "Anterior surface of vertebral bodies of C1\u2013T3 and transverse processes of C3\u2013C5",
+      "insertion": "Anterior arch of atlas (C1), anterior tubercles of C1\u2013C3, vertebral bodies of C2\u2013C4",
+      "innervation": "Anterior rami of cervical spinal nerves (C2\u2013C6)",
+      "spinal_levels": "C2, C3, C4, C5, C6",
+      "function": "Bilateral: flexes the cervical spine. Unilateral: laterally flexes and slightly rotates the cervical spine to the same side",
+      "opposing_muscle": "Splenius capitis, longissimus capitis (cervical extension)",
+      "blood_supply": "Ascending cervical artery; vertebral artery branches",
+      "clinical_note": "Longus Colli is the primary flexor of the cervical spine and lies directly on the anterior vertebral bodies \u2014 an important surgical landmark in anterior cervical discectomy and fusion (ACDF). It is retracted laterally during the approach to expose the cervical vertebrae. Calcific tendinitis of longus colli causes acute neck pain and stiffness (retropharyngeal calcific tendinitis) \u2014 calcium deposits at the C1\u2013C2 level produce retropharyngeal oedema visible on lateral neck X-ray and CT. It forms part of the prevertebral muscle group with Longus Capitis."
+    }
+  },
+  {
+    "id": "longus_capitis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/longus_capitis_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Longus Capitis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Longus Capitis",
+      "origin": "Anterior tubercles of the transverse processes of C3\u2013C6",
+      "insertion": "Inferior surface of the basilar part of the occipital bone",
+      "innervation": "Anterior rami of cervical spinal nerves (C1\u2013C3)",
+      "spinal_levels": "C1, C2, C3",
+      "function": "Bilateral: flexes the head at the atlanto-occipital joint; flexes the upper cervical spine. Unilateral: laterally flexes the head to the same side",
+      "opposing_muscle": "Rectus capitis posterior major and minor; semispinalis capitis (head extension)",
+      "blood_supply": "Ascending pharyngeal artery; ascending cervical artery",
+      "clinical_note": "Longus Capitis lies on the anterior surface of the upper cervical vertebrae, covering the upper part of longus colli. Together they form the prevertebral muscles \u2014 the deepest anterior neck muscles lying directly on the cervical vertebral bodies behind the prevertebral fascia. They are the primary flexors of the head and cervical spine. The prevertebral space (between prevertebral fascia and vertebrae) is a potential space for retropharyngeal abscess formation \u2014 infection can spread from the nasopharynx down into this space."
+    }
+  },
+  {
+    "id": "rectus_capitis_anterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/rectus_capitis_anterior_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Rectus Capitis Anterior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rectus Capitis Anterior",
+      "origin": "Anterior surface of the lateral mass and transverse process of the atlas (C1)",
+      "insertion": "Inferior surface of the basilar part of the occipital bone, anterior to the occipital condyle",
+      "innervation": "Anterior rami of C1\u2013C2; flexes head at atlanto-occipital joint",
+      "spinal_levels": "C1, C2",
+      "function": "Flexes the head at the atlanto-occipital joint",
+      "opposing_muscle": "Rectus Capitis Posterior Major and Minor (head extension)",
+      "blood_supply": "Ascending pharyngeal artery; vertebral artery",
+      "clinical_note": "Rectus Capitis Anterior is a short prevertebral muscle acting only at the atlanto-occipital joint \u2014 producing the nodding 'yes' movement along with longus capitis. It lies deep to longus capitis. It is the anterior counterpart to Rectus Capitis Posterior Minor in the suboccipital group \u2014 both act at the atlanto-occipital joint. The four prevertebral muscles (Longus Colli, Longus Capitis, Rectus Capitis Anterior, Rectus Capitis Lateralis) all flex the head and neck and are all innervated by upper cervical anterior rami."
+    }
+  },
+  {
+    "id": "rectus_capitis_lateralis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/neck/rectus_capitis_lateralis_01.jpg",
+    "region": "Neck",
+    "structure_labeled": "Rectus Capitis Lateralis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Rectus Capitis Lateralis",
+      "origin": "Upper surface of the transverse process of the atlas (C1)",
+      "insertion": "Inferior surface of the jugular process of the occipital bone",
+      "innervation": "Anterior rami of C1\u2013C2; lateral flexion at atlanto-occipital joint",
+      "spinal_levels": "C1, C2",
+      "function": "Lateral flexion of the head at the atlanto-occipital joint; stabilises the atlanto-occipital joint",
+      "opposing_muscle": "Contralateral Rectus Capitis Lateralis",
+      "blood_supply": "Vertebral artery; occipital artery",
+      "clinical_note": "Rectus Capitis Lateralis is a short prevertebral muscle that laterally flexes the head at the atlanto-occipital joint. It lies lateral to rectus capitis anterior and is the anterior homologue of the posterior intertransversarii at the atlanto-occipital level. The jugular foramen lies just lateral to its insertion \u2014 transmitting CN IX, X, XI and the internal jugular vein. It is rarely tested in isolation but is important as part of the prevertebral muscle group and as a landmark in approaches to the jugular foramen and upper cervical spine."
+    }
+  }
+]
