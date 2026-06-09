@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fibularis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/fibularis_longus_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Fibularis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Fibularis Longus",
+      "origin": "Upper two-thirds of the lateral surface of the fibula and lateral condyle of tibia",
+      "insertion": "Medial cuneiform and base of first metatarsal (plantar surface) \u2014 crosses the sole diagonally",
+      "innervation": "Superficial fibular (peroneal) nerve (L5, S1); longer tendon crosses sole",
+      "spinal_levels": "L5, S1",
+      "function": "Everts the foot; plantarflexes the ankle; supports the transverse and lateral longitudinal arches of the foot",
+      "opposing_muscle": "Tibialis Anterior and Tibialis Posterior (inversion)",
+      "blood_supply": "Fibular (peroneal) artery",
+      "clinical_note": "Fibularis Longus has the longest course of any fibular muscle \u2014 its tendon wraps behind the lateral malleolus, under the foot, and crosses diagonally to insert on the medial side. This diagonal course makes it a key supporter of the transverse arch. The superficial fibular nerve (L5\u2013S1) innervates both fibularis longus and brevis \u2014 injury at the fibular neck (e.g. from a knee varus stress, fibular neck fracture, or prolonged squatting) causes eversion weakness and sensory loss over the dorsum of the foot. Fibularis longus and tibialis anterior form a stirrup supporting the medial and lateral arches."
+    }
+  },
+  {
+    "id": "fibularis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/fibularis_brevis_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Fibularis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Fibularis Brevis",
+      "origin": "Lower two-thirds of the lateral surface of the fibula",
+      "insertion": "Tuberosity (styloid process) at the base of the fifth metatarsal",
+      "innervation": "Superficial fibular (peroneal) nerve (L5, S1); inserts on 5th metatarsal base",
+      "spinal_levels": "L5, S1",
+      "function": "Everts the foot; plantarflexes the ankle; stabilises the lateral ankle",
+      "opposing_muscle": "Tibialis Anterior and Tibialis Posterior (inversion)",
+      "blood_supply": "Fibular (peroneal) artery",
+      "clinical_note": "Fibularis Brevis inserts on the base of the fifth metatarsal \u2014 an avulsion fracture here (dancer's fracture) is the most common foot fracture, caused by forced inversion when fibularis brevis pulls off its bony attachment. This must be distinguished from a Jones fracture (transverse fracture at the metaphyseal-diaphyseal junction of the fifth metatarsal) which has a higher nonunion rate. Both fibularis muscles share their nerve (superficial fibular, L5\u2013S1) and travel posterior to the lateral malleolus in a shared synovial sheath."
+    }
+  }
+]

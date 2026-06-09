@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tibialis_anterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/tibialis_anterior_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Tibialis Anterior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Tibialis Anterior",
+      "origin": "Lateral surface of the upper two-thirds of the tibia and interosseous membrane",
+      "insertion": "Medial cuneiform and base of first metatarsal",
+      "innervation": "Deep fibular (peroneal) nerve (L4, L5); primary dorsiflexor",
+      "spinal_levels": "L4, L5",
+      "function": "Dorsiflexes the ankle; inverts the foot",
+      "opposing_muscle": "Gastrocnemius and soleus (plantarflexion); fibularis longus and brevis (eversion)",
+      "blood_supply": "Anterior tibial artery",
+      "clinical_note": "Tibialis Anterior is the largest and most medial muscle of the anterior compartment, and the primary dorsiflexor of the ankle. Deep fibular nerve palsy (from compartment syndrome, tight cast, or peroneal nerve injury at the fibular neck) causes foot drop \u2014 inability to dorsiflex, with a steppage gait. Anterior compartment syndrome after tibial fracture or exercise is a surgical emergency \u2014 the anterior tibial artery and deep fibular nerve are compressed, causing pain, pallor, and weakness of dorsiflexion. L4 root lesion classically affects tibialis anterior."
+    }
+  },
+  {
+    "id": "extensor_hallucis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/extensor_hallucis_longus_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Extensor Hallucis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Hallucis Longus",
+      "origin": "Middle half of the medial surface of the fibula and interosseous membrane",
+      "insertion": "Dorsal surface of the base of the distal phalanx of the great toe",
+      "innervation": "Deep fibular (peroneal) nerve (L4, L5); L5 indicator muscle",
+      "spinal_levels": "L4, L5",
+      "function": "Extends (dorsiflexes) the great toe; dorsiflexes the ankle; assists inversion of the foot",
+      "opposing_muscle": "Flexor Hallucis Longus (plantarflexes great toe)",
+      "blood_supply": "Anterior tibial artery",
+      "clinical_note": "Extensor Hallucis Longus lies between tibialis anterior and extensor digitorum longus in the anterior compartment. Its tendon is prominent on the dorsum of the foot with active great toe extension and is a useful landmark for the dorsalis pedis pulse (lateral to EHL tendon). EHL weakness is a sensitive indicator of L5 nerve root compression \u2014 typically from L4\u2013L5 disc herniation. Testing great toe extension against resistance is a standard L5 neurological exam manoeuvre."
+    }
+  },
+  {
+    "id": "extensor_digitorum_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/extensor_digitorum_longus_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Extensor Digitorum Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Digitorum Longus",
+      "origin": "Lateral condyle of tibia, upper three-quarters of fibula, interosseous membrane",
+      "insertion": "Middle and distal phalanges of the lateral four toes via extensor expansion",
+      "innervation": "Deep fibular (peroneal) nerve (L4, L5); lateral anterior compartment",
+      "spinal_levels": "L4, L5",
+      "function": "Extends the lateral four toes; dorsiflexes the ankle; assists eversion of the foot",
+      "opposing_muscle": "Flexor Digitorum Longus (plantarflexes toes)",
+      "blood_supply": "Anterior tibial artery",
+      "clinical_note": "Extensor Digitorum Longus is the most lateral muscle of the anterior compartment. Its four tendons fan out across the dorsum of the foot to the lateral four toes. All three anterior compartment muscles (Tibialis Anterior, EHL, EDL) share deep fibular nerve innervation (L4\u2013L5) and are supplied by the anterior tibial artery. Foot drop from deep fibular nerve palsy affects all three \u2014 the patient cannot dorsiflex or extend the toes, causing a characteristic high-stepping steppage gait."
+    }
+  }
+]

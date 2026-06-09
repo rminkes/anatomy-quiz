@@ -1,0 +1,74 @@
+[
+  {
+    "id": "popliteus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/popliteus_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Popliteus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Popliteus",
+      "origin": "Lateral surface of the lateral femoral condyle (via a strong tendon inside the knee joint capsule); lateral meniscus",
+      "insertion": "Posterior surface of the tibia above the soleal line",
+      "innervation": "Tibial nerve (L4, L5, S1)",
+      "spinal_levels": "L4, L5, S1",
+      "function": "Unlocks the fully extended knee by laterally rotating the femur on the fixed tibia (or medially rotating the tibia) \u2014 initiates knee flexion from full extension; stabilises the posterior knee capsule",
+      "opposing_muscle": "Quadriceps (knee extension/locking)",
+      "blood_supply": "Popliteal artery; posterior tibial artery",
+      "clinical_note": "Popliteus is described as the key that unlocks the knee \u2014 the fully extended knee is in a close-packed (screw-home) position with the tibia externally rotated. Popliteus initiates flexion by medially rotating the tibia (or laterally rotating the femur on the fixed foot). Its tendon passes inside the knee capsule and attaches to the lateral meniscus \u2014 it retracts the lateral meniscus during knee flexion, preventing impingement. Popliteus tendinopathy causes posterolateral knee pain, particularly on downhill running."
+    }
+  },
+  {
+    "id": "tibialis_posterior_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/tibialis_posterior_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Tibialis Posterior",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Tibialis Posterior",
+      "origin": "Posterior surface of the interosseous membrane, adjacent tibia and fibula",
+      "insertion": "Tuberosity of navicular (primary); slips to all cuneiforms, cuboid, and bases of metatarsals 2\u20134",
+      "innervation": "Tibial nerve (L4, L5)",
+      "spinal_levels": "L4, L5",
+      "function": "Inverts the foot (primary invertor); plantarflexes the ankle; supports the medial longitudinal arch of the foot",
+      "opposing_muscle": "Fibularis Longus and Brevis (eversion)",
+      "blood_supply": "Posterior tibial artery; fibular artery",
+      "clinical_note": "Tibialis Posterior is the deepest and most central muscle of the deep posterior compartment. Its tendon passes posterior to the medial malleolus in the tarsal tunnel. Tibialis posterior tendon dysfunction (TPTD) is the most common cause of adult-acquired flatfoot deformity \u2014 progressive tendon degeneration leads to loss of the medial arch, hindfoot valgus, and forefoot abduction. It is assessed clinically by the single-heel-rise test. L4 root involvement affects both tibialis anterior and tibialis posterior (both inversion)."
+    }
+  },
+  {
+    "id": "flexor_digitorum_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/flexor_digitorum_longus_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Flexor Digitorum Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digitorum Longus",
+      "origin": "Posterior surface of the middle three-fifths of the tibia, medial to the vertical line",
+      "insertion": "Bases of the distal phalanges of the lateral four toes",
+      "innervation": "Tibial nerve (L5, S1, S2); flexes lateral four toes",
+      "spinal_levels": "L5, S1, S2",
+      "function": "Flexes the lateral four toes (all joints); plantarflexes the ankle; supports the medial longitudinal arch; grips the ground during walking",
+      "opposing_muscle": "Extensor Digitorum Longus (toe extension)",
+      "blood_supply": "Posterior tibial artery",
+      "clinical_note": "FDL passes posterior to the medial malleolus in the tarsal tunnel \u2014 remember Tom, Dick and Harry (Tibialis posterior, flexor Digitorum longus, posterior tibial Artery/nerve, flexor Hallucis longus) from anterior to posterior in the tarsal tunnel. In the sole of the foot FDL crosses over FHL (the knot of Henry) \u2014 a surgical landmark. FDL is used for tendon transfer in tibialis posterior tendon dysfunction to reconstruct the medial arch (FDL transfer procedure)."
+    }
+  },
+  {
+    "id": "flexor_hallucis_longus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/flexor_hallucis_longus_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Flexor Hallucis Longus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Hallucis Longus",
+      "origin": "Posterior surface of the lower two-thirds of the fibula and interosseous membrane",
+      "insertion": "Base of the distal phalanx of the great toe (plantar surface)",
+      "innervation": "Tibial nerve (L5, S1, S2); flexes great toe \u2014 push-off muscle",
+      "spinal_levels": "L5, S1, S2",
+      "function": "Flexes all joints of the great toe; plantarflexes the ankle; supports the medial longitudinal arch; provides the final push-off in the gait cycle",
+      "opposing_muscle": "Extensor Hallucis Longus (great toe extension)",
+      "blood_supply": "Fibular (peroneal) artery; posterior tibial artery",
+      "clinical_note": "FHL is the most powerful of the deep posterior compartment muscles despite being the most laterally placed \u2014 it is the main push-off muscle for the great toe in walking and running. Its tendon passes posterior to the medial malleolus (last in Tom, Dick and Harry \u2014 the Harry), then through a fibro-osseous tunnel beneath the sustentaculum tali of the calcaneus. FHL tendinopathy (dancer's tendinopathy) is a classic overuse injury in ballet dancers from repetitive plantarflexion en pointe. Trigger toe (stenosing tenosynovitis of FHL) causes great toe catching or locking."
+    }
+  }
+]

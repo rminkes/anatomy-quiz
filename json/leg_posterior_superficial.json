@@ -1,0 +1,92 @@
+[
+  {
+    "id": "gastrocnemius_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/gastrocnemius_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Gastrocnemius",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Gastrocnemius",
+      "origin": "Medial head: posterior surface of medial femoral condyle. Lateral head: posterior surface of lateral femoral condyle",
+      "insertion": "Posterior surface of calcaneus via the calcaneal (Achilles) tendon, shared with soleus",
+      "innervation": "Tibial nerve (S1, S2); two-joint muscle \u2014 crosses knee and ankle",
+      "spinal_levels": "S1, S2",
+      "function": "Plantarflexes the ankle (powerful); flexes the knee. Two-joint muscle crossing both knee and ankle",
+      "opposing_muscle": "Tibialis Anterior, EHL, EDL (dorsiflexion); quadriceps (knee flexion vs extension)",
+      "blood_supply": "Sural arteries (branches of popliteal artery)",
+      "clinical_note": "Gastrocnemius is one muscle with two heads \u2014 Medial and Lateral. Together with Soleus it forms the Triceps Surae, inserting via the Achilles tendon. Gastrocnemius is a two-joint muscle (crosses knee and ankle) while Soleus is a single-joint muscle (ankle only). Gastrocnemius is most active during fast walking and running; Soleus during slow walking and standing. The Silfverski\u00f6ld test distinguishes gastrocnemius tightness (equinus corrects with knee flexion) from combined gastrocnemius-soleus tightness (equinus persists with knee flexion). Innervated by the tibial nerve (S1\u2013S2)."
+    }
+  },
+  {
+    "id": "gastrocnemius_medial_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/gastrocnemius_medial_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Gastrocnemius \u2014 Medial Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Gastrocnemius \u2014 Medial Head",
+      "origin": "Posterior surface of the medial femoral condyle and adjacent femoral shaft",
+      "insertion": "Posterior surface of calcaneus via calcaneal (Achilles) tendon",
+      "innervation": "Tibial nerve (S1, S2); medial head \u2014 larger, extends more distally",
+      "spinal_levels": "S1, S2",
+      "function": "Plantarflexes the ankle; flexes the knee. Medial head is the larger of the two heads",
+      "opposing_muscle": "Tibialis Anterior (dorsiflexion)",
+      "blood_supply": "Medial sural artery (branch of popliteal artery)",
+      "clinical_note": "The medial head of gastrocnemius is larger and extends further distally than the lateral head. Gastrocnemius is one muscle with two heads sharing a common insertion via the Achilles tendon. The medial gastrocnemius flap is a workhorse in reconstructive surgery \u2014 used to cover exposed bone and hardware in proximal tibial wounds. Tennis leg (acute calf pain from sudden plantarflexion against resistance) typically involves a tear at the medial gastrocnemius musculotendinous junction."
+    }
+  },
+  {
+    "id": "gastrocnemius_lateral_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/gastrocnemius_lateral_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Gastrocnemius \u2014 Lateral Head",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Gastrocnemius \u2014 Lateral Head",
+      "origin": "Posterior surface of the lateral femoral condyle and adjacent femoral shaft",
+      "insertion": "Posterior surface of calcaneus via calcaneal (Achilles) tendon",
+      "innervation": "Tibial nerve (S1, S2); lateral head \u2014 smaller, may contain fabella",
+      "spinal_levels": "S1, S2",
+      "function": "Plantarflexes the ankle; flexes the knee. Lateral head is the smaller of the two heads",
+      "opposing_muscle": "Tibialis Anterior (dorsiflexion)",
+      "blood_supply": "Lateral sural artery (branch of popliteal artery)",
+      "clinical_note": "The lateral head of gastrocnemius is smaller than the medial head. A fabella (sesamoid bone) is found in the lateral head tendon in approximately 25% of people \u2014 visible on lateral knee X-ray and occasionally causing posterolateral knee pain (fabella syndrome). Gastrocnemius is one muscle with two heads; both are innervated by the tibial nerve (S1\u2013S2). The two heads form the lower boundaries of the popliteal fossa \u2014 medial head forms the inferomedial boundary, lateral head forms the inferolateral boundary."
+    }
+  },
+  {
+    "id": "soleus_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/soleus_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Soleus",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Soleus",
+      "origin": "Posterior surface of fibular head and upper quarter of fibula; soleal line and middle third of medial border of tibia; fibrous arch between tibia and fibula",
+      "insertion": "Posterior surface of calcaneus via calcaneal (Achilles) tendon, shared with gastrocnemius",
+      "innervation": "Tibial nerve (S1, S2); single-joint muscle \u2014 ankle only",
+      "spinal_levels": "S1, S2",
+      "function": "Plantarflexes the ankle; postural muscle \u2014 maintains standing posture against forward sway; pumps venous blood from the leg (soleal venous sinuses)",
+      "opposing_muscle": "Tibialis Anterior, EHL, EDL (dorsiflexion)",
+      "blood_supply": "Sural arteries; fibular artery; posterior tibial artery",
+      "clinical_note": "Soleus lies deep to gastrocnemius and together they form the Triceps Surae. Unlike gastrocnemius it is a single-joint muscle (ankle only) \u2014 it continues to plantarflex even with the knee flexed, when gastrocnemius is slack. It contains the soleal venous sinuses \u2014 large venous lakes that are a major site of deep vein thrombosis (DVT) formation after surgery or immobility. Soleus is predominantly slow-twitch (Type I) muscle \u2014 built for endurance and postural control. The Achilles tendon, shared with gastrocnemius, is the largest and strongest tendon in the body."
+    }
+  },
+  {
+    "id": "plantaris_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/leg/plantaris_01.jpg",
+    "region": "Leg",
+    "structure_labeled": "Plantaris",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Plantaris",
+      "origin": "Lateral supracondylar line of femur and oblique popliteal ligament",
+      "insertion": "Posterior surface of calcaneus (medial to Achilles tendon)",
+      "innervation": "Tibial nerve (S1, S2); vestigial muscle with very long slender tendon",
+      "spinal_levels": "S1, S2",
+      "function": "Weak plantarflexion of the ankle; weak knee flexion; vestigial muscle of minimal functional significance",
+      "opposing_muscle": "Tibialis Anterior (dorsiflexion)",
+      "blood_supply": "Sural arteries",
+      "clinical_note": "Plantaris is a vestigial muscle with a very small belly and an extremely long thin tendon (up to 40 cm) \u2014 one of the longest tendons in the body. It is absent in approximately 10% of people. Its tendon runs between gastrocnemius and soleus to insert medial to the Achilles tendon. Clinically important because its rupture (plantaris tear) causes sudden sharp posteromedial calf pain, mistaken for a DVT or partial Achilles rupture \u2014 treated conservatively. The plantaris tendon is harvested as a graft in tendon repair surgery."
+    }
+  }
+]
