@@ -173,5 +173,30 @@
     "label": "Foot — Plantar Layer 4",
     "region": "Foot",
     "file": "foot_plantar_4.json"
+  },
+  {
+    "label": "Neck — Suprahyoid",
+    "region": "Neck",
+    "file": "neck_suprahyoid.json"
+  },
+  {
+    "label": "Neck — Infrahyoid",
+    "region": "Neck",
+    "file": "neck_infrahyoid.json"
+  },
+  {
+    "label": "Neck — Scalenes",
+    "region": "Neck",
+    "file": "neck_scalene.json"
+  },
+  {
+    "label": "Neck — Prevertebral",
+    "region": "Neck",
+    "file": "neck_prevertebral.json"
+  },
+  {
+    "label": "Neck — Other",
+    "region": "Neck",
+    "file": "neck_other.json"
   }
 ]
