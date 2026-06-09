@@ -1,4 +1,3 @@
-
 [
   {
     "label": "Rotator Cuff",
@@ -149,5 +148,30 @@
     "label": "Leg — Posterior Deep",
     "region": "Leg",
     "file": "leg_posterior_deep.json"
+  },
+  {
+    "label": "Foot — Dorsal",
+    "region": "Foot",
+    "file": "foot_dorsal.json"
+  },
+  {
+    "label": "Foot — Plantar Layer 1",
+    "region": "Foot",
+    "file": "foot_plantar_1.json"
+  },
+  {
+    "label": "Foot — Plantar Layer 2",
+    "region": "Foot",
+    "file": "foot_plantar_2.json"
+  },
+  {
+    "label": "Foot — Plantar Layer 3",
+    "region": "Foot",
+    "file": "foot_plantar_3.json"
+  },
+  {
+    "label": "Foot — Plantar Layer 4",
+    "region": "Foot",
+    "file": "foot_plantar_4.json"
   }
 ]
