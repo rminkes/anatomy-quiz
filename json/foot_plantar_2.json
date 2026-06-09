@@ -1,0 +1,110 @@
+[
+  {
+    "id": "foot_lumbricals_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/foot_lumbricals_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Foot Lumbricals (1\u20134)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Foot Lumbricals (1\u20134)",
+      "origin": "Lumbrical 1: medial border of FDL tendon to the second toe. Lumbricals 2\u20134: adjacent borders of FDL tendons to toes 2\u20135",
+      "insertion": "Medial side of the extensor expansions of toes 2\u20135",
+      "innervation": "Lumbrical 1: medial plantar nerve (L5, S1). Lumbricals 2\u20134: lateral plantar nerve, deep branch (S1, S2)",
+      "spinal_levels": "L5, S1, S2",
+      "function": "Flex the MTP joints of toes 2\u20135; extend the IP joints via the extensor expansions; prevent toe clawing",
+      "opposing_muscle": "Extensor Digitorum Longus (MTP extension); Flexor Digitorum Longus (IP flexion)",
+      "blood_supply": "Medial and lateral plantar arteries",
+      "clinical_note": "The four foot lumbricals are numbered 1\u20134 from medial to lateral, arising from the FDL tendons in the second plantar layer. Lumbrical 1 is the only one innervated by the medial plantar nerve (L5\u2013S1); Lumbricals 2\u20134 are innervated by the lateral plantar nerve (S1\u2013S2). This mirrors the hand where Lumbricals 1\u20132 are median nerve and 3\u20134 are ulnar nerve. They flex MTP and extend IP joints \u2014 the intrinsic-plus position. In diabetic peripheral neuropathy, lumbrical wasting causes clawing of the lesser toes with pressure ulcers under the metatarsal heads."
+    }
+  },
+  {
+    "id": "quadratus_plantae_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/quadratus_plantae_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Quadratus Plantae",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Quadratus Plantae",
+      "origin": "Two heads: medial head from medial surface of calcaneus; lateral head from lateral border of calcaneus",
+      "insertion": "Posterolateral border of the FDL tendon before it divides into four slips",
+      "innervation": "Lateral plantar nerve (S1, S2)",
+      "spinal_levels": "S1, S2",
+      "function": "Straightens the oblique pull of FDL \u2014 redirects the FDL tendons to pull in line with the toes rather than obliquely toward the medial leg",
+      "opposing_muscle": "None significant",
+      "blood_supply": "Lateral plantar artery",
+      "clinical_note": "Quadratus Plantae (also called Flexor Accessorius) is unique in that its sole purpose is to correct the angle of pull of FDL \u2014 FDL pulls obliquely toward the medial leg, and Quadratus Plantae redirects this force to act straight along the toes. It has no bony insertion of its own. It is the only muscle in the second plantar layer that is not a lumbrical. The lateral plantar nerve and artery pass between the first and second layers \u2014 a key surgical landmark in plantar foot approaches."
+    }
+  },
+  {
+    "id": "foot_lumbrical_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/foot_lumbrical_1_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Lumbrical 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 1",
+      "origin": "Medial border of the FDL tendon to the second toe",
+      "insertion": "Medial side of the extensor expansion (dorsal digital expansion) of the second toe",
+      "innervation": "Medial plantar nerve (L5, S1); first lumbrical only",
+      "spinal_levels": "L5, S1",
+      "function": "Flexes the MTP joint of the second toe; extends the IP joints of the second toe via the extensor expansion",
+      "opposing_muscle": "Extensor Digitorum Longus (MTP extension); Flexor Digitorum Longus (IP flexion)",
+      "blood_supply": "Medial plantar artery",
+      "clinical_note": "The foot lumbricals mirror the hand lumbricals in origin and action \u2014 arising from FDL tendons and inserting into extensor expansions. Lumbrical 1 is the only foot lumbrical innervated by the medial plantar nerve (L5\u2013S1); Lumbricals 2\u20134 are innervated by the lateral plantar nerve (S1\u2013S2) \u2014 the same medial/lateral split as in the hand (median/ulnar nerve). The lumbricals flex the MTP joints and extend the IP joints \u2014 preventing clawing of the toes."
+    }
+  },
+  {
+    "id": "foot_lumbrical_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/foot_lumbrical_2_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Lumbrical 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 2",
+      "origin": "Adjacent borders of FDL tendons to the second and third toes",
+      "insertion": "Medial side of the extensor expansion of the third toe",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); second lumbrical \u2014 third toe",
+      "spinal_levels": "S1, S2",
+      "function": "Flexes the MTP joint of the third toe; extends the IP joints of the third toe",
+      "opposing_muscle": "Extensor Digitorum Longus; Flexor Digitorum Longus",
+      "blood_supply": "Lateral plantar artery",
+      "clinical_note": "Lumbrical 2 is the first of three lumbricals innervated by the lateral plantar nerve (S1\u2013S2), in contrast to Lumbrical 1 (medial plantar nerve). It arises from two FDL tendons \u2014 a bipennate origin shared with Lumbricals 3 and 4. The foot lumbricals are generally smaller and less functionally significant than the hand lumbricals, but still contribute to preventing toe clawing. Morton's neuroma most commonly affects the interdigital nerve between the third and fourth toes \u2014 near the passage of the lateral plantar nerve branches."
+    }
+  },
+  {
+    "id": "foot_lumbrical_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/foot_lumbrical_3_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Lumbrical 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 3",
+      "origin": "Adjacent borders of FDL tendons to the third and fourth toes",
+      "insertion": "Medial side of the extensor expansion of the fourth toe",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); third lumbrical \u2014 fourth toe",
+      "spinal_levels": "S1, S2",
+      "function": "Flexes the MTP joint of the fourth toe; extends the IP joints of the fourth toe",
+      "opposing_muscle": "Extensor Digitorum Longus; Flexor Digitorum Longus",
+      "blood_supply": "Lateral plantar artery",
+      "clinical_note": "Lumbrical 3 arises from the adjacent borders of the FDL tendons to the third and fourth toes. All four foot lumbricals insert into the extensor expansions on the medial side of their respective toes \u2014 acting to flex MTP and extend IP joints, balancing the extrinsic flexor and extensor tendons. In diabetic peripheral neuropathy, lumbrical wasting leads to intrinsic minus deformity \u2014 clawing of the lesser toes with MTP hyperextension and IP flexion, causing pressure sores under the metatarsal heads."
+    }
+  },
+  {
+    "id": "foot_lumbrical_4_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/foot_lumbrical_4_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Lumbrical 4",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Lumbrical 4",
+      "origin": "Adjacent borders of FDL tendons to the fourth and fifth toes",
+      "insertion": "Medial side of the extensor expansion of the fifth toe",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); fourth lumbrical \u2014 fifth toe",
+      "spinal_levels": "S1, S2",
+      "function": "Flexes the MTP joint of the fifth toe; extends the IP joints of the fifth toe",
+      "opposing_muscle": "Extensor Digitorum Longus; Flexor Digitorum Longus",
+      "blood_supply": "Lateral plantar artery",
+      "clinical_note": "Lumbrical 4 is the most lateral lumbrical, acting on the fifth toe. It shares the same innervation (lateral plantar nerve, S1\u2013S2) and action as Lumbricals 2 and 3. The four foot lumbricals number from medial to lateral (1\u20134), same as in the hand. Innervation summary: Lumbrical 1 \u2014 medial plantar nerve; Lumbricals 2, 3, 4 \u2014 lateral plantar nerve. This mirrors the hand where Lumbricals 1 and 2 are median nerve and Lumbricals 3 and 4 are ulnar nerve."
+    }
+  }
+]

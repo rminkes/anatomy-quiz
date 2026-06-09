@@ -1,0 +1,164 @@
+[
+  {
+    "id": "plantar_interossei_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/plantar_interossei_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Plantar Interossei (1\u20133)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Plantar Interossei (1\u20133)",
+      "origin": "Medial sides of the shafts of metatarsals 3, 4, and 5 respectively",
+      "insertion": "Medial sides of the bases of the proximal phalanges of toes 3, 4, and 5; extensor expansions",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); all 3 plantar interossei \u2014 PAD",
+      "spinal_levels": "S1, S2",
+      "function": "Adduct toes 3\u20135 toward the second toe axis; flex MTP joints; extend IP joints. PAD \u2014 Plantar ADduct",
+      "opposing_muscle": "Dorsal Interossei (abduct toes from second toe axis)",
+      "blood_supply": "Plantar metatarsal arteries",
+      "clinical_note": "There are 3 plantar interossei acting on toes 3, 4, and 5 \u2014 there is no plantar interosseous for the second toe because it is the axis of the foot. Mnemonic PAD \u2014 Plantar ADduct. All arise from the medial side of their metatarsal and insert on the medial side of their toe, always pulling toward the second toe axis. All are innervated by the deep branch of the lateral plantar nerve (S1\u2013S2) \u2014 the foot equivalent of the deep branch of the ulnar nerve. In intrinsic muscle paralysis the toes splay and claw."
+    }
+  },
+  {
+    "id": "dorsal_interossei_foot_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/dorsal_interossei_foot_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Dorsal Interossei (1\u20134)",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interossei (1\u20134)",
+      "origin": "Bipennate: adjacent sides of each pair of metatarsals (1\u20132, 2\u20133, 3\u20134, 4\u20135)",
+      "insertion": "DI1: medial side of proximal phalanx of 2nd toe. DI2: lateral side of 2nd toe. DI3: lateral side of 3rd toe. DI4: lateral side of 4th toe",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); all 4 dorsal interossei \u2014 DAB",
+      "spinal_levels": "S1, S2",
+      "function": "Abduct toes 2\u20134 away from the second toe axis; flex MTP joints; extend IP joints. DAB \u2014 Dorsal ABduct",
+      "opposing_muscle": "Plantar Interossei (adduct toes toward second toe axis)",
+      "blood_supply": "Dorsal and plantar metatarsal arteries",
+      "clinical_note": "There are 4 dorsal interossei in the foot \u2014 same as the hand. The axis of the foot is the second toe (unlike the hand where the axis is the third finger). DI1 abducts the second toe medially; DI2 abducts it laterally \u2014 the second toe has two dorsal interossei because it is the axis. DI3 and DI4 abduct the third and fourth toes laterally. Mnemonic DAB \u2014 Dorsal ABduct. All are innervated by the deep branch of the lateral plantar nerve (S1\u2013S2). They are bipennate \u2014 arising from two adjacent metatarsals."
+    }
+  },
+  {
+    "id": "plantar_interosseous_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/plantar_interosseous_1_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Plantar Interosseous 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Plantar Interosseous 1",
+      "origin": "Medial side of the shaft of the third metatarsal",
+      "insertion": "Medial side of the base of the proximal phalanx of the third toe; extensor expansion",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); first plantar interosseous \u2014 third toe",
+      "spinal_levels": "S1, S2",
+      "function": "Adducts the third toe toward the second toe (axis of foot); flexes the MTP joint; extends the IP joints",
+      "opposing_muscle": "Dorsal Interossei (abduct toes from second toe axis)",
+      "blood_supply": "Plantar metatarsal arteries",
+      "clinical_note": "The three Plantar Interossei ADduct the toes \u2014 mnemonic PAD (Plantar ADduct). The four Dorsal Interossei ABduct \u2014 DAB (Dorsal ABduct). The axis of the foot is the second toe (unlike the hand where the axis is the third finger). There are 3 plantar and 4 dorsal interossei in the foot \u2014 same numbers as in the hand. All are innervated by the deep branch of the lateral plantar nerve (S1\u2013S2), equivalent to the deep branch of the ulnar nerve in the hand."
+    }
+  },
+  {
+    "id": "plantar_interosseous_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/plantar_interosseous_2_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Plantar Interosseous 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Plantar Interosseous 2",
+      "origin": "Medial side of the shaft of the fourth metatarsal",
+      "insertion": "Medial side of the base of the proximal phalanx of the fourth toe; extensor expansion",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); second plantar interosseous",
+      "spinal_levels": "S1, S2",
+      "function": "Adducts the fourth toe toward the second toe; flexes the MTP joint; extends the IP joints",
+      "opposing_muscle": "Dorsal Interossei (abduct toes)",
+      "blood_supply": "Plantar metatarsal arteries",
+      "clinical_note": "Plantar Interosseous 2 adducts the fourth toe toward the second toe axis. All three plantar interossei arise from the medial side of their metatarsal and insert on the medial side of their toe \u2014 always pulling toward the second toe. The foot interossei are clinically important in diabetic neuropathy and Charcot-Marie-Tooth disease \u2014 intrinsic wasting causes clawing of the lesser toes with dorsal prominence of the metatarsal heads, leading to pressure ulcers. PAD \u2014 Plantar ADduct; DAB \u2014 Dorsal ABduct."
+    }
+  },
+  {
+    "id": "plantar_interosseous_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/plantar_interosseous_3_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Plantar Interosseous 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Plantar Interosseous 3",
+      "origin": "Medial side of the shaft of the fifth metatarsal",
+      "insertion": "Medial side of the base of the proximal phalanx of the fifth toe; extensor expansion",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); third plantar interosseous",
+      "spinal_levels": "S1, S2",
+      "function": "Adducts the fifth toe toward the second toe; flexes the MTP joint; extends the IP joints",
+      "opposing_muscle": "Dorsal Interossei; Abductor Digiti Minimi (abducts fifth toe)",
+      "blood_supply": "Plantar metatarsal arteries",
+      "clinical_note": "Plantar Interosseous 3 adducts the fifth (little) toe toward the second toe, opposing Abductor Digiti Minimi. There are only 3 plantar interossei (for toes 3, 4, 5) because the second toe is the axis \u2014 it has dorsal interossei on both sides but no plantar interosseous. All plantar interossei are innervated by the deep branch of the lateral plantar nerve (S1\u2013S2). Their collective function is adduction of the lateral three toes back toward the midline of the foot."
+    }
+  },
+  {
+    "id": "dorsal_interosseous_foot_1_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/dorsal_interosseous_foot_1_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Dorsal Interosseous 1",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 1",
+      "origin": "Bipennate: adjacent sides of the first and second metatarsals",
+      "insertion": "Medial side of the base of the proximal phalanx of the second toe; extensor expansion",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); first dorsal interosseous",
+      "spinal_levels": "S1, S2",
+      "function": "Abducts the second toe medially (toward the great toe); flexes the MTP joint; extends the IP joints",
+      "opposing_muscle": "Plantar Interossei (adduct toes)",
+      "blood_supply": "Dorsal and plantar metatarsal arteries",
+      "clinical_note": "Dorsal Interosseous 1 abducts the second toe toward the great toe \u2014 it is the only dorsal interosseous that abducts medially because the axis of the foot is the second toe. All four dorsal interossei abduct from the second toe axis: DI1 pulls the second toe medially, DI2 pulls it laterally, DI3 abducts the third toe laterally, DI4 abducts the fourth toe laterally. DAB \u2014 Dorsal ABduct. All share the deep branch of the lateral plantar nerve (S1\u2013S2)."
+    }
+  },
+  {
+    "id": "dorsal_interosseous_foot_2_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/dorsal_interosseous_foot_2_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Dorsal Interosseous 2",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 2",
+      "origin": "Bipennate: adjacent sides of the second and third metatarsals",
+      "insertion": "Lateral side of the base of the proximal phalanx of the second toe; extensor expansion",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); second dorsal interosseous",
+      "spinal_levels": "S1, S2",
+      "function": "Abducts the second toe laterally (away from the great toe); flexes the MTP joint; extends the IP joints",
+      "opposing_muscle": "Dorsal Interosseous 1 (abducts second toe medially); Plantar Interossei",
+      "blood_supply": "Dorsal and plantar metatarsal arteries",
+      "clinical_note": "Dorsal Interosseous 2 abducts the second toe laterally \u2014 working opposite to DI1 which abducts it medially. The second toe is unique in having two dorsal interossei acting on it (one from each side) because it is the axis of the foot. Together DI1 and DI2 stabilise the second toe on either side of the axis. The second MTP joint is the most common site of lesser toe instability and plantar plate tears \u2014 the interossei play a role in its dynamic stabilisation."
+    }
+  },
+  {
+    "id": "dorsal_interosseous_foot_3_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/dorsal_interosseous_foot_3_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Dorsal Interosseous 3",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 3",
+      "origin": "Bipennate: adjacent sides of the third and fourth metatarsals",
+      "insertion": "Lateral side of the base of the proximal phalanx of the third toe; extensor expansion",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); third dorsal interosseous",
+      "spinal_levels": "S1, S2",
+      "function": "Abducts the third toe laterally away from the second toe axis; flexes the MTP joint; extends the IP joints",
+      "opposing_muscle": "Plantar Interosseous 1 (adducts third toe)",
+      "blood_supply": "Dorsal and plantar metatarsal arteries",
+      "clinical_note": "Dorsal Interosseous 3 abducts the third toe laterally. The third intermetatarsal space (between DI3 territory) is the second most common site of Morton's neuroma after the second intermetatarsal space. Morton's neuroma is a perineural fibrosis of the interdigital nerve \u2014 not a true neuroma \u2014 causing burning pain and numbness in the adjacent toes, worse in tight footwear. All four dorsal interossei share the deep branch of the lateral plantar nerve (S1\u2013S2) and are the foot equivalents of the dorsal interossei of the hand."
+    }
+  },
+  {
+    "id": "dorsal_interosseous_foot_4_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/dorsal_interosseous_foot_4_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Dorsal Interosseous 4",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Dorsal Interosseous 4",
+      "origin": "Bipennate: adjacent sides of the fourth and fifth metatarsals",
+      "insertion": "Lateral side of the base of the proximal phalanx of the fourth toe; extensor expansion",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2); fourth dorsal interosseous",
+      "spinal_levels": "S1, S2",
+      "function": "Abducts the fourth toe laterally away from the second toe axis; flexes the MTP joint; extends the IP joints",
+      "opposing_muscle": "Plantar Interosseous 2 (adducts fourth toe)",
+      "blood_supply": "Dorsal and plantar metatarsal arteries",
+      "clinical_note": "Dorsal Interosseous 4 is the most lateral dorsal interosseous, abducting the fourth toe. There are 4 dorsal and 3 plantar interossei in the foot \u2014 same numbers as the hand (4 dorsal, 3 palmar). The axis difference: foot axis = second toe; hand axis = third finger. All foot interossei are innervated by the lateral plantar nerve deep branch (S1\u2013S2), equivalent to the deep branch of the ulnar nerve in the hand. Intrinsic muscle wasting from lateral plantar nerve damage causes splaying of the toes and clawing."
+    }
+  }
+]

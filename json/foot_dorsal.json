@@ -1,0 +1,38 @@
+[
+  {
+    "id": "extensor_hallucis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/extensor_hallucis_brevis_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Extensor Hallucis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Hallucis Brevis",
+      "origin": "Anterior and lateral surfaces of the calcaneus (superolateral surface); inferior extensor retinaculum",
+      "insertion": "Dorsal surface of the base of the proximal phalanx of the great toe",
+      "innervation": "Deep fibular (peroneal) nerve (L5, S1); extends great toe",
+      "spinal_levels": "L5, S1",
+      "function": "Extends the metatarsophalangeal joint of the great toe",
+      "opposing_muscle": "Flexor Hallucis Longus and Brevis (great toe flexion)",
+      "blood_supply": "Dorsalis pedis artery; lateral tarsal artery",
+      "clinical_note": "Extensor Hallucis Brevis is the medial part of the muscle belly that arises from the calcaneus \u2014 it is often described as a separate muscle from Extensor Digitorum Brevis but they share the same origin. A soft swelling over the lateral dorsum of the foot at the sinus tarsi is often mistaken for a ganglion but may represent hypertrophy of the EDB/EHB muscle belly \u2014 a common incidental finding. Both dorsal foot muscles are innervated by the deep fibular nerve (L5\u2013S1), the same nerve that supplies the anterior compartment of the leg."
+    }
+  },
+  {
+    "id": "extensor_digitorum_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/extensor_digitorum_brevis_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Extensor Digitorum Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Extensor Digitorum Brevis",
+      "origin": "Anterior and lateral surfaces of the calcaneus; inferior extensor retinaculum",
+      "insertion": "Lateral sides of the tendons of Extensor Digitorum Longus to toes 2\u20134",
+      "innervation": "Deep fibular (peroneal) nerve (L5, S1); extends toes 2\u20134",
+      "spinal_levels": "L5, S1",
+      "function": "Extends the metatarsophalangeal and interphalangeal joints of toes 2\u20134",
+      "opposing_muscle": "Flexor Digitorum Longus and Brevis (toe flexion)",
+      "blood_supply": "Dorsalis pedis artery; lateral tarsal artery",
+      "clinical_note": "Extensor Digitorum Brevis is the only intrinsic muscle on the dorsum of the foot \u2014 all other intrinsic foot muscles are plantar. Its fleshy belly is visible on the lateral dorsum of the foot and can be palpated during active toe extension. It assists EDL in extending toes 2\u20134. The deep fibular nerve terminates on the dorsum of the foot supplying EDB and EHB \u2014 its sensory distribution is the first web space between the great and second toes. Loss of sensation here with preserved toe extension suggests a lesion distal to where the nerve supplies EDB."
+    }
+  }
+]

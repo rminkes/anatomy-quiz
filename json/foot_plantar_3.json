@@ -1,0 +1,56 @@
+[
+  {
+    "id": "flexor_hallucis_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/flexor_hallucis_brevis_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Flexor Hallucis Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Hallucis Brevis",
+      "origin": "Plantar surface of the cuboid and lateral cuneiforms; plantar calcaneocuboid ligament",
+      "insertion": "Two heads: medial head to medial sesamoid and medial base of proximal phalanx of great toe; lateral head to lateral sesamoid and lateral base of proximal phalanx",
+      "innervation": "Medial plantar nerve (L5, S1)",
+      "spinal_levels": "L5, S1",
+      "function": "Flexes the MTP joint of the great toe; the two sesamoid bones within its tendons protect the FHL tendon and bear weight during push-off",
+      "opposing_muscle": "Extensor Hallucis Longus and Brevis (great toe extension)",
+      "blood_supply": "Medial plantar artery",
+      "clinical_note": "Flexor Hallucis Brevis contains two sesamoid bones (medial and lateral) within its tendons at the MTP joint of the great toe — these are the only sesamoids consistently present in the foot and bear significant weight during the push-off phase of gait. Sesamoiditis (inflammation of these bones) causes pain under the first MTP joint in runners and dancers. Bipartite sesamoids (divided into two parts) can be mistaken for fractures on X-ray. FHB is innervated by the medial plantar nerve (L5–S1)."
+    }
+  },
+  {
+    "id": "adductor_hallucis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/adductor_hallucis_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Adductor Hallucis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Adductor Hallucis",
+      "origin": "Oblique head: bases of metatarsals 2–4 and sheath of fibularis longus tendon. Transverse head: plantar MTP ligaments of toes 3–5",
+      "insertion": "Lateral side of the base of the proximal phalanx of the great toe; lateral sesamoid bone",
+      "innervation": "Lateral plantar nerve, deep branch (S1, S2)",
+      "spinal_levels": "S1, S2",
+      "function": "Adducts the great toe toward the second toe; assists in flexion of the MTP joint; supports the transverse arch of the foot",
+      "opposing_muscle": "Abductor Hallucis (abducts great toe)",
+      "blood_supply": "Lateral plantar artery; plantar metatarsal arteries",
+      "clinical_note": "Adductor Hallucis has two heads — oblique and transverse — analogous to Adductor Pollicis in the hand. The transverse head is the key maintainer of the transverse arch. In hallux valgus, the lateral pull of Adductor Hallucis combined with the medial deviation of the first metatarsal progressively worsens the deformity. Surgical correction (osteotomy) may include lateral soft tissue release of the adductor tendon. It is innervated by the deep branch of the lateral plantar nerve — same nerve as the interossei."
+    }
+  },
+  {
+    "id": "flexor_digiti_minimi_brevis_foot_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/flexor_digiti_minimi_brevis_foot_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Flexor Digiti Minimi Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digiti Minimi Brevis",
+      "origin": "Base of the fifth metatarsal and sheath of fibularis longus tendon",
+      "insertion": "Lateral side of the base of the proximal phalanx of the little toe",
+      "innervation": "Lateral plantar nerve, superficial branch (S1, S2)",
+      "spinal_levels": "S1, S2",
+      "function": "Flexes the MTP joint of the little toe",
+      "opposing_muscle": "Extensor Digitorum Longus (little toe extension)",
+      "blood_supply": "Lateral plantar artery",
+      "clinical_note": "Flexor Digiti Minimi Brevis is the plantar equivalent of the hand's Flexor Digiti Minimi Brevis. It originates from the fifth metatarsal base — adjacent to where Fibularis Brevis inserts and where avulsion fractures (dancer's fracture) commonly occur. It is innervated by the superficial branch of the lateral plantar nerve, distinguishing it from Adductor Hallucis (deep branch). Note: also covered in Hand — Hypothenar as its anatomical counterpart."
+    }
+  }
+]

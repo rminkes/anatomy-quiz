@@ -1,0 +1,56 @@
+[
+  {
+    "id": "abductor_hallucis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/abductor_hallucis_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Abductor Hallucis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Abductor Hallucis",
+      "origin": "Medial process of the calcaneal tuberosity; flexor retinaculum; plantar aponeurosis",
+      "insertion": "Medial side of the base of the proximal phalanx of the great toe; medial sesamoid bone",
+      "innervation": "Medial plantar nerve (L5, S1); abducts great toe \u2014 medial border of foot",
+      "spinal_levels": "L5, S1",
+      "function": "Abducts and assists flexion of the great toe at the MTP joint; supports the medial longitudinal arch",
+      "opposing_muscle": "Adductor Hallucis (adducts great toe)",
+      "blood_supply": "Medial plantar artery",
+      "clinical_note": "Abductor Hallucis forms the medial border of the foot and is the most medially placed muscle of the first plantar layer. It is the first muscle encountered when approaching the plantar foot medially \u2014 a key landmark in tarsal tunnel surgery and plantar fascia release. Weakness or dysfunction contributes to hallux valgus deformity \u2014 the great toe drifts laterally as the abductor loses its ability to maintain alignment. The medial plantar nerve (branch of the tibial nerve) innervates the muscles of the medial plantar region."
+    }
+  },
+  {
+    "id": "flexor_digitorum_brevis_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/flexor_digitorum_brevis_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Flexor Digitorum Brevis",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Flexor Digitorum Brevis",
+      "origin": "Medial process of the calcaneal tuberosity; plantar aponeurosis; intermuscular septa",
+      "insertion": "Middle phalanges of the lateral four toes \u2014 each tendon splits (like FDS in the hand) to allow FDL to pass through",
+      "innervation": "Medial plantar nerve (L5, S1); flexes lateral four toes \u2014 plantar FDS equivalent",
+      "spinal_levels": "L5, S1",
+      "function": "Flexes the proximal interphalangeal joints of the lateral four toes; assists in gripping the ground",
+      "opposing_muscle": "Extensor Digitorum Longus and Brevis (toe extension)",
+      "blood_supply": "Medial plantar artery",
+      "clinical_note": "Flexor Digitorum Brevis is the plantar equivalent of FDS in the hand \u2014 its tendons split to allow FDL (equivalent to FDP) to pass through to the distal phalanges. It lies directly deep to the plantar aponeurosis in the first layer. Plantar fasciitis involves the proximal plantar aponeurosis at its calcaneal attachment \u2014 FDB shares this origin and its tightness contributes to the condition. FDB is the central and most prominent muscle of the first plantar layer."
+    }
+  },
+  {
+    "id": "abductor_digiti_minimi_foot_01",
+    "image_url": "https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/foot/abductor_digiti_minimi_foot_01.jpg",
+    "region": "Foot",
+    "structure_labeled": "Abductor Digiti Minimi",
+    "structure_type": "muscle",
+    "qa": {
+      "name": "Abductor Digiti Minimi",
+      "origin": "Lateral and medial processes of the calcaneal tuberosity; plantar aponeurosis",
+      "insertion": "Lateral side of the base of the proximal phalanx of the little toe",
+      "innervation": "Lateral plantar nerve (S1, S2); abducts little toe \u2014 lateral border of foot",
+      "spinal_levels": "S1, S2",
+      "function": "Abducts the little toe; assists flexion of the little toe MTP joint; supports the lateral longitudinal arch",
+      "opposing_muscle": "Plantar interossei (adduct toes toward second toe axis)",
+      "blood_supply": "Lateral plantar artery",
+      "clinical_note": "Abductor Digiti Minimi forms the lateral border of the foot and is the most laterally placed muscle of the first plantar layer. It is innervated by the lateral plantar nerve (unlike Abductor Hallucis and FDB which are medial plantar nerve). Entrapment of the nerve to Abductor Digiti Minimi (a branch of the lateral plantar nerve) as it passes between the deep fascia and the calcaneus is a recognised cause of chronic heel pain \u2014 Baxter's nerve entrapment \u2014 distinct from plantar fasciitis. Note: also present in the hand as Abductor Digiti Minimi."
+    }
+  }
+]
