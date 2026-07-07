@@ -198,5 +198,40 @@
     "label": "Neck — Other",
     "region": "Neck",
     "file": "neck_other.json"
+  },
+  {
+    "label": "Neck — Pharynx: Internal",
+    "region": "Neck",
+    "file": "neck_pharynx_internal.json"
+  },
+  {
+    "label": "Neck — Pharynx: External",
+    "region": "Neck",
+    "file": "neck_pharynx_external.json"
+  },
+  {
+    "label": "Neck — Larynx",
+    "region": "Neck",
+    "file": "neck_larynx.json"
+  },
+  {
+    "label": "Head — Mastication",
+    "region": "Head",
+    "file": "head_mastication.json"
+  },
+  {
+    "label": "Head — Facial Expression",
+    "region": "Head",
+    "file": "head_facial.json"
+  },
+  {
+    "label": "Head — Tongue",
+    "region": "Head",
+    "file": "head_tongue.json"
+  },
+  {
+    "label": "Head — Soft Palate",
+    "region": "Head",
+    "file": "head_soft_palate.json"
   }
 ]
