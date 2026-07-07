@@ -233,5 +233,20 @@
     "label": "Head — Soft Palate",
     "region": "Head",
     "file": "head_soft_palate.json"
+  },
+  {
+    "label": "Orbit — Extraocular Muscles",
+    "region": "Orbit",
+    "file": "orbit.json"
+  },
+  {
+    "label": "Pelvis — Pelvic Wall & Floor",
+    "region": "Pelvis",
+    "file": "pelvis_floor.json"
+  },
+  {
+    "label": "Pelvis — Perineum",
+    "region": "Pelvis",
+    "file": "pelvis_perineum.json"
   }
 ]
