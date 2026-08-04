@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VH Dissector Link Test</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f2ed; color: #1a1a1a; padding: 2rem 1rem; max-width: 640px; margin: 0 auto; }
+    h1 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+    .subtitle { font-size: 13px; color: #888; margin-bottom: 1.5rem; }
+    .card { background: #fff; border: 1px solid #e0ddd7; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .card-header { padding: 14px 16px; border-bottom: 1px solid #e0ddd7; }
+    .card-title { font-size: 17px; font-weight: 600; }
+    .card-region { font-size: 12px; color: #888; margin-top: 2px; }
+    .card-img { width: 100%; max-height: 300px; object-fit: contain; background: #1a1a1a; display: block; }
+    .fields { padding: 14px 16px; }
+    .field { display: grid; grid-template-columns: 130px 1fr; gap: 8px; padding: 7px 0; border-bottom: 1px solid #f0ede6; font-size: 13px; }
+    .field:last-child { border-bottom: none; }
+    .field-label { color: #888; font-weight: 500; }
+    .field-value { color: #1a1a1a; }
+    .clinical { margin: 0 16px 16px; padding: 10px 12px; background: #f5f2ed; border-radius: 8px; border-left: 3px solid #3b82f6; font-size: 12px; color: #555; line-height: 1.65; }
+    .clinical strong { color: #1a1a1a; display: block; margin-bottom: 3px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .vh-btn { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 16px 16px; padding: 12px; background: #1a1a2e; color: #fff; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 500; transition: opacity 0.15s; }
+    .vh-btn:hover { opacity: 0.85; }
+    .vh-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .note { margin-top: 1.5rem; padding: 12px; background: #fff; border: 1px solid #e0ddd7; border-radius: 8px; font-size: 12px; color: #888; line-height: 1.6; }
+    .note strong { color: #1a1a1a; }
+  </style>
+</head>
+<body>
+
+  <h1>VH Dissector Link Test</h1>
+  <p class="subtitle">Testing shareable VH Dissector links in the Study tab — Deltoid Anterior Head</p>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">Deltoid — Anterior Head</div>
+      <div class="card-region">Shoulder</div>
+    </div>
+
+    <img class="card-img"
+         src="https://raw.githubusercontent.com/rminkes/anatomy-quiz/main/images/shoulder/deltoid_anterior_01.jpg"
+         alt="Deltoid — Anterior Head"
+         onerror="this.style.display='none'">
+
+    <div class="fields">
+      <div class="field"><span class="field-label">Origin</span><span class="field-value">Lateral third of the clavicle</span></div>
+      <div class="field"><span class="field-label">Insertion</span><span class="field-value">Deltoid tuberosity of the humerus</span></div>
+      <div class="field"><span class="field-label">Innervation</span><span class="field-value">Axillary nerve</span></div>
+      <div class="field"><span class="field-label">Spinal Levels</span><span class="field-value">C5, C6</span></div>
+      <div class="field"><span class="field-label">Function</span><span class="field-value">Flexion and medial rotation of the arm</span></div>
+      <div class="field"><span class="field-label">Opposing Muscle</span><span class="field-value">Posterior Deltoid</span></div>
+      <div class="field"><span class="field-label">Blood Supply</span><span class="field-value">Anterior circumflex humeral artery; Thoracoacromial artery</span></div>
+    </div>
+
+    <div class="clinical">
+      <strong>Clinical Note</strong>
+      All three heads of the deltoid are tested together by resisted abduction — axillary nerve injury causes flattening of the shoulder contour.
+    </div>
+
+    <a class="vh-btn" href="https://www.vhdissector.com/share/fz3g4t" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      View in VH Dissector
+    </a>
+  </div>
+
+  <div class="note">
+    <strong>Test notes:</strong> This page tests whether the VH Dissector shareable link opens correctly for authenticated users. The "View in VH Dissector" button should open the Deltoid view directly within the VH Dissector app or browser. If successful, this button will be added to the Study tab for muscles that have a shareable link.
+  </div>
+
+</body>
+</html>
