@@ -5616,6 +5616,41 @@ const DATA = {
 const MUSCLE_REGION_KEY = {};
 DATA.index.forEach(r => (DATA[r.key] || []).forEach(m => { MUSCLE_REGION_KEY[m.id] = r.key; }));
 
+// --- Same-structure guard for quiz distractors -----------------------------
+// Two muscle-name labels refer to the SAME structure when one label is a
+// whole-word PREFIX of the other (a whole muscle vs. one of its parts/heads),
+// OR when they share the same base name after stripping a trailing
+// head/belly/fibers/part qualifier (e.g. gastrocnemius medial head vs. lateral
+// head). This deliberately does NOT collapse distinct muscles that merely share
+// early words but where neither is a prefix — e.g. flexor digitorum
+// superficialis vs. profundus, extensor carpi radialis longus vs. brevis, the
+// recti of the eye, superior vs. inferior gemellus. Those stay valid together.
+const STRUCT_QUAL = new Set(["head","heads","belly","bellies","fiber","fibers","fibre","fibres","part","parts","portion"]);
+function structWords(s) {
+  return String(s).toLowerCase()
+    .replace(/\([^)]*\)/g, " ")     // drop parentheticals
+    .replace(/[^a-z0-9]+/g, " ")    // punctuation (em dash, hyphen) -> space
+    .trim().split(/\s+/).filter(Boolean);
+}
+function structBase(words) {
+  let w = words.slice();
+  while (w.length && /^\d+$/.test(w[w.length - 1])) w.pop();   // trailing number ("part 2")
+  if (w.length >= 2 && STRUCT_QUAL.has(w[w.length - 1])) {
+    w.pop();                                                    // drop head/belly/fibers/part
+    if (w.length >= 2) w.pop();                                 // drop its descriptor (medial/long/...)
+    return w;
+  }
+  return null;                                                  // no qualifier -> no base collapse
+}
+function sameNamedStructure(a, b) {
+  const wa = structWords(a), wb = structWords(b);
+  if (!wa.length || !wb.length) return false;
+  const isPrefix = (s, l) => s.length < l.length && s.every((t, i) => t === l[i]);
+  if (isPrefix(wa, wb) || isPrefix(wb, wa)) return true;        // whole vs part/head
+  const ba = structBase(wa), bb = structBase(wb);              // sibling heads/parts
+  return !!(ba && bb && ba.length === bb.length && ba.every((t, i) => t === bb[i]));
+}
+
 const QT = [
   { key: "name",            label: "Identify muscle" },
   { key: "innervation",     label: "Innervation" },
@@ -5934,7 +5969,9 @@ function nextQuestion() {
     && !val.includes(':')
     && val.length < 120
     && similarity(val, correct) < 0.65
-    && wrongs.every(w => similarity(val, w) < 0.65);
+    && wrongs.every(w => similarity(val, w) < 0.65)
+    && (qType !== "name" || (!sameNamedStructure(val, correct)
+        && wrongs.every(w => !sameNamedStructure(val, w))));
 
   // Pass 1: same region
   for (const m of regionMuscles.filter(m => m.id !== muscle.id && m.qa[qType]).sort(() => Math.random() - 0.5)) {
@@ -5977,6 +6014,8 @@ function nextQuestion() {
       .sort(() => Math.random() - 0.5);
     for (const f of pool) {
       if (wrongs.length === 3) break;
+      if (qType === "name" && (sameNamedStructure(f, correct)
+          || wrongs.some(w => sameNamedStructure(f, w)))) continue;
       wrongs.push(f);
       used.add(f);
     }
