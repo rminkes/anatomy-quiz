@@ -48,10 +48,20 @@
     .score-item span { display: block; font-size: 20px; font-weight: 700; color: var(--text); line-height: 1.2; }
     .status { padding: 2rem; text-align: center; color: var(--text-muted); font-size: 14px; }
     @media (max-width: 480px) { .choices { grid-template-columns: 1fr; } body { padding: 1rem 0.75rem; } }
-    .mode-tabs { display: flex; gap: 8px; margin-bottom: 1rem; }
-    .mode-tab { padding: 8px 20px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg); color: var(--text-muted); font-size: 14px; font-family: inherit; cursor: pointer; transition: all 0.12s; }
+    .mode-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem; }
+    .mode-tab { padding: 8px 20px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg); color: var(--text-muted); font-size: 14px; font-family: inherit; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
     .mode-tab.active { background: var(--surface); color: var(--text); border-color: var(--border-strong); font-weight: 500; box-shadow: var(--shadow); }
     .mode-tab:hover:not(.active) { border-color: var(--border-strong); color: var(--text); }
+    .mode-tab .lbl-short { display: none; }
+    /* Narrow viewports (phones + VH Dissector's docked panel): the full-label row
+       stops fitting one row at ~676px given body max-width 680px, so swap to short
+       labels + tighter pills. flex-wrap above is the safety net at any width. */
+    @media (max-width: 675px) {
+      .mode-tabs { gap: 6px; }
+      .mode-tab { padding: 7px 13px; font-size: 13px; }
+      .mode-tab .lbl-full { display: none; }
+      .mode-tab .lbl-short { display: inline; }
+    }
     .btn-start-random { padding: 9px 22px; border-radius: var(--radius-sm); border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); font-size: 14px; font-family: inherit; cursor: pointer; transition: all 0.12s; box-shadow: var(--shadow); margin-top: 18px; }
     .btn-start-random:hover { border-color: var(--blue); color: var(--blue); }
     .instructions { border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 1.25rem; background: var(--surface); }
