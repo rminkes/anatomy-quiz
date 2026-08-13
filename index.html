@@ -25,6 +25,14 @@
     .brand-credit { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
     .brand-credit a { color: var(--text-muted); text-decoration: underline; }
     .brand-credit a:hover { color: var(--text); }
+    /* Narrow widths (phone / VH panel): instead of the logo wrapping BELOW the
+       title, stack the header as a column with the logo ABOVE the title, left-
+       aligned. ~600px is where the title+logo row stops fitting (measured), so
+       desktop keeps the logo top-right on the title row, unchanged. */
+    @media (max-width: 600px) {
+      .header-main { flex-direction: column; align-items: flex-start; }
+      .header-main .brand-logo-link { order: -1; }
+    }
     .controls { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 1rem; box-shadow: var(--shadow); }
     label { font-size: 12px; font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
     select { width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 14px; font-family: inherit; background: var(--bg); color: var(--text); appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 10px center; padding-right: 30px; }
@@ -209,7 +217,7 @@
     Anatomical visualisations, 3D renderings, and cross-sectional images used in this application are sourced from the <strong>VH Dissector</strong>, developed by <a href="https://www.toltech.net/" target="_blank">Touch of Life Technologies (ToLTech)</a>. The underlying anatomical data is provided courtesy of the National Library of Medicine's <a href="https://www.nlm.nih.gov/research/visible/visible_human.html" target="_blank">Visible Human Project</a>. All rights reserved by their respective owners.<br><br>
     Educational articles, 3D model perspectives, and anatomical data used in this application are sourced from <a href="https://anatomy.app/" target="_blank">Anatomy.app</a> by 3DMedical OÜ. All rights reserved by the original content creators.<br><br>
     <strong>Found an error?</strong> Help us improve — <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrnLQMcwHMsGnk2gjqFh4wlZctjla75DGrZJC0fjTsRF1vTA/viewform?usp=publish-editor" target="_blank">report it here</a>.
-    <div class="build-stamp">Updated 2026-08-13 · build f18914c</div>
+    <div class="build-stamp">Updated 2026-08-13 · build 47feb49</div>
   </footer>
 
 <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:1000;cursor:zoom-out;align-items:center;justify-content:center;">
